@@ -19,7 +19,7 @@ export type Piece = {
     Composer: string;
     "Piece Title": string;
     Instrumentation: string;
-    "Instr Category": string;
+    instrumentation_category: string;
     "Date Written": string;
     Published: string;
     Unpublished: string;
@@ -36,4 +36,8 @@ export type Piece = {
     "Perf Consid": string;
     Description: string;
 };
+
+export type InstrumentationCategory = {
+    instrumentation_category: string;
+}
 

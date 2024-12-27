@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Routes } from "react-router";
-import ComposerPieces from './components/ComposerPieces';
+import ComposerList from './components/ComposerList';
+import InstrumentationCategoryList from './components/InstrumentationCategoryList';
+import InstrumentationCategoryInfo from './components/InstrumentationCategoryInfo';
 import ComposerInfo from './components/ComposerInfo';
 import PieceInfo from './components/PieceInfo';
 import { Composer } from './types';
@@ -28,22 +30,32 @@ function App() {
           element={
             <>
               <h1>Ukrainian Chamber Music Encyclopedia</h1>
-              <h2>Composers</h2>
-              {data.map((composer, index) => (
-                <div key={index}>
-                  <h2>
-                    <Link to={`/composer/${encodeURIComponent(composer.Composer)}`}>
-                      {composer.Composer}
-                    </Link>
-                  </h2>
-                </div>
-              ))}
+              <p>Here is a wonderful description of this ukrainian chamber music encyclopedia</p>
+              <h2>
+                <Link to={`/composers`}>
+                  Composers
+                </Link>
+              </h2>
+              <h2>
+                <Link to={`/instrumentation_category`}>
+                  Instrumentation Category
+                </Link>
+              </h2>
             </>
           }
         />
 
-        {/* Composer Pieces Page */}
+        {/* Composer List Page */}
+        <Route path="/composers" element={<ComposerList />} />
+
+        {/* Instrumentation Category List Page */}
+        <Route path="/instrumentation_category" element={<InstrumentationCategoryList />} />
+
+        {/* Composer Info Page */}
         <Route path="/composer/:name" element={<ComposerInfo />} />
+
+        {/* Instrumentation Category Info Page */}
+        <Route path="/instrumentation_category/:category" element={<InstrumentationCategoryInfo />} />
 
         {/* Piece Info Page with composer and title as parameters */}
         <Route path="/piece/:composer/:title" element={<PieceInfo />} />
