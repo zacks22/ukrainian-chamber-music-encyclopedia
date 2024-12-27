@@ -1,16 +1,13 @@
 import { useEffect, useState } from 'react';
-//import reactLogo from './assets/react.svg';
-//import viteLogo from '/vite.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Routes } from "react-router";
 import ComposerPieces from './components/ComposerPieces';
+import ComposerInfo from './components/ComposerInfo';
+import PieceInfo from './components/PieceInfo';
 import { Composer } from './types';
 
-
-
 function App() {
-
   const [data, setData] = useState<Composer[]>([]);  // Use state to store the dataset
 
   useEffect(() => {
@@ -21,10 +18,6 @@ function App() {
       })
       .catch(error => console.error('Error fetching JSON:', error));
   }, []);
-
-  //for (const d of data) {
-  //  console.log(d['Composer']);
-  //}
 
   return (
     <Router>
@@ -43,13 +36,6 @@ function App() {
                       {composer.Composer}
                     </Link>
                   </h2>
-                  {Object.keys(composer)
-                    .filter((key) => key !== "Composer") // Exclude the Composer key
-                    .map((key, idx) => (
-                      <p key={idx}>
-                        <b>{key}: </b> {composer[key]}
-                      </p>
-                    ))}
                 </div>
               ))}
             </>
@@ -57,10 +43,14 @@ function App() {
         />
 
         {/* Composer Pieces Page */}
-        <Route path="/composer/:name" element={<ComposerPieces />} />
+        <Route path="/composer/:name" element={<ComposerInfo />} />
+
+        {/* Piece Info Page with composer and title as parameters */}
+        <Route path="/piece/:composer/:title" element={<PieceInfo />} />
+
       </Routes>
     </Router>
   );
 }
 
-export default App
+export default App;
