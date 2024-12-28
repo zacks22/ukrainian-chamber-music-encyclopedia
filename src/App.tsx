@@ -11,6 +11,7 @@ import DifficultyInfo from './components/DifficultyInfo';
 import PieceLengthList from './components/PieceLengthList';
 import PieceLengthInfo from './components/PieceLengthInfo';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -73,6 +74,7 @@ function App() {
         </Routes>
       </Router>
 
+      <Footer></Footer>
     </>
   );
 }
