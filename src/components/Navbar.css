@@ -1,0 +1,64 @@
+/* Navbar.css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #347ecc;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+    color: white;
+    /* Title text color */
+    font-size: 20px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    /* Make it stand out */
+    justify-content: center;
+    /* Centers the title */
+    position: absolute;
+    /* Keeps it in the center while allowing other items */
+    left: 50%;
+    /* Position to the horizontal center */
+    transform: translateX(-50%);
+    /* Correct centering with left 50% */
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    list-style: none;
+    /* Removes the default bullet point */
+    margin: 0;
+    /* Removes any default margin */
+    padding: 0;
+    /* Removes any default padding */
+}
+
+.navbar-item a {
+    display: flex;
+    /* Ensures proper alignment of the icon */
+    align-items: center;
+}
+
+.navbar-icon {
+    width: auto;
+    /* Maintains the aspect ratio */
+    height: auto;
+    /* Ensures proportions stay consistent */
+    transform: scale(0.5);
+    /* Scales the icon to 75% of its original size */
+}
