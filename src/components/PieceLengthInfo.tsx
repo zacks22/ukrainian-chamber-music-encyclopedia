@@ -1,25 +1,25 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { InstrumentationCategory, Piece } from '../types';
+import { PieceLength, Piece } from '../types';
 import '../App.css';
 
 function ComposerInfo() {
-    const { category } = useParams(); // Get the instrument category name from the URL
-    const [instrumentationCategoryInfo, setInstrumentationCategoryInfo] = useState<InstrumentationCategory | null>(null);
+    const { length } = useParams(); // Get the composer name from the URL
+    const [pieceLengthInfo, setPieceLengthInfo] = useState<PieceLength>();
     const [pieces, setPieces] = useState<Piece[]>([]);
 
-    if (!category) return; // Exit if category is undefined
+    if (!length) return; // Exit if length is undefined
 
 
     useEffect(() => {
         // Fetch the composer data from test_composers.json
-        fetch(`${import.meta.env.BASE_URL}/test_instrumentation_categories.json`) // Ensure it's correctly located in the public folder
+        fetch(`${import.meta.env.BASE_URL}/test_piece_lengths.json`) // Ensure it's correctly located in the public folder
             .then((response) => response.json())
-            .then((data: InstrumentationCategory[]) => {
-                const selectedInstrumentationCategory = data.find(
-                    (instrumentation_category) => instrumentation_category.instrumentation_category === decodeURIComponent(category)
+            .then((data: PieceLength[]) => {
+                const selectedPieceLength = data.find(
+                    (piece_length) => piece_length.length === decodeURIComponent(length)
                 );
-                setInstrumentationCategoryInfo(selectedInstrumentationCategory || null);
+                setPieceLengthInfo(selectedPieceLength);
 
                 // Now fetch the pieces for this composer (assuming test_pieces.json is available)
                 fetch(`${import.meta.env.BASE_URL}/test_pieces.json`)
@@ -27,31 +27,24 @@ function ComposerInfo() {
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer
                         const composerPieces = piecesData.filter(
-                            (piece) => piece.instrumentation_category === decodeURIComponent(category)
+                            (piece) => piece.length === decodeURIComponent(length)
                         );
                         setPieces(composerPieces);
                     })
                     .catch((error) => console.error('Error fetching pieces:', error));
             })
             .catch((error) => {
-                console.error('Error fetching instrumentation cateogory info:', error);
+                console.error('Error fetching length info:', error);
             });
-    }, [category]);
+    }, [length]);
+
 
     return (
         <>
-            <h1>Instrumentation Category: {decodeURIComponent(category)}</h1>
-            {instrumentationCategoryInfo ? (
+            <h1>Piece Length: {decodeURIComponent(length)}</h1>
+            {pieceLengthInfo ? (
                 <>
-                    {Object.keys(instrumentationCategoryInfo)
-                        .filter((key) => key !== 'instrumentation_category') // Exclude the Composer key
-                        .map((key, idx) => (
-                            <p key={idx}>
-                                <b>{key}: </b> {instrumentationCategoryInfo[key as keyof InstrumentationCategory]}
-                            </p>
-                        ))}
-
-                    <h3>Pieces by {decodeURIComponent(category)}:</h3>
+                    <h3>Pieces by piece length {decodeURIComponent(length)}:</h3>
                     {pieces.length > 0 ? (
                         <ul>
                             {pieces.map((piece, index) => (
@@ -67,11 +60,10 @@ function ComposerInfo() {
                     )}
                 </>
             ) : (
-                <p>Loading composer info...</p>
+                <p>Loading piece info...</p>
             )}
         </>
     );
 }
 
 export default ComposerInfo;
-

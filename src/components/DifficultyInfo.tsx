@@ -1,25 +1,24 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { InstrumentationCategory, Piece } from '../types';
+import { Difficulty, Piece } from '../types';
 import '../App.css';
 
 function ComposerInfo() {
-    const { category } = useParams(); // Get the instrument category name from the URL
-    const [instrumentationCategoryInfo, setInstrumentationCategoryInfo] = useState<InstrumentationCategory | null>(null);
+    const { difficulty } = useParams(); // Get the composer name from the URL
+    const [difficultyInfo, setDifficultyInfo] = useState<Difficulty>();
     const [pieces, setPieces] = useState<Piece[]>([]);
 
-    if (!category) return; // Exit if category is undefined
-
+    if (!difficulty) return; // Exit if difficulty is undefined
 
     useEffect(() => {
         // Fetch the composer data from test_composers.json
-        fetch(`${import.meta.env.BASE_URL}/test_instrumentation_categories.json`) // Ensure it's correctly located in the public folder
+        fetch(`${import.meta.env.BASE_URL}/test_difficulty_levels.json`) // Ensure it's correctly located in the public folder
             .then((response) => response.json())
-            .then((data: InstrumentationCategory[]) => {
-                const selectedInstrumentationCategory = data.find(
-                    (instrumentation_category) => instrumentation_category.instrumentation_category === decodeURIComponent(category)
+            .then((data: Difficulty[]) => {
+                const selectedDifficulty = data.find(
+                    (difficulty_level) => difficulty_level.difficulty_level === decodeURIComponent(difficulty)
                 );
-                setInstrumentationCategoryInfo(selectedInstrumentationCategory || null);
+                setDifficultyInfo(selectedDifficulty);
 
                 // Now fetch the pieces for this composer (assuming test_pieces.json is available)
                 fetch(`${import.meta.env.BASE_URL}/test_pieces.json`)
@@ -27,31 +26,24 @@ function ComposerInfo() {
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer
                         const composerPieces = piecesData.filter(
-                            (piece) => piece.instrumentation_category === decodeURIComponent(category)
+                            (piece) => piece.difficulty_level === decodeURIComponent(difficulty)
                         );
                         setPieces(composerPieces);
                     })
                     .catch((error) => console.error('Error fetching pieces:', error));
             })
             .catch((error) => {
-                console.error('Error fetching instrumentation cateogory info:', error);
+                console.error('Error fetching difficulty info:', error);
             });
-    }, [category]);
+    }, [difficulty]);
+
 
     return (
         <>
-            <h1>Instrumentation Category: {decodeURIComponent(category)}</h1>
-            {instrumentationCategoryInfo ? (
+            <h1>Difficulty Level: {decodeURIComponent(difficulty)}</h1>
+            {difficultyInfo ? (
                 <>
-                    {Object.keys(instrumentationCategoryInfo)
-                        .filter((key) => key !== 'instrumentation_category') // Exclude the Composer key
-                        .map((key, idx) => (
-                            <p key={idx}>
-                                <b>{key}: </b> {instrumentationCategoryInfo[key as keyof InstrumentationCategory]}
-                            </p>
-                        ))}
-
-                    <h3>Pieces by {decodeURIComponent(category)}:</h3>
+                    <h3>Pieces by difficulty level {decodeURIComponent(difficulty)}:</h3>
                     {pieces.length > 0 ? (
                         <ul>
                             {pieces.map((piece, index) => (
@@ -67,11 +59,10 @@ function ComposerInfo() {
                     )}
                 </>
             ) : (
-                <p>Loading composer info...</p>
+                <p>Loading piece info...</p>
             )}
         </>
     );
 }
 
 export default ComposerInfo;
-

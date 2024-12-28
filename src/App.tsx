@@ -6,6 +6,10 @@ import InstrumentationCategoryList from './components/InstrumentationCategoryLis
 import InstrumentationCategoryInfo from './components/InstrumentationCategoryInfo';
 import ComposerInfo from './components/ComposerInfo';
 import PieceInfo from './components/PieceInfo';
+import DifficultyList from './components/DifficultyList';
+import DifficultyInfo from './components/DifficultyInfo';
+import PieceLengthList from './components/PieceLengthList';
+import PieceLengthInfo from './components/PieceLengthInfo';
 
 function App() {
 
@@ -18,7 +22,6 @@ function App() {
           element={
             <>
               <h1>Ukrainian Chamber Music Encyclopedia</h1>
-              <p>Here is a wonderful description of this ukrainian chamber music encyclopedia</p>
               <h2>
                 <Link to={`/composers`}>
                   Composers
@@ -29,12 +32,29 @@ function App() {
                   Instrumentation Category
                 </Link>
               </h2>
+              <h2>
+                <Link to={`/difficulty_levels`}>
+                  Difficulty
+                </Link>
+              </h2>
+              <h2>
+                <Link to={`/piece_lengths`}>
+                  Piece Length
+                </Link>
+              </h2>
+              <p>Here is a wonderful description of this ukrainian chamber music encyclopedia</p>
             </>
           }
         />
 
         {/* Composer List Page */}
         <Route path="/composers" element={<ComposerList />} />
+
+        {/* Difficulty List Page */}
+        <Route path="/difficulty_levels" element={<DifficultyList />} />
+
+        {/* Piece Length List Page */}
+        <Route path="/piece_lengths" element={<PieceLengthList />} />
 
         {/* Instrumentation Category List Page */}
         <Route path="/instrumentation_category" element={<InstrumentationCategoryList />} />
@@ -44,6 +64,12 @@ function App() {
 
         {/* Instrumentation Category Info Page */}
         <Route path="/instrumentation_category/:category" element={<InstrumentationCategoryInfo />} />
+
+        {/* Difficulty Info Page */}
+        <Route path="/difficulty_levels/:difficulty" element={<DifficultyInfo />} />
+
+        {/* Piece Length Info Page */}
+        <Route path="/piece_lengths/:length" element={<PieceLengthInfo />} />
 
         {/* Piece Info Page with composer and title as parameters */}
         <Route path="/piece/:composer/:title" element={<PieceInfo />} />

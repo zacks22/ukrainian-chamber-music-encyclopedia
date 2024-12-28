@@ -28,7 +28,7 @@ export type Piece = {
     premiere: string;
     recordings: string;
     length: string;
-    difficulty: string;
+    difficulty_level: string;
     style: string;
     range: string;
     key: string;
@@ -41,5 +41,13 @@ export type Piece = {
 
 export type InstrumentationCategory = {
     instrumentation_category: string;
+}
+
+export type Difficulty = {
+    difficulty_level: string;
+}
+
+export type PieceLength = {
+    length: string;
 }
 
