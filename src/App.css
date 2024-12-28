@@ -53,14 +53,14 @@ h1 {
 }
 
 /* Style for list items */
-ul {
+.piece-line ul {
   padding: 0;
   list-style-type: none;
   /* Remove default bullet points */
   margin: 0;
 }
 
-li {
+.piece-line li {
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -73,14 +73,14 @@ li {
 }
 
 /* Hover effects */
-li:hover {
+.piece-line li:hover {
   background-color: #e0e0e0;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for text inside list items */
-li a {
+.piece-line li a {
   text-decoration: none;
   color: #333;
   font-size: 1.0rem;
@@ -88,13 +88,13 @@ li a {
   transition: color 0.2s ease;
 }
 
-li a:hover {
+.piece-line li a:hover {
   color: #007BFF;
   /* Blue color on hover */
 }
 
 /* Optional: Icon styling (if any) inside list item */
-li::before {
+.piece-line li::before {
   content: '→';
   /* Example arrow symbol */
   margin-right: 10px;

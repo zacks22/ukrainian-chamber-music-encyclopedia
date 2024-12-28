@@ -45,9 +45,9 @@ function DifficultyInfo() {
                 <>
                     <h3>Pieces by difficulty level {decodeURIComponent(difficulty)}:</h3>
                     {pieces.length > 0 ? (
-                        <ul>
+                        <ul className='piece-line'>
                             {pieces.map((piece, index) => (
-                                <li key={index}>
+                                <li key={index} className='piece-line'>
                                     <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
                                         {piece.piece_title}
                                     </Link >
