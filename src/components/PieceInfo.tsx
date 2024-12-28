@@ -13,8 +13,8 @@ function PieceInfo() {
             .then((piecesData: Piece[]) => {
                 const selectedPiece = piecesData.find(
                     (piece) =>
-                        piece.Composer === decodeURIComponent(composer) &&
-                        piece["Piece Title"] === decodeURIComponent(title)
+                        piece.composer === decodeURIComponent(composer) &&
+                        piece.piece_title === decodeURIComponent(title)
                 );
                 setPieceInfo(selectedPiece || null);
             })
@@ -28,9 +28,9 @@ function PieceInfo() {
         <>
             {pieceInfo ? (
                 <>
-                    <h1>Piece: {pieceInfo["Piece Title"]}</h1>
+                    <h1>Piece: {pieceInfo.piece_title}</h1>
                     {Object.keys(pieceInfo)
-                        .filter((key) => key !== "Piece Title") // Exclude the "Piece Title" key
+                        .filter((key) => key !== "Piece Title" && pieceInfo[key as keyof Piece] !== '-') // Exclude the "Piece Title" key and keys with "-" value
                         .map((key, idx) => (
                             <p key={idx}>
                                 <b>{key}: </b> {pieceInfo[key as keyof Piece]}

@@ -36,7 +36,7 @@ function ComposerInfo() {
 
     return (
         <>
-            <h1>Composer: {decodeURIComponent(category)}</h1>
+            <h1>Instrumentation Category: {decodeURIComponent(category)}</h1>
             {instrumentationCategoryInfo ? (
                 <>
                     {Object.keys(instrumentationCategoryInfo)
@@ -52,8 +52,8 @@ function ComposerInfo() {
                         <ul>
                             {pieces.map((piece, index) => (
                                 <li key={index}>
-                                    <Link to={`/piece/${encodeURIComponent(piece.Composer)}/${encodeURIComponent(piece["Piece Title"])}`}>
-                                        {piece["Piece Title"]}
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
+                                        {piece.piece_title}
                                     </Link>
                                 </li>
                             ))}

@@ -1,41 +1,43 @@
 // Composer data type
 export type Composer = {
-    Composer: string;
-    Gender: string;
-    Birth: string;
-    Currently: string;
-    Diaspora: string;
-    Death: string;
-    Studied: string;
-    Taught: string;
-    Worked: string;
-    "Member of NUCU": string;
-    Sources: string;
-    "Personal Website": string;
-    "In contact": string;
+    composer: string;
+    gender: string;
+    birth: string;
+    currently: string;
+    diaspora: string;
+    death: string;
+    studied: string;
+    taught: string;
+    worked: string;
+    member_of_NUCU: string;
+    sources: string;
+    personal_website: string;
+    in_contact: string;
 };
 
 export type Piece = {
-    Composer: string;
-    "Piece Title": string;
-    Instrumentation: string;
+    composer: string;
+    composer_cyrillic: string;
+    piece_title: string;
+    instrumentation: string;
     instrumentation_category: string;
-    "Date Written": string;
-    Published: string;
-    Unpublished: string;
-    Dedicated: string;
-    Premiere: string;
-    Recordings: string;
-    Length: string;
-    Difficulty: string;
-    Style: string;
-    Range: string;
-    Key: string;
-    Metre: string;
-    "Extended Tech": string;
-    "Perf Consid": string;
-    Description: string;
+    date_written: string;
+    published: string;
+    unpublished: string;
+    dedicated: string;
+    premiere: string;
+    recordings: string;
+    length: string;
+    difficulty: string;
+    style: string;
+    range: string;
+    key: string;
+    metre: string;
+    extended_techniques: string;
+    performace_considerations: string;
+    description: string;
 };
+
 
 export type InstrumentationCategory = {
     instrumentation_category: string;

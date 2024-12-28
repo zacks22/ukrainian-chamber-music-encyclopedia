@@ -20,8 +20,8 @@ function ComposerList() {
             {data.map((composer, index) => (
                 <div key={index}>
                     <h2>
-                        <Link to={`/composer/${encodeURIComponent(composer.Composer)}`}>
-                            {composer.Composer}
+                        <Link to={`/composer/${encodeURIComponent(composer.composer)}`}>
+                            {composer.composer}
                         </Link>
                     </h2>
                 </div>

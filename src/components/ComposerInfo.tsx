@@ -13,7 +13,7 @@ function ComposerInfo() {
             .then((response) => response.json())
             .then((data: Composer[]) => {
                 const selectedComposer = data.find(
-                    (composer) => composer.Composer === decodeURIComponent(name)
+                    (composer) => composer.composer === decodeURIComponent(name)
                 );
                 setComposerInfo(selectedComposer || null);
 
@@ -23,7 +23,7 @@ function ComposerInfo() {
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer
                         const composerPieces = piecesData.filter(
-                            (piece) => piece.Composer === decodeURIComponent(name)
+                            (piece) => piece.composer === decodeURIComponent(name)
                         );
                         setPieces(composerPieces);
                     })
@@ -40,20 +40,23 @@ function ComposerInfo() {
             {composerInfo ? (
                 <>
                     {Object.keys(composerInfo)
-                        .filter((key) => key !== 'Composer') // Exclude the Composer key
+                        .filter((key) => key !== 'Composer' &&
+                            composerInfo[key as keyof Composer] !== '-')
+                        // Exclude the Composer key and keys with "-" value
                         .map((key, idx) => (
                             <p key={idx}>
                                 <b>{key}: </b> {composerInfo[key as keyof Composer]}
                             </p>
                         ))}
 
+
                     <h3>Pieces by {decodeURIComponent(name)}:</h3>
                     {pieces.length > 0 ? (
                         <ul>
                             {pieces.map((piece, index) => (
                                 <li key={index}>
-                                    <Link to={`/piece/${encodeURIComponent(piece.Composer)}/${encodeURIComponent(piece["Piece Title"])}`}>
-                                        {piece["Piece Title"]}
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
+                                        {piece.piece_title}
                                     </Link>
                                 </li>
                             ))}
