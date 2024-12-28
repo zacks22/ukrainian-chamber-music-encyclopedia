@@ -56,7 +56,7 @@ function PieceLengthInfo() {
                             ))}
                         </ul >
                     ) : (
-                        <p>No pieces found for this composer.</p>
+                        <p>No pieces found for this piece length.</p>
                     )}
                 </>
             ) : (

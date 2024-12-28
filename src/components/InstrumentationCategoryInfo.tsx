@@ -63,7 +63,7 @@ function ComposerInfo() {
                             ))}
                         </ul >
                     ) : (
-                        <p>No pieces found for this composer.</p>
+                        <p>No pieces found for this instrumentation category.</p>
                     )}
                 </>
             ) : (
