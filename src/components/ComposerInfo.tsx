@@ -13,7 +13,7 @@ function ComposerInfo() {
     useEffect(() => {
 
         // Fetch the composer data from test_composers.json
-        fetch('/test_composers.json') // Ensure it's correctly located in the public folder
+        fetch(`${import.meta.env.BASE_URL}/test_composers.json`) // Ensure it's correctly located in the public folder
             .then((response) => response.json())
             .then((data: Composer[]) => {
                 const selectedComposer = data.find(

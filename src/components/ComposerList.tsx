@@ -6,7 +6,7 @@ function ComposerList() {
     const [data, setData] = useState<Composer[]>([]);  // Use state to store the dataset
 
     useEffect(() => {
-        fetch('./test_composers.json')
+        fetch(`${import.meta.env.BASE_URL}/test_composers.json`)
             .then(response => response.json())  // Parse the JSON directly
             .then(data => {
                 setData(data);  // Save fetched data to state

@@ -6,7 +6,7 @@ function InstrumentationCategoryList() {
     const [data, setData] = useState<InstrumentationCategory[]>([]);  // Use state to store the dataset
 
     useEffect(() => {
-        fetch('./test_instrumentation_categories.json')
+        fetch(`${import.meta.env.BASE_URL}/test_instrumentation_categories.json`)
             .then(response => response.json())  // Parse the JSON directly
             .then(data => {
                 setData(data);  // Save fetched data to state
