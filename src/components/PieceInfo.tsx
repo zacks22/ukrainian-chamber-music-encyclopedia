@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Piece } from '../types';
 import '../App.css';
 
@@ -34,6 +34,14 @@ function PieceInfo() {
             {pieceInfo ? (
                 <>
                     <h1>Piece: {pieceInfo.piece_title}</h1>
+
+                    {/* Link to ComposerInfo using the composer field */}
+                    <p>
+                        <Link to={`/composer/${encodeURIComponent(pieceInfo.composer)}`}>
+                            See more about {pieceInfo.composer}
+                        </Link>
+                    </p>
+
                     {Object.keys(pieceInfo)
                         .filter((key) => key !== "Piece Title" && pieceInfo[key as keyof Piece] !== '-') // Exclude the "Piece Title" key and keys with "-" value
                         .map((key, idx) => (

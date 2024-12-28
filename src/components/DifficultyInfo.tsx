@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Difficulty, Piece } from '../types';
 import '../App.css';
 
@@ -7,6 +7,12 @@ function ComposerInfo() {
     const { difficulty } = useParams(); // Get the composer name from the URL
     const [difficultyInfo, setDifficultyInfo] = useState<Difficulty>();
     const [pieces, setPieces] = useState<Piece[]>([]);
+    const navigate = useNavigate();  // Hook to navigate programmatically
+
+    // Go back to the previous page
+    const goBack = () => {
+        navigate(-1);  // This will navigate to the previous page
+    };
 
     if (!difficulty) return; // Exit if difficulty is undefined
 
@@ -40,6 +46,8 @@ function ComposerInfo() {
 
     return (
         <>
+            <button onClick={goBack}>Previous Page</button>  {/* Back button */}
+
             <h1>Difficulty Level: {decodeURIComponent(difficulty)}</h1>
             {difficultyInfo ? (
                 <>
