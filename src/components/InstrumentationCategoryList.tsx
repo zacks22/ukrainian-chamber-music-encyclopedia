@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { InstrumentationCategory } from '../types';
+import '../App.css';
 
 function InstrumentationCategoryList() {
     const [data, setData] = useState<InstrumentationCategory[]>([]);  // Use state to store the dataset
@@ -16,7 +17,7 @@ function InstrumentationCategoryList() {
 
     return (
         <>
-            <h2>Instrumentation Categories</h2>
+            <h1>Instrumentation Categories</h1>
             {data.map((instrumentation_category, index) => (
                 <div key={index}>
                     <h2>

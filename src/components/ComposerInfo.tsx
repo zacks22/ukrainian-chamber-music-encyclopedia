@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
+import '../App.css';
 
 function ComposerInfo() {
     const { name } = useParams<{ name: string }>(); // Get the composer name from the URL
@@ -22,7 +23,7 @@ function ComposerInfo() {
                 setComposerInfo(selectedComposer || null);
 
                 // Now fetch the pieces for this composer (assuming test_pieces.json is available)
-                fetch('/test_pieces.json')
+                fetch(`${import.meta.env.BASE_URL}/test_pieces.json`)
                     .then((response) => response.json())
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer
@@ -38,9 +39,11 @@ function ComposerInfo() {
             });
     }, [name]);
 
+
+
     return (
         <>
-            <h1>Composer: {decodeURIComponent(name)}</h1>
+            <h1 className="my-class">Composer: {decodeURIComponent(name)}</h1>
             {composerInfo ? (
                 <>
                     {Object.keys(composerInfo)
@@ -59,9 +62,7 @@ function ComposerInfo() {
                         <ul>
                             {pieces.map((piece, index) => (
                                 <li key={index}>
-                                    <Link to={`/piece/
-                                        ${encodeURIComponent(piece.composer)}/
-                                        ${encodeURIComponent(piece.piece_title)}`}>
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
                                         {piece.piece_title}
                                     </Link>
                                 </li>

@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color:rgb(246, 244, 241);
+  background-color: rgb(246, 244, 241);
 }
 
-.card {
-  padding: 2em;
+h1 {
+  color: green;
 }

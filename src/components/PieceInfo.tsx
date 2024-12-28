@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Piece } from '../types';
+import '../App.css';
 
 function PieceInfo() {
     const { composer, title } = useParams(); // Get the piece title from the URL

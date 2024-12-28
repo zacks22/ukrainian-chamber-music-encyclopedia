@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Composer } from '../types';
+import '../App.css';
 
 function ComposerList() {
     const [data, setData] = useState<Composer[]>([]);  // Use state to store the dataset
@@ -16,7 +17,7 @@ function ComposerList() {
 
     return (
         <>
-            <h2>Composers</h2>
+            <h1>Composers</h1>
             {data.map((composer, index) => (
                 <div key={index}>
                     <h2>

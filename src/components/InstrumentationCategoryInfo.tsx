@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { InstrumentationCategory, Piece } from '../types';
+import '../App.css';
 
 function ComposerInfo() {
     const { category } = useParams(); // Get the composer name from the URL
@@ -55,9 +56,7 @@ function ComposerInfo() {
                         <ul>
                             {pieces.map((piece, index) => (
                                 <li key={index}>
-                                    <Link to={`/piece/
-                                        ${encodeURIComponent(piece.composer)}/
-                                        ${encodeURIComponent(piece.piece_title)}`}>
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
                                         {piece.piece_title}
                                     </Link >
                                 </li >
