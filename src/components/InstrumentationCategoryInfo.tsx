@@ -55,8 +55,9 @@ function ComposerInfo() {
                         <ul>
                             {pieces.map((piece, index) => (
                                 <li key={index}>
-                                    <Link to={`/ piece / ${encodeURIComponent(piece.composer)
-                                        }/${encodeURIComponent(piece.piece_title)}`}>
+                                    <Link to={`/piece/
+                                        ${encodeURIComponent(piece.composer)}/
+                                        ${encodeURIComponent(piece.piece_title)}`}>
                                         {piece.piece_title}
                                     </Link >
                                 </li >
