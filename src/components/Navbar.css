@@ -30,6 +30,9 @@ header {
     /* Position to the horizontal center */
     transform: translateX(-50%);
     /* Correct centering with left 50% */
+    text-align: center;
+    display: block;
+    /* Ensure the title is visible by default */
 }
 
 .navbar-list {
@@ -61,4 +64,11 @@ header {
     /* Ensures proportions stay consistent */
     transform: scale(0.5);
     /* Scales the icon to 75% of its original size */
+}
+
+@media(max-width: 540px) {
+    .navbar-title {
+        display: none;
+        /* Hide the title on small screens */
+    }
 }
