@@ -3,6 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
 import '../App.css';
 
+// Function to convert snake_case to Title Case
+const toTitleCase = (str: string): string => {
+    return str
+        .replace(/_/g, ' ') // Replace underscores with spaces
+        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize the first letter of each word
+        .replace(/\s+/g, ' '); // Remove extra spaces
+};
+
 function ComposerInfo() {
     const { name } = useParams<{ name: string }>(); // Get the composer name from the URL
     const [composerInfo, setComposerInfo] = useState<Composer | null>(null);
@@ -46,16 +54,16 @@ function ComposerInfo() {
             <h1 className="my-class">Composer: {decodeURIComponent(name)}</h1>
             {composerInfo ? (
                 <>
-                    {Object.keys(composerInfo)
-                        .filter((key) => key !== 'Composer' &&
-                            composerInfo[key as keyof Composer] !== '-')
-                        // Exclude the Composer key and keys with "-" value
-                        .map((key, idx) => (
-                            <p key={idx}>
-                                <b>{key}: </b> {composerInfo[key as keyof Composer]}
-                            </p>
-                        ))}
-
+                    <div className="wrapper">
+                        {Object.keys(composerInfo)
+                            .filter((key) => key !== 'Composer' &&
+                                composerInfo[key as keyof Composer] !== '-')
+                            .map((key, idx) => (
+                                <p key={idx}>
+                                    <b>{toTitleCase(key)}: </b> {composerInfo[key as keyof Composer]}
+                                </p>
+                            ))}
+                    </div>
 
                     <h3>Pieces by {decodeURIComponent(name)}:</h3>
                     {pieces.length > 0 ? (

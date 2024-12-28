@@ -20,30 +20,22 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <div className="wrapper">
               <h1>Ukrainian Chamber Music Encyclopedia</h1>
               <h2>
-                <Link to={`/composers`}>
-                  Composers
-                </Link>
+                <Link to={`/composers`}>Composers</Link>
               </h2>
               <h2>
-                <Link to={`/instrumentation_category`}>
-                  Instrumentation Category
-                </Link>
+                <Link to={`/instrumentation_category`}>Instrumentation Category</Link>
               </h2>
               <h2>
-                <Link to={`/difficulty_levels`}>
-                  Difficulty
-                </Link>
+                <Link to={`/difficulty_levels`}>Difficulty</Link>
               </h2>
               <h2>
-                <Link to={`/piece_lengths`}>
-                  Piece Length
-                </Link>
+                <Link to={`/piece_lengths`}>Piece Length</Link>
               </h2>
-              <p>Here is a wonderful description of this ukrainian chamber music encyclopedia</p>
-            </>
+              <p>Here is a wonderful description of this Ukrainian chamber music encyclopedia</p>
+            </div>
           }
         />
 

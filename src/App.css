@@ -6,10 +6,148 @@
   color: black;
 }
 
+/* Yellow banner at the top 15% of the page */
+.yellow-banner {
+  background-color: #f3e50d;
+  /* Yellow color */
+  height: 15vh;
+  /* 15% of the viewport height */
+  width: 100%;
+  /* Full width of the page */
+  text-align: center;
+  /* Center the content if you add any */
+  color: #333;
+  /* Dark text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Softer background color for the body */
 body {
-  background-color: rgb(246, 244, 241);
+  background-color: #f3e50d;
+  /* Muted yellow that is softer on the eyes */
+  color: #333;
+  /* Dark text color for contrast and readability */
+  font-family: 'Arial', sans-serif;
+  /* Clean and readable font */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  background: linear-gradient(135deg, #e6e6c0, #ddc958);
+  /* A subtle gradient for a smoother transition */
+}
+
+/* Wrapper div with a border and margin */
+.wrapper {
+  background-color: #fff;
+  /* White background inside the border for contrast */
+  padding: 20px;
+  /* Space between the content and the border */
+  border: 5px solid #333;
+  /* Dark border around the entire screen */
+  border-radius: 10px;
+  /* Optional: Rounded corners */
+  width: 100%;
+  /* Full width */
+  max-width: 1200px;
+  /* Max width for large screens */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in width calculation */
+  height: 100%;
+  /* Ensure the wrapper takes full viewport height */
+  overflow: auto;
+  /* Allow scroll if content exceeds height */
 }
 
 h1 {
-  color: green;
+  color: #0056B9;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+/* Style for list items */
+ul {
+  padding: 0;
+  list-style-type: none;
+  /* Remove default bullet points */
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effects */
+li:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for text inside list items */
+li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+li a:hover {
+  color: #007BFF;
+  /* Blue color on hover */
+}
+
+/* Optional: Icon styling (if any) inside list item */
+li::before {
+  content: '→';
+  /* Example arrow symbol */
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+/* Style for h2 headings */
+h2 {
+  font-family: 'Arial', sans-serif;
+  /* Clean sans-serif font */
+  font-size: 2rem;
+  /* Adjust font size */
+  font-weight: 600;
+  /* Slightly bolder for emphasis */
+  color: #333;
+  /* Dark color for contrast */
+  text-transform: uppercase;
+  /* Uppercase for a clean look */
+  letter-spacing: 2px;
+  /* Slight letter spacing */
+  margin: 20px 0;
+  /* Space above and below */
+  padding: 10px;
+  /* Padding around the heading */
+  border-bottom: 2px solid #007BFF;
+  /* Blue underline */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Hover effect for h2 */
+h2:hover {
+  color: #007BFF;
+  /* Change color to blue on hover */
+  transform: translateY(-2px);
+  /* Lift effect */
 }

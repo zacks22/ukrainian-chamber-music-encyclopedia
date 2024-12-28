@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { PieceLength, Piece } from '../types';
 import '../App.css';
 
-function ComposerInfo() {
+function PieceLengthInfo() {
     const { length } = useParams(); // Get the composer name from the URL
     const [pieceLengthInfo, setPieceLengthInfo] = useState<PieceLength>();
     const [pieces, setPieces] = useState<Piece[]>([]);
@@ -66,4 +66,4 @@ function ComposerInfo() {
     );
 }
 
-export default ComposerInfo;
+export default PieceLengthInfo;

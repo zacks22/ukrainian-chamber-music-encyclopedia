@@ -3,6 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import { Piece } from '../types';
 import '../App.css';
 
+// Function to convert snake_case to Title Case
+const toTitleCase = (str: string): string => {
+    return str
+        .replace(/_/g, ' ') // Replace underscores with spaces
+        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize the first letter of each word
+        .replace(/\s+/g, ' '); // Remove extra spaces
+};
+
 function PieceInfo() {
     const { composer, title } = useParams(); // Get the piece title from the URL
     const [pieceInfo, setPieceInfo] = useState<Piece | null>(null);
@@ -35,20 +43,24 @@ function PieceInfo() {
                 <>
                     <h1>Piece: {pieceInfo.piece_title}</h1>
 
-                    {/* Link to ComposerInfo using the composer field */}
-                    <p>
-                        <Link to={`/composer/${encodeURIComponent(pieceInfo.composer)}`}>
-                            See more about {pieceInfo.composer}
-                        </Link>
-                    </p>
+                    <div className="wrapper">
 
-                    {Object.keys(pieceInfo)
-                        .filter((key) => key !== "Piece Title" && pieceInfo[key as keyof Piece] !== '-') // Exclude the "Piece Title" key and keys with "-" value
-                        .map((key, idx) => (
-                            <p key={idx}>
-                                <b>{key}: </b> {pieceInfo[key as keyof Piece]}
-                            </p>
-                        ))}
+                        {/* Link to ComposerInfo using the composer field */}
+                        <p>
+                            <Link to={`/composer/${encodeURIComponent(pieceInfo.composer)}`}>
+                                See more about {pieceInfo.composer}
+                            </Link>
+                        </p>
+
+                        {Object.keys(pieceInfo)
+                            .filter((key) => key !== "Piece Title" && pieceInfo[key as keyof Piece] !== '-') // Exclude the "Piece Title" key and keys with "-" value
+                            .map((key, idx) => (
+                                <p key={idx}>
+                                    <b>{toTitleCase(key)}: </b> {pieceInfo[key as keyof Piece]}
+                                </p>
+                            ))}
+
+                    </div>
                 </>
             ) : (
                 <p>Loading piece info...</p>

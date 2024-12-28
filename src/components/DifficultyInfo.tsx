@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Difficulty, Piece } from '../types';
 import '../App.css';
 
-function ComposerInfo() {
+function DifficultyInfo() {
     const { difficulty } = useParams(); // Get the composer name from the URL
     const [difficultyInfo, setDifficultyInfo] = useState<Difficulty>();
     const [pieces, setPieces] = useState<Piece[]>([]);
@@ -65,4 +65,4 @@ function ComposerInfo() {
     );
 }
 
-export default ComposerInfo;
+export default DifficultyInfo;
