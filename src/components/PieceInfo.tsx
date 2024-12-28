@@ -6,6 +6,10 @@ function PieceInfo() {
     const { composer, title } = useParams(); // Get the piece title from the URL
     const [pieceInfo, setPieceInfo] = useState<Piece | null>(null);
 
+    if (!composer) return; // Exit if composer is undefined
+    if (!title) return; // Exit if title is undefined
+
+
     useEffect(() => {
         // Fetch the pieces data from test_pieces.json
         fetch('/test_pieces.json')

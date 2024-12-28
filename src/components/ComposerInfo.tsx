@@ -3,11 +3,15 @@ import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
 
 function ComposerInfo() {
-    const { name } = useParams(); // Get the composer name from the URL
+    const { name } = useParams<{ name: string }>(); // Get the composer name from the URL
     const [composerInfo, setComposerInfo] = useState<Composer | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
 
+    if (!name) return; // Exit if name is undefined
+
+
     useEffect(() => {
+
         // Fetch the composer data from test_composers.json
         fetch('/test_composers.json') // Ensure it's correctly located in the public folder
             .then((response) => response.json())

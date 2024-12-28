@@ -7,6 +7,9 @@ function ComposerInfo() {
     const [instrumentationCategoryInfo, setInstrumentationCategoryInfo] = useState<InstrumentationCategory | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
 
+    if (!category) return; // Exit if category is undefined
+
+
     useEffect(() => {
         // Fetch the composer data from test_composers.json
         fetch('/test_instrumentation_categories.json') // Ensure it's correctly located in the public folder

@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Routes } from "react-router";
@@ -7,19 +6,8 @@ import InstrumentationCategoryList from './components/InstrumentationCategoryLis
 import InstrumentationCategoryInfo from './components/InstrumentationCategoryInfo';
 import ComposerInfo from './components/ComposerInfo';
 import PieceInfo from './components/PieceInfo';
-import { Composer } from './types';
 
 function App() {
-  const [data, setData] = useState<Composer[]>([]);  // Use state to store the dataset
-
-  useEffect(() => {
-    fetch('./test_composers.json')
-      .then(response => response.json())  // Parse the JSON directly
-      .then(data => {
-        setData(data);  // Save fetched data to state
-      })
-      .catch(error => console.error('Error fetching JSON:', error));
-  }, []);
 
   return (
     <Router>
