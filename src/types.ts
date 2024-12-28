@@ -1,6 +1,7 @@
 // Composer data type
 export type Composer = {
     composer: string;
+    composer_cyrillic: string;
     gender: string;
     birth: string;
     currently: string;

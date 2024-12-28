@@ -23,6 +23,8 @@ function ComposerList() {
                     <h2>
                         <Link to={`/composer/${encodeURIComponent(composer.composer)}`}>
                             {composer.composer}
+                            <br></br>
+                            {composer.composer_cyrillic}
                         </Link>
                     </h2>
                 </div>
