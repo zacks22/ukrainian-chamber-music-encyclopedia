@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
@@ -9,6 +10,11 @@ const toTitleCase = (str: string): string => {
         .replace(/_/g, ' ') // Replace underscores with spaces
         .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize the first letter of each word
         .replace(/\s+/g, ' '); // Remove extra spaces
+};
+
+const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.target as HTMLImageElement; // Type assertion
+    target.src = import.meta.env.BASE_URL + '/composer_photos/_default_silhouette.svg'; // Set fallback image
 };
 
 function ComposerInfo() {
@@ -47,13 +53,18 @@ function ComposerInfo() {
             });
     }, [name]);
 
-
-
     return (
         <>
             <h1 className="my-class">Composer: {decodeURIComponent(name)}</h1>
             {composerInfo ? (
                 <>
+                    <div className="composer-photo-container">
+                        <img
+                            src={import.meta.env.BASE_URL + 'composer_photos/photo_' + name + '.jpg'}
+                            className='composer-photo'
+                            onError={handleImageError}
+                        ></img>
+                    </div>
                     <div className="wrapper">
                         {Object.keys(composerInfo)
                             .filter((key) => key !== 'Composer' &&
@@ -82,7 +93,8 @@ function ComposerInfo() {
                 </>
             ) : (
                 <p>Loading composer info...</p>
-            )}
+            )
+            }
         </>
     );
 }
