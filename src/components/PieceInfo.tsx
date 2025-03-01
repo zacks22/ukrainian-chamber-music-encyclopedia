@@ -11,6 +11,11 @@ const toTitleCase = (str: string): string => {
         .replace(/\s+/g, ' '); // Remove extra spaces
 };
 
+const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.target as HTMLImageElement; // Type assertion
+    target.src = import.meta.env.BASE_URL + '/default_photos/_default_piece.webp'; // Set fallback image
+};
+
 function PieceInfo() {
     const { composer, title } = useParams(); // Get the piece title from the URL
     const [pieceInfo, setPieceInfo] = useState<Piece | null>(null);
@@ -37,11 +42,23 @@ function PieceInfo() {
     }, [title]);
 
 
+    console.log(title)
+
+
     return (
         <>
             {pieceInfo ? (
                 <>
                     <h1>Piece: {pieceInfo.piece_title}</h1>
+
+                    <div className="piece-photo-container">
+                        <img
+                            src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + title + '.jpg'}
+                            className='piece-photo'
+                            onError={handleImageError}
+                        ></img>
+                    </div>
+
 
                     <div className="wrapper">
 

@@ -14,7 +14,7 @@ const toTitleCase = (str: string): string => {
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement; // Type assertion
-    target.src = import.meta.env.BASE_URL + '/composer_photos/_default_silhouette.svg'; // Set fallback image
+    target.src = import.meta.env.BASE_URL + '/default_photos/_default_silhouette.svg'; // Set fallback image
 };
 
 function ComposerInfo() {
