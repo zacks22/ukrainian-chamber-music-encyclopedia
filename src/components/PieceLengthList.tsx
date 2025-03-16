@@ -7,7 +7,7 @@ function PieceLengthList() {
     const [data, setData] = useState<PieceLength[]>([]);  // Use state to store the dataset
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}/test_piece_lengths.json`)
+        fetch(`${import.meta.env.BASE_URL}test_piece_lengths.json`)
             .then(response => response.json())  // Parse the JSON directly
             .then(data => {
                 setData(data);  // Save fetched data to state

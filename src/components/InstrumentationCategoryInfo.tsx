@@ -13,7 +13,7 @@ function ComposerInfo() {
 
     useEffect(() => {
         // Fetch the composer data from test_composers.json
-        fetch(`${import.meta.env.BASE_URL}/test_instrumentation_categories.json`) // Ensure it's correctly located in the public folder
+        fetch(`${import.meta.env.BASE_URL}test_instrumentation_categories.json`) // Ensure it's correctly located in the public folder
             .then((response) => response.json())
             .then((data: InstrumentationCategory[]) => {
                 const selectedInstrumentationCategory = data.find(
@@ -22,7 +22,7 @@ function ComposerInfo() {
                 setInstrumentationCategoryInfo(selectedInstrumentationCategory || null);
 
                 // Now fetch the pieces for this composer (assuming test_pieces.json is available)
-                fetch(`${import.meta.env.BASE_URL}/test_pieces.json`)
+                fetch(`${import.meta.env.BASE_URL}test_pieces.json`)
                     .then((response) => response.json())
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer
@@ -67,7 +67,7 @@ function ComposerInfo() {
                     )}
                 </>
             ) : (
-                <p>Loading composer info...</p>
+                <p>Instrumentation Category not found...</p>
             )}
         </>
     );

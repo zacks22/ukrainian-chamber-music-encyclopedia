@@ -13,7 +13,7 @@ const toTitleCase = (str: string): string => {
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement; // Type assertion
-    target.src = import.meta.env.BASE_URL + '/default_photos/_default_piece.webp'; // Set fallback image
+    target.src = import.meta.env.BASE_URL + 'default_photos/default_piece.webp'; // Set fallback image
 };
 
 function PieceInfo() {
@@ -26,7 +26,7 @@ function PieceInfo() {
 
     useEffect(() => {
         // Fetch the pieces data from test_pieces.json
-        fetch(`${import.meta.env.BASE_URL}/test_pieces.json`)
+        fetch(`${import.meta.env.BASE_URL}test_pieces.json`)
             .then((response) => response.json())
             .then((piecesData: Piece[]) => {
                 const selectedPiece = piecesData.find(
@@ -53,7 +53,7 @@ function PieceInfo() {
 
                     <div className="piece-photo-container">
                         <img
-                            src={import.meta.env.BASE_URL + '/piece_photos/photo_piece_' + pieceInfo.composer + '_' + title + '.jpg'}
+                            src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + title + '.jpg'}
                             className='piece-photo'
                             onError={handleImageError}
                         ></img>
@@ -80,7 +80,7 @@ function PieceInfo() {
                     </div>
                 </>
             ) : (
-                <p>Loading piece info...</p>
+                <p>Piece not found...</p>
             )}
         </>
     );

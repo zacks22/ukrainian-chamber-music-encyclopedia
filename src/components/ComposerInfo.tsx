@@ -14,7 +14,7 @@ const toTitleCase = (str: string): string => {
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement; // Type assertion
-    target.src = import.meta.env.BASE_URL + '/default_photos/_default_silhouette.svg'; // Set fallback image
+    target.src = import.meta.env.BASE_URL + 'default_photos/default_silhouette.svg'; // Set fallback image
 };
 
 function ComposerInfo() {
@@ -28,7 +28,7 @@ function ComposerInfo() {
     useEffect(() => {
 
         // Fetch the composer data from test_composers.json
-        fetch(`${import.meta.env.BASE_URL}/test_composers.json`) // Ensure it's correctly located in the public folder
+        fetch(`${import.meta.env.BASE_URL}test_composers.json`) // Ensure it's correctly located in the public folder
             .then((response) => response.json())
             .then((data: Composer[]) => {
                 const selectedComposer = data.find(
@@ -37,7 +37,7 @@ function ComposerInfo() {
                 setComposerInfo(selectedComposer || null);
 
                 // Now fetch the pieces for this composer (assuming test_pieces.json is available)
-                fetch(`${import.meta.env.BASE_URL}/test_pieces.json`)
+                fetch(`${import.meta.env.BASE_URL}test_pieces.json`)
                     .then((response) => response.json())
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer
@@ -60,7 +60,7 @@ function ComposerInfo() {
                 <>
                     <div className="composer-photo-container">
                         <img
-                            src={import.meta.env.BASE_URL + '/composer_photos/photo_' + name + '.jpg'}
+                            src={import.meta.env.BASE_URL + 'composer_photos/photo_' + name + '.jpg'}
                             className='composer-photo'
                             onError={handleImageError}
                         ></img>
