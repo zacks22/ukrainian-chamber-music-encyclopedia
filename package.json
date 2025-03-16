@@ -1,8 +1,8 @@
 {
-  "homepage": "http://zacks22.github.io/ukrainian-chamber-music-encyclopedia",
+  "homepage": "http://ukrainianchambermusic.com",
   "name": "ukrainian-chamber-music-encyclopedia",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
