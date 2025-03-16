@@ -6,7 +6,7 @@ const Navbar = () => {
             <nav className="navbar">
                 <ul className="navbar-list">
                     <div className="navbar-item">
-                        <a href={import.meta.env.BASE_URL + '/'}>
+                        <a href={import.meta.env.BASE_URL}>
                             <img src='./icons/icons8-home.svg' alt="Home" className="navbar-icon" />
                         </a>
                     </div>
