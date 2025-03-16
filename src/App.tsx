@@ -15,6 +15,8 @@ import Footer from './components/Footer';
 
 function App() {
 
+  console.log(import.meta.env.BASE_URL);
+
   return (
     <>
       <Navbar></Navbar>
