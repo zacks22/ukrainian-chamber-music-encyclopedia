@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // set equal to '/' for deployment and '/ukrainian-chamber-music-encyclopedia/' for development
-  base: 'http://www.ukrainianchambermusic.com/',
+  base: 'http://www.ukrainianchambermusic.com',
 })
