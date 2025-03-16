@@ -1,0 +1,17 @@
+[
+    {
+        "difficulty_level": "1 Beginner"
+    },
+    {
+        "difficulty_level": "2 Intermediate"
+    },
+    {
+        "difficulty_level": "3 Early Advanced"
+    },
+    {
+        "difficulty_level": "4 Late Advanced"
+    },
+    {
+        "difficulty_level": "5 Professional"
+    }
+]
