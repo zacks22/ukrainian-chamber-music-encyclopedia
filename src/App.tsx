@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router>
         <Routes>
           {/* Main Page */}
           <Route
