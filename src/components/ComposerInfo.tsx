@@ -60,7 +60,7 @@ function ComposerInfo() {
                 <>
                     <div className="composer-photo-container">
                         <img
-                            src={import.meta.env.BASE_URL + 'composer_photos/photo_' + name + '.jpg'}
+                            src={import.meta.env.BASE_URL + '/composer_photos/photo_' + name + '.jpg'}
                             className='composer-photo'
                             onError={handleImageError}
                         ></img>

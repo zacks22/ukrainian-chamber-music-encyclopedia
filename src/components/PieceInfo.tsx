@@ -53,7 +53,7 @@ function PieceInfo() {
 
                     <div className="piece-photo-container">
                         <img
-                            src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + title + '.jpg'}
+                            src={import.meta.env.BASE_URL + '/piece_photos/photo_piece_' + pieceInfo.composer + '_' + title + '.jpg'}
                             className='piece-photo'
                             onError={handleImageError}
                         ></img>
