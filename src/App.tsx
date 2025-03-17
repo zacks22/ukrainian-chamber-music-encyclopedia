@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Routes } from "react-router";
 import ComposerList from './components/ComposerList';
 import InstrumentationCategoryList from './components/InstrumentationCategoryList';
@@ -21,7 +21,7 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router>
         <Routes>
           {/* Main Page */}
           <Route
