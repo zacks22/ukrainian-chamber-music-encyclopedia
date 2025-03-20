@@ -1,44 +1,44 @@
 [
     {
-        "instrumentation": "Unaccompanied Bassoon"
+        "instrumentation_category": "Unaccompanied Bassoon"
     },
     {
-        "instrumentation": "Bassoon & Piano"
+        "instrumentation_category": "Bassoon & Piano"
     },
     {
-        "instrumentation": "Bassoon Concerto & Works with Strings"
+        "instrumentation_category": "Bassoon Concerto & Works with Strings"
     },
     {
-        "instrumentation": "Concerto Grosso"
+        "instrumentation_category": "Concerto Grosso"
     },
     {
-        "instrumentation": "Duo"
+        "instrumentation_category": "Duo"
     },
     {
-        "instrumentation": "Trio"
+        "instrumentation_category": "Trio"
     },
     {
-        "instrumentation": "Woodwind Quartet"
+        "instrumentation_category": "Woodwind Quartet"
     },
     {
-        "instrumentation": "Wind Quintet"
+        "instrumentation_category": "Wind Quintet"
     },
     {
-        "instrumentation": "Bassoon Duo/Trio/Quartet"
+        "instrumentation_category": "Bassoon Duo/Trio/Quartet"
     },
     {
-        "instrumentation": "Quartet (non-standard)"
+        "instrumentation_category": "Quartet (non-standard)"
     },
     {
-        "instrumentation": "Quintet (non-standard)"
+        "instrumentation_category": "Quintet (non-standard)"
     },
     {
-        "instrumentation": "Piano Trio/Quartet/Quintet"
+        "instrumentation_category": "Piano Trio/Quartet/Quintet"
     },
     {
-        "instrumentation": "Sextet/Septet/Octet"
+        "instrumentation_category": "Sextet/Septet/Octet"
     },
     {
-        "instrumentation": "With Voice"
+        "instrumentation_category": "With Voice"
     }
 ]
