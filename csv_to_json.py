@@ -22,10 +22,17 @@ def make_json(csvFilePath, jsonFilePath):
 
 # Define the file paths according to your system
 
-file_name = 'test_pieces'
+file_names = [
+        'test_composers',
+        'test_difficulty_levels',
+        'test_instrumentation_categories',
+        'test_piece_lengths',
+        'test_pieces'
+    ]
 
-csvFilePath = f'/Users/matthewsenick/Github/ukrainian-chamber-music-encyclopedia/public/{file_name}.csv'
-jsonFilePath = f'/Users/matthewsenick/Github/ukrainian-chamber-music-encyclopedia/public/{file_name}.json'
+for file_name in file_names:
+    csvFilePath = f'/Users/matthewsenick/Github/ukrainian-chamber-music-encyclopedia/public/{file_name}.csv'
+    jsonFilePath = f'/Users/matthewsenick/Github/ukrainian-chamber-music-encyclopedia/public/{file_name}.json'
 
-# Call the make_json function
-make_json(csvFilePath, jsonFilePath)
+    # Call the make_json function
+    make_json(csvFilePath, jsonFilePath)

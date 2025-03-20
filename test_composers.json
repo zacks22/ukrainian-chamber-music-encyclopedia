@@ -35,13 +35,13 @@
         "composer": "ALMASHI, Zoltan",
         "composer_cyrillic": "\u0410\u043b\u043c\u0430\u0448\u0456, \u0417\u043e\u043b\u0442\u0430\u043d",
         "gender": "Male",
-        "birth": "1975 in Lviv, Ukraine",
+        "birth": "1975 in Lviv, Ukraine (musical family, violinists)",
         "currently": "-",
         "diaspora": "-",
         "death": "-",
-        "studied": "LNMA (1998) vlc, (1999) comp with Y. Laniuk, NMAU (2002) comp with Y. Stankovych; Private Studies: A. Lason in Poland  ",
+        "studied": "LNMA (1998) vlc, (1999) comp with Y. Laniuk, NMAU (2002)Phd with comp with Y. Stankovych; Private studies 2008 in Poland with A. Larson",
         "taught": "NMAU",
-        "worked": "vlc soloist with Kyiv Camerata (2000), Ricochet Contemporary Music Ensemble, & New Music Ukraine, founder & artistic director of Levko Revutsky String Quartet (2018\u2013) & Gulfstream Chamber Music Festival (2012\u2013)",
+        "worked": "vlc soloist with Kyiv Camerata (2000\u2013), Ricochet Contemporary Music Ensemble (2000\u2013), Nostri Temporis (2007\u2013), & New Music Ukraine, founder & artistic director of Levko Revutsky String Quartet (2018\u2013) & Gulfstream Chamber Music Festival (2012\u2013)",
         "member_of_NUCU": "joined (2001)",
         "sources": "ESU, Gnativ (15), Mukha (14), UL, UMW, Vilkova (9), VUE, NUCU website, 2006 (9)",
         "personal_website": "-",
@@ -647,10 +647,10 @@
         "currently": "-",
         "diaspora": "-",
         "death": "-",
-        "studied": "LNMA (1991) comp with V. Fyls & M. Skoryk",
+        "studied": "LNMA (1991) comp with V. Flys & M. Skoryk",
         "taught": "LNMA (1991\u2013)",
         "worked": "-",
-        "member_of_NUCU": "joined (unknown)",
+        "member_of_NUCU": "joined (1995)",
         "sources": "Gnativ (30\u201331), Karas, Korniy, Mukha (311), NMU, UL, UMW, Vilkova (324), VUE, NUCU website, 2006 (64)",
         "personal_website": "-",
         "in_contact": "via email "
@@ -878,6 +878,22 @@
         "sources": "Baley (The 20th Century), Drabyna (26\u201336) Dytynyak (42), ESU, Gnativ (39\u201340), Grove, Herman (I: 78\u201379), Ho (197), IEU, Korniy, Kubikovyc (II: 262), Mukha (81\u201382), Musicalics, Rozhok, Schwarz, Shank (122), Sonevytskyi (88), UME (547\u201348), UMW, Vilkova (77\u201378), VUE, NUCU website, 1968 (47), 1978 (43\u201344), 1984 (50\u201351)",
         "personal_website": "-",
         "in_contact": "-"
+    },
+    {
+        "composer": "HUMENIUK, Illia",
+        "composer_cyrillic": "\u0413\u0443\u043c\u0435\u043d\u044e\u043a, \u0406\u043b\u043b\u044f",
+        "gender": "Male",
+        "birth": "March 21st, 2000",
+        "currently": "Tallinn, Estonia",
+        "diaspora": "Estonia",
+        "death": "-",
+        "studied": "Mykolaiv College of Musical Arts (2019) cond, comp with S. Kumysh, Estonian Academy of Music and Theatre (2024) Bachelor in cond, comp with T. K\u00f5rvits, (2024\u2013) Master in cond",
+        "taught": "-",
+        "worked": "cond of Mixed Choir of Tuljak (2024\u2013), Mixed choir Wannamoisa (2023\u2013), Chambers Choir Avis Animi (2024), Mixed Choir of the Rocca al Mare School (2023\u201324), Mixed Choir HUIK! (2023), Womens Choir Virvik (2022\u201323), Metropolitan Choir of the Cathedral in Ukraine (2020\u201321), composer-in-residence of Kraziai College (2024), Spectacle Lohe linna all (2022), Orthodox Singers (2022\u201323), singer with various choirs in Ukraine and Estonia such as Collegium Musicale (2023), EMTA Choir (2021\u2013) and Orthodox Singers (2020\u2013)",
+        "member_of_NUCU": "-",
+        "sources": "-",
+        "personal_website": "https://www.illiahumeniuk.com",
+        "in_contact": "via email "
     },
     {
         "composer": "ISHCHENKO, Yuriy",
@@ -1232,6 +1248,22 @@
         "in_contact": "-"
     },
     {
+        "composer": "KOSTIV, Andriy-Ivan",
+        "composer_cyrillic": "\u041a\u043e\u0441\u0442\u0456\u0432, \u0410\u043d\u0434\u0440\u0456\u0439-\u0406\u0432\u0430\u043d",
+        "gender": "Male",
+        "birth": "September 28th, 2000 in Truskavets, Lviv oblast, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "death": "-",
+        "studied": "Drohobych Music College (2020) pno, KhNUA (2020\u201321) comp with V. Ptushkin, LNMA (2024) comp with L. Sydorenko, (2024\u2013) comp with L. Sydorenko",
+        "taught": "-",
+        "worked": "-",
+        "member_of_NUCU": "-",
+        "sources": "-",
+        "personal_website": "-",
+        "in_contact": "via email "
+    },
+    {
         "composer": "KOSTOV, Oleksandr",
         "composer_cyrillic": "\u041a\u043e\u0441\u0442\u043e\u0432, \u041e\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440",
         "gender": "Male",
@@ -1372,7 +1404,7 @@
         "worked": "-",
         "member_of_NUCU": "-",
         "sources": "-",
-        "personal_website": "https://www.dmytrokyryliv.com/",
+        "personal_website": "dymtrokyryliv.com",
         "in_contact": "via email and in person"
     },
     {
@@ -1568,6 +1600,22 @@
         "in_contact": "via email "
     },
     {
+        "composer": "LOHIN, Vitaliy",
+        "composer_cyrillic": "\u041b\u043e\u0433\u0456\u043d, \u0412\u0456\u0442\u0430\u043b\u0456\u0439",
+        "gender": "Male",
+        "birth": "March 4th, 1980 in Budenets, Chernivtsi oblast, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "death": "-",
+        "studied": "Chernivtsi School of Arts (2001) pno, National Music Academy of Romania (2003) pno",
+        "taught": "private pno lessons (2001\u2013), Chudey School of Arts () head of pno department",
+        "worked": "writing pno educational materials",
+        "member_of_NUCU": "-",
+        "sources": "-",
+        "personal_website": "-",
+        "in_contact": "via email "
+    },
+    {
         "composer": "LOMOV, Nathan",
         "composer_cyrillic": "\u041b\u043e\u043c\u043e\u0432, \u041d\u0430\u0442\u0430\u043d",
         "gender": "Male",
@@ -1632,6 +1680,22 @@
         "in_contact": "-"
     },
     {
+        "composer": "LYS, Olena",
+        "composer_cyrillic": "\u041b\u0438\u0441, \u041e\u043b\u0435\u043d\u0430",
+        "gender": "Female",
+        "birth": "June 3rd, 1978 in Lebedyn, Sumy Oblast, Ukraine",
+        "currently": "Prague, Czechia",
+        "diaspora": "Czechia (moved in 2022 due to war)",
+        "death": "-",
+        "studied": "Sumy State Music School (1997) pno, music theory, NMAU (2002) comp with L. Kolodub (2006) comp with Y. Ishchenko",
+        "taught": "KMS no. 37 (2000\u201304), Kyiv Academy of Pop and Circus Arts (2001\u201320), NMAU (2007\u201311) Prague Music Schools (2023\u2013)",
+        "worked": "vocalist for early music ensembles \u201cMusical Assemblies\u201d (2000\u201307) & \u201cAliteya\u201d (2007\u201322), concertmaster for Olga Kindlova Ballet School in Prague (2022\u201323), performer for Brandis Nad Labem Sacred Music Society (2023\u2013), musicologist researching the style and genre formation in Ukrainian chamber and instrumental music of the twentieth and twenty-first centuries.",
+        "member_of_NUCU": "joined (2007)",
+        "sources": "NUCU Website",
+        "personal_website": "-",
+        "in_contact": "via email "
+    },
+    {
         "composer": "LYUBYNETSKA-BUKHARI, Oksana",
         "composer_cyrillic": "\u041b\u044e\u0431\u0438\u043d\u0435\u0442\u0441\u044c\u043a\u0430-\u0411\u0443\u0445\u0430\u0440\u0456, \u041e\u043a\u0441\u0430\u043d\u0430",
         "gender": "Female",
@@ -1662,6 +1726,22 @@
         "sources": "UL, UMW",
         "personal_website": "-",
         "in_contact": "via email "
+    },
+    {
+        "composer": "MARCHUK, Evgenia",
+        "composer_cyrillic": "\u041c\u0430\u0440\u0447\u0443\u043a, \u0404\u0432\u0433\u0435\u043d\u0456\u044f",
+        "gender": "Female",
+        "birth": "April 11th, 1970 in Cherkasy, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "death": "-",
+        "studied": "Cherkasy Music College (1998) pno & music theory, KhNUA (2005) comp. With Y. Alzhneva & V. Muzchilya",
+        "taught": "Cherkasy Music Schools (2010\u2013)",
+        "worked": "head of music department of Cherkasy Puppet Theatre (2005\u201310)",
+        "member_of_NUCU": "joined (2010)",
+        "sources": "ESU, NUCU website",
+        "personal_website": "https://evgeniamarchuk.musicaneo.com/",
+        "in_contact": "via email"
     },
     {
         "composer": "MANULYAK, Ostap",
@@ -1715,7 +1795,7 @@
         "composer": "MARTYNYUK, Valentyna",
         "composer_cyrillic": "\u041c\u0430\u0440\u0442\u0438\u043d\u044e\u043a, \u0412\u0430\u043b\u0435\u043d\u0442\u0438\u043d\u0430",
         "gender": "Female",
-        "birth": "December 26th, 1958 in Sokil, Sakhalinsky, Russia",
+        "birth": "December 26th, 1958 in Sokil, Sakhalinsky, Russia (Her creative pseudonym is Martynyuk for her compositions and her legal last name used for teaching is Brondzya.)",
         "currently": "-",
         "diaspora": "-",
         "death": "-",
@@ -1744,7 +1824,7 @@
         "in_contact": "-"
     },
     {
-        "composer": "MERKHEL, Andriy",
+        "composer": "MERKHEL, Andrii",
         "composer_cyrillic": "\u041c\u0435\u0440\u0445\u0435\u043b\u044c, \u0410\u043d\u0434\u0440\u0456\u0439",
         "gender": "Male",
         "birth": "1986 in ?, Ukraine",
@@ -1901,6 +1981,22 @@
         "member_of_NUCU": "joined (1991)",
         "sources": "ESU, Grove, Karas, Mukha (219), Rozhok, Shank (208\u201309), Sonevytskyi (206), UME (IV: 354\u201355), NUCU website, 2006 (104)",
         "personal_website": "http://www.halynaovcharenko.com/",
+        "in_contact": "via email "
+    },
+    {
+        "composer": "OZERSKYI, Zakhar",
+        "composer_cyrillic": "\u041e\u0437\u0435\u0440\u0441\u044c\u043a\u0438\u0439, \u0417\u0430\u0445\u0430\u0440",
+        "gender": "Male",
+        "birth": "April 1st, 2001 in Odesa, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "death": "-",
+        "studied": "Drohobych Music College (2020) perc, LNMA (2024) & (2024\u2013) comp with O. Manulyak",
+        "taught": "",
+        "worked": "-",
+        "member_of_NUCU": "-",
+        "sources": "-",
+        "personal_website": "-",
         "in_contact": "via email "
     },
     {
@@ -2181,11 +2277,11 @@
         "gender": "Female",
         "birth": "February 6th, 1973 in Kyiv",
         "currently": "-",
-        "diaspora": "-",
+        "diaspora": "Germany (moved in March 2022)",
         "death": "-",
-        "studied": "NMAU (1997) comp with L. Kolodub",
-        "taught": "KMS no. 25 (1994\u2013?), NMAU (2001\u2013)",
-        "worked": "-",
+        "studied": "NMAU (1997) comp with L. Kolodub, (2000) supervisor N. Herasymova-Persydska; Private Studies: 2003 in Poland with E. Knapik",
+        "taught": "KMS no. 25 (1994\u20132006), NMAU (1999\u2013), KMS no. 4 (2005\u20132012)",
+        "worked": "Regent at hospital church of St. Luke of Crimea in Kyiv (2010\u2013), musicologist",
         "member_of_NUCU": "joined (1999)",
         "sources": "Mukha (240), Rozhok, UME (V: 409), NUCU website, 2006 (32)",
         "personal_website": "-",
@@ -2343,11 +2439,27 @@
         "currently": "-",
         "diaspora": "-",
         "death": "-",
-        "studied": "March 31st, 1951 in Ussuriysk, Russia",
+        "studied": "ONMA (1976) pno, (1985) comp with O. Krasotov",
         "taught": "Odesa Music School, pno assistant at ONMA (1990-)",
         "worked": "-",
         "member_of_NUCU": "joined (1990)",
         "sources": "Gnativ (54\u201355), Korniy, Mukha (259), Musicalics, NMU, Shank (236), Sonevytskyi (235), UME (VI: 276\u201378), UMW, NUCU website, 2006 (82)",
+        "personal_website": "-",
+        "in_contact": "via email "
+    },
+    {
+        "composer": "SAVRANSKY, George",
+        "composer_cyrillic": "\u0421\u0430\u0432\u0440\u0430\u043d\u0441\u044c\u043a\u0438\u0439, \u0413\u0435\u043e\u0440\u0433\u0456\u0439",
+        "gender": "Male",
+        "birth": "March 16th, 1986 in Znamyanska, Kirovohrod oblast, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "death": "-",
+        "studied": "Mykolaiv branch of KU (2010) acc, Mykolaiv Music School (2012\u201313) acc, NMAU (2021) comp with L. Kolodub (2017\u201318) & D. Shcherytsya",
+        "taught": "Mykolaiv Palace of Student Creativity (2006\u201316) folk instruments, Znamyanska Music School (2021\u2013)",
+        "worked": "musician (acc, sopilka)",
+        "member_of_NUCU": "-",
+        "sources": "-",
         "personal_website": "-",
         "in_contact": "via email "
     },
@@ -2365,7 +2477,7 @@
         "member_of_NUCU": "-",
         "sources": "-",
         "personal_website": "www.zacharysenick.com",
-        "in_contact": ""
+        "in_contact": "via email "
     },
     {
         "composer": "SENYTYSYA, Pavlo",
@@ -2412,8 +2524,8 @@
         "worked": "-",
         "member_of_NUCU": "joined (unknown)",
         "sources": "Gnativ (56), Karas, 1984 (245\u2013246), Rozhok, Shank (242\u201343), Sonevytyskyi (242\u201343), UMW, 2006 (105)",
-        "personal_website": "",
-        "in_contact": ""
+        "personal_website": "http://www.igorshamo.de/eng/biogr.htm",
+        "in_contact": "-"
     },
     {
         "composer": "SHATS, Oleksandr",
@@ -2768,6 +2880,22 @@
         "in_contact": "via email"
     },
     {
+        "composer": "STOIANOVA, Anna",
+        "composer_cyrillic": "\u0421\u0442\u043e\u044f\u043d\u043e\u0432\u0430, \u0410\u043d\u043d\u0430",
+        "gender": "Female",
+        "birth": "1991 in Odesa, Ukraine",
+        "currently": "Ottawa, Canada",
+        "diaspora": "Canada",
+        "death": "-",
+        "studied": "ONMA (2014) musicology, comp (2017) comp with J. Gomelskaya & K. Tsepkolenko (2019) Phd \u201cNew Genre Paradigms of Ukrainian Composers\u2019 Creativity Last Decades of XX \u2013 Beginning of XXI Century\u201d",
+        "taught": "private lessons pno, comp, music theory & history, ONMA (2017\u201318) harmony & solfege",
+        "worked": "-",
+        "member_of_NUCU": "joined (2018)",
+        "sources": "NUCU Website",
+        "personal_website": "-",
+        "in_contact": "via email "
+    },
+    {
         "composer": "STRONKO, Boryslav",
         "composer_cyrillic": "\u0421\u0442\u0440\u043e\u043d\u044c\u043a\u043e, \u0411\u043e\u0440\u0438\u0441\u043b\u0430\u0432",
         "gender": "Male",
@@ -2803,13 +2931,13 @@
         "composer": "SYDORENKO, Wasyl",
         "composer_cyrillic": "\u0421\u0438\u0434\u043e\u0440\u0435\u043d\u043a\u043e, \u0412\u0430\u0441\u0438\u043b\u044c",
         "gender": "Male",
-        "birth": "March 15th, 1960 in Toronto, Canada",
+        "birth": "March 15th, 1960 in Toronto, Canada (His parents Petro and Kateryna immigrated seperately to Canada from Ukraine after WWII and met in Toronto. His father was a survivor of Holodomor and Ostarbeiter Camps in Germany)",
         "currently": "-",
         "diaspora": "Canada",
         "death": "January 13th, 2022 in Toronto, Canada",
-        "studied": "ARCT from Royal Conservatory of Music in Toronto (1978) pno, University of Toronto (1983) Geology, (?) Masters in Library and Information Science; Ukrainian Free University in Munich (?) musicology; Private studies: comp with W. Buczynski ",
+        "studied": "Royal Conservatory of Music in Toronto (1978) ARCT pno, University of Toronto (1983) Bachelor of Arts: Musicology Specialist (comp with W. Buczynski) & Geology Major, (2007) Masters in Library and Information Science; Ukrainian Free University in Munich (1989 & 1992) independent researcher in musicology",
         "taught": "-",
-        "worked": "director of various Ukrainian organizations in Toronto, University of Toronto Library (1987\u20132022) East European Reference Specialist (1994\u20132022)",
+        "worked": "President CUPE Local 1230 (2010\u201322), Founder Hypertext Plus (1998\u2013 2022), Editor \u201cCathedral Bells\u201d St. Volodymyr Ukrainian Orthodox Cathedral (1995\u2013 2021), East European Reference Specialist at Petro Jacyk Resource Centre University of Toronto (1994\u20132022), artistic advisor for festivals \u201cUkrainian Music Festival\u201d & \u201cUkrainian Art Song Project\u201d, music critic with articles in US Daily, Svoboda & Canadian Weekly, The New Pathway, cond & organized concert for 100 year of Ukrainians in Canada (1991), musicologist contributed works such as the Encyclopedia of Ukraine",
         "member_of_NUCU": "-",
         "sources": "CE, Karas, Mukha (264\u2013265), Sonevytskyi (278), Struk (V: 139), UME (VI: 358\u201359)",
         "personal_website": "-",
@@ -2830,6 +2958,22 @@
         "sources": "-",
         "personal_website": "https://syroyid.com/",
         "in_contact": "via email"
+    },
+    {
+        "composer": "SYSENKO, Anastasia",
+        "composer_cyrillic": "\u0421\u0438\u0441\u0435\u043d\u043a\u043e, \u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0456\u044f",
+        "gender": "Female",
+        "birth": "",
+        "currently": "",
+        "diaspora": "",
+        "death": "",
+        "studied": "",
+        "taught": "",
+        "worked": "",
+        "member_of_NUCU": "",
+        "sources": "",
+        "personal_website": "",
+        "in_contact": ""
     },
     {
         "composer": "TARANENKO, Ivan",
@@ -3280,7 +3424,7 @@
         "in_contact": "via email"
     },
     {
-        "composer": "ZHYLINSKY, Oleksandr",
+        "composer": "ZHYLINSKYI, Oleksandr",
         "composer_cyrillic": "\u0416\u0438\u043b\u0456\u043d\u0441\u044c\u043a\u0438\u0439, \u041e\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440",
         "gender": "Male",
         "birth": "December 1st, 1955 in Berdyansk, Zaporizhia Oblast, Ukraine",
@@ -3312,7 +3456,7 @@
         "in_contact": "-"
     },
     {
-        "composer": "ZUBTISKY, Volodymyr",
+        "composer": "ZUBITSKY, Volodymyr",
         "composer_cyrillic": "\u0417\u0443\u0431\u0438\u0446\u044c\u043a\u0438\u0439, \u0412\u043e\u043b\u043e\u0434\u0438\u043c\u0438\u0440",
         "gender": "Male",
         "birth": "March 2nd, 1953 in Holoskove, Mykolaiv oblast, Ukraine",
