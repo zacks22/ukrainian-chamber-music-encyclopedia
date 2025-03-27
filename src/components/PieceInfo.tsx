@@ -59,7 +59,6 @@ function PieceInfo() {
                         ></img>
                     </div>
 
-
                     <div className="wrapper">
 
                         {/* Link to ComposerInfo using the composer field */}
