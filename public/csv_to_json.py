@@ -24,9 +24,9 @@ def make_json(csvFilePath, jsonFilePath):
 
 file_names = [
         'test_composers',
-        'test_difficulty_levels',
-        'test_instrumentation_categories',
-        'test_piece_lengths',
+        #'test_difficulty_levels',
+        #'test_instrumentation_categories',
+        #'test_piece_lengths',
         'test_pieces'
     ]
 
