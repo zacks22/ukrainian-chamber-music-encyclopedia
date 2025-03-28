@@ -44,7 +44,11 @@ function App() {
 
                 {/* Webpage description */}
 
-                <br></br>
+                <div className="logo-container">
+                  <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="logo-icon" />
+                  <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="logo-icon" />
+                  <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="logo-icon" />
+                </div>
 
                 <p>Welcome to the Ukrainian Chamber Music Encyclopedia! This database features solo bassoon and chamber music involving the bassoon. Over time this database will be updated with solo and chamber works for other instruments beginning with other wind instruments.</p>
 
