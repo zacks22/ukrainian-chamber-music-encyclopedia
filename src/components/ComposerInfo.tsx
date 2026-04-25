@@ -11,7 +11,6 @@ const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     target.src = import.meta.env.BASE_URL + 'default_photos/default_silhouette.svg';
 };
 
-const HIDDEN_KEYS: (keyof Composer)[] = ['composer', 'composer_cyrillic'];
 
 const BIO_FIELDS: { key: keyof Composer; label: string }[] = [
     { key: 'birth',           label: 'Born' },
