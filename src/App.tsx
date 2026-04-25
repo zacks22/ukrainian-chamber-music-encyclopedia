@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect, useState } from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Routes } from "react-router";
 import ComposerList from './components/ComposerList';
@@ -14,13 +15,22 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
+  const [counts, setCounts] = useState({ composers: 0, pieces: 0, categories: 0 });
+
+  useEffect(() => {
+    Promise.all([
+      fetch(`${import.meta.env.BASE_URL}composers.json`).then(r => r.json()),
+      fetch(`${import.meta.env.BASE_URL}pieces.json`).then(r => r.json()),
+      fetch(`${import.meta.env.BASE_URL}instrumentation_categories.json`).then(r => r.json()),
+    ]).then(([composers, pieces, categories]) => {
+      setCounts({ composers: composers.length, pieces: pieces.length, categories: categories.length });
+    }).catch(err => console.error(err));
+  }, []);
 
   return (
-    <>
-      <Navbar></Navbar>
-
-      <Router>
-        <Routes>
+    <Router>
+      <Navbar />
+      <Routes>
           {/* Main Page */}
           <Route
             path="/"
@@ -40,22 +50,36 @@ function App() {
                 {/* Nav cards */}
                 <div className="home-nav-cards">
                   <Link to="/composers" className="home-nav-card">
-                    <span className="home-nav-card-icon">🎼</span>
+                    <svg className="home-nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="8" r="4"/>
+                      <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
                     <span className="home-nav-card-label">Composers</span>
-                    <span className="home-nav-card-sub">259 composers</span>
+                    <span className="home-nav-card-sub">{counts.composers} composers</span>
                   </Link>
                   <Link to="/instrumentation_category" className="home-nav-card">
-                    <span className="home-nav-card-icon">🎵</span>
+                    <svg className="home-nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M9 18V5l12-2v13"/>
+                      <circle cx="6" cy="18" r="3"/>
+                      <circle cx="18" cy="16" r="3"/>
+                    </svg>
                     <span className="home-nav-card-label">Instrumentation</span>
-                    <span className="home-nav-card-sub">17 categories</span>
+                    <span className="home-nav-card-sub">{counts.categories} categories</span>
                   </Link>
                   <Link to="/difficulty_levels" className="home-nav-card">
-                    <span className="home-nav-card-icon">📊</span>
+                    <svg className="home-nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="14" width="4" height="7" rx="1"/>
+                      <rect x="9" y="9" width="4" height="12" rx="1"/>
+                      <rect x="16" y="4" width="4" height="17" rx="1"/>
+                    </svg>
                     <span className="home-nav-card-label">Difficulty</span>
                     <span className="home-nav-card-sub">5 levels</span>
                   </Link>
                   <Link to="/piece_lengths" className="home-nav-card">
-                    <span className="home-nav-card-icon">⏱️</span>
+                    <svg className="home-nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="9"/>
+                      <polyline points="12 7 12 12 15.5 12"/>
+                    </svg>
                     <span className="home-nav-card-label">Piece Length</span>
                     <span className="home-nav-card-sub">Browse by duration</span>
                   </Link>
@@ -64,17 +88,17 @@ function App() {
                 {/* Stats bar */}
                 <div className="home-stats">
                   <div className="home-stat">
-                    <span className="home-stat-number">259</span>
+                    <span className="home-stat-number">{counts.composers}</span>
                     <span className="home-stat-label">Composers</span>
                   </div>
                   <div className="home-stat-divider" />
                   <div className="home-stat">
-                    <span className="home-stat-number">675</span>
+                    <span className="home-stat-number">{counts.pieces}</span>
                     <span className="home-stat-label">Pieces</span>
                   </div>
                   <div className="home-stat-divider" />
                   <div className="home-stat">
-                    <span className="home-stat-number">17</span>
+                    <span className="home-stat-number">{counts.categories}</span>
                     <span className="home-stat-label">Instrumentation Categories</span>
                   </div>
                 </div>
@@ -84,7 +108,7 @@ function App() {
                   <div className="home-about-col">
                     <h3>About the Database</h3>
                     <p>The Ukrainian Chamber Music Encyclopedia is a searchable database of solo and chamber music involving the bassoon by Ukrainian composers. It arose from Zachary Senick's doctoral research at the University of Toronto as a way to make information from his dissertation on Ukrainian solo and chamber bassoon music freely accessible to musicians worldwide.</p>
-                    <p>The database has been compiled through extensive source research and direct contact with living composers and the families of deceased composers. Over 259 composers are currently represented. The source used for each composer is cited by the author's last name or organization abbreviation.</p>
+                    <p>The database has been compiled through extensive source research and direct contact with living composers and the families of deceased composers. Over {counts.composers} composers are currently represented. The source used for each composer is cited by the author's last name or organization abbreviation.</p>
                     <p>The database is browsable by composer biography, instrumentation category, difficulty level (1–5), and piece duration. Each piece entry links back to the composer's biography.</p>
                   </div>
                   <div className="home-about-col">
@@ -151,10 +175,8 @@ function App() {
           <Route path="/piece/:composer/:title" element={<PieceInfo />} />
 
         </Routes>
-      </Router>
-
-      <Footer></Footer>
-    </>
+      <Footer />
+    </Router>
   );
 }
 

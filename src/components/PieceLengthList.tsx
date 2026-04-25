@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PieceLength } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function PieceLengthList() {
@@ -14,6 +15,8 @@ function PieceLengthList() {
             .then(data => { setData(data); setLoading(false); })
             .catch(err => { console.error(err); setLoading(false); });
     }, []);
+
+    usePageTitle('Piece Length');
 
     return (
         <div className="list-page">

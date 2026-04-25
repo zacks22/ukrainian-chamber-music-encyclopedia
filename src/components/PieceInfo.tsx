@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
@@ -30,6 +31,8 @@ function PieceInfo() {
             })
             .catch(err => console.error(err));
     }, [title]);
+
+    usePageTitle(pieceInfo?.piece_title);
 
     if (!pieceInfo) return <p className="detail-empty">Piece not found.</p>;
 

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
@@ -49,6 +50,7 @@ function ComposerInfo() {
     }, [name]);
 
     const decoded = decodeURIComponent(name);
+    usePageTitle(decoded);
 
     return (
         <div className="detail-page">

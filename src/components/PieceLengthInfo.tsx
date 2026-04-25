@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PieceLength, Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function PieceLengthInfo() {
@@ -11,6 +12,7 @@ function PieceLengthInfo() {
     const [query, setQuery] = useState('');
 
     if (!length) return null;
+    usePageTitle(decodeURIComponent(length));
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}piece_lengths.json`)

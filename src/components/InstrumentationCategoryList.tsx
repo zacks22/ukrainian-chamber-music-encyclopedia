@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { InstrumentationCategory } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function InstrumentationCategoryList() {
@@ -14,6 +15,8 @@ function InstrumentationCategoryList() {
             .then(data => { setData(data); setLoading(false); })
             .catch(err => { console.error(err); setLoading(false); });
     }, []);
+
+    usePageTitle('Instrumentation');
 
     return (
         <div className="list-page">

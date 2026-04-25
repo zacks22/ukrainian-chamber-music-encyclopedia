@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Difficulty, Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function DifficultyInfo() {
@@ -11,6 +12,7 @@ function DifficultyInfo() {
     const [query, setQuery] = useState('');
 
     if (!difficulty) return null;
+    usePageTitle(decodeURIComponent(difficulty));
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}difficulty_levels.json`)

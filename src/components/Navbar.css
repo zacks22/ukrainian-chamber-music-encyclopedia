@@ -12,67 +12,140 @@ header {
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.navbar-list {
+/* Brand / title — left side, links home */
+.navbar-brand {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+}
+
+/* Desktop nav links — right side */
+.navbar-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
+    gap: 0.25rem;
+}
+
+.navbar-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-link-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Hamburger — hidden on desktop */
+.navbar-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
     flex-shrink: 0;
 }
 
-.navbar-item {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-}
-
-.navbar-item a:hover {
+.navbar-hamburger:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.navbar-icon {
-    width: 22px;
-    height: 22px;
+.navbar-hamburger span {
     display: block;
-    /* invert to make the icon white against the blue background */
-    filter: brightness(0) invert(1);
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.navbar-title {
-    color: white;
-    font-size: 1rem;
+.navbar-hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.navbar-hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.navbar-hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile dropdown */
+.navbar-mobile-menu {
+    background-color: #004fa8;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-mobile-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    pointer-events: none;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.15s ease;
 }
 
-@media (max-width: 540px) {
-    .navbar-title {
-        font-size: 0.85rem;
-        /* shift right slightly to avoid overlap with home icon */
-        left: calc(50% + 20px);
+.navbar-mobile-link:hover,
+.navbar-mobile-link.navbar-link-active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-hamburger {
+        display: flex;
+    }
+
+    .navbar-brand {
+        font-size: 0.875rem;
     }
 }
 
 @media (max-width: 380px) {
-    .navbar-title {
-        display: none;
+    .navbar-brand {
+        font-size: 0.78rem;
     }
 }

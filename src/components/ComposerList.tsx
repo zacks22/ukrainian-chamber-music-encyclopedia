@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Composer } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function ComposerList() {
@@ -15,6 +16,8 @@ function ComposerList() {
             .then(data => { setData(data); setLoading(false); })
             .catch(err => { console.error(err); setLoading(false); });
     }, []);
+
+    usePageTitle('Composers');
 
     const filtered = data.filter(c => {
         const q = query.toLowerCase();

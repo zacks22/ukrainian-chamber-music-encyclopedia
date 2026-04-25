@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { InstrumentationCategory, Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function InstrumentationCategoryInfo() {
@@ -11,6 +12,7 @@ function InstrumentationCategoryInfo() {
     const [query, setQuery] = useState('');
 
     if (!category) return null;
+    usePageTitle(decodeURIComponent(category));
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}instrumentation_categories.json`)

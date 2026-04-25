@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Difficulty } from '../types';
 import Breadcrumb from './Breadcrumb';
+import { usePageTitle } from '../usePageTitle';
 import '../App.css';
 
 function DifficultyList() {
@@ -14,6 +15,8 @@ function DifficultyList() {
             .then(data => { setData(data); setLoading(false); })
             .catch(err => { console.error(err); setLoading(false); });
     }, []);
+
+    usePageTitle('Difficulty');
 
     return (
         <div className="list-page">

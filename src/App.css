@@ -184,8 +184,11 @@ h2:hover {
 
 .detail-page h1 {
   text-align: left;
-  padding: 0.5rem 0 0.25rem;
+  color: #1a1a1a;
+  padding: 0.25rem 0 0.75rem;
+  margin: 0 0 0.25rem;
   font-size: 1.9rem;
+  border-bottom: 2px solid #005BBB;
 }
 
 .detail-subtitle {
@@ -202,11 +205,13 @@ h2:hover {
 }
 
 .detail-photo {
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 12px;
+  width: 200px;
+  height: 260px;
+  object-fit: contain;
+  object-position: center top;
+  border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  background-color: #f0f0ee;
 }
 
 .detail-photo-caption {
@@ -321,6 +326,7 @@ h2:hover {
   padding: 0;
   text-align: left;
   line-height: 1.25;
+  border-bottom: none;
 }
 
 .piece-hero-composer {
@@ -388,8 +394,8 @@ h2:hover {
 
 @media (max-width: 480px) {
   .detail-photo {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 210px;
   }
 
   .detail-label {
@@ -408,6 +414,15 @@ h2:hover {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.list-page h1 {
+  text-align: left;
+  color: #1a1a1a;
+  font-size: 1.75rem;
+  padding: 0.25rem 0 0.75rem;
+  margin: 0 0 0.75rem;
+  border-bottom: 2px solid #005BBB;
 }
 
 .list-loading {
@@ -583,8 +598,10 @@ h2:hover {
 }
 
 .home-nav-card-icon {
-  font-size: 1.75rem;
-  line-height: 1;
+  width: 32px;
+  height: 32px;
+  color: #005BBB;
+  flex-shrink: 0;
 }
 
 .home-nav-card-label {
