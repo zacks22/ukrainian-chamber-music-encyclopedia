@@ -28,7 +28,6 @@ function App() {
             path="/"
             element={
               <div className="wrapper">
-                <h1>Ukrainian Chamber Music Encyclopedia</h1>
                 <h2>
                   <Link to={`/composers`}>Composers</Link>
                 </h2>

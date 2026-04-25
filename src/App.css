@@ -6,50 +6,33 @@
   color: black;
 }
 
-/* Softer background color for the body */
 body {
-  background-color: #f3e50d;
-  /* Muted yellow that is softer on the eyes */
-  color: #333;
-  /* Dark text color for contrast and readability */
-  font-family: 'Arial', sans-serif;
-  /* Clean and readable font */
+  color: #1a1a1a;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
-  /* Remove default margin */
   padding: 0;
-  /* Remove default padding */
-  background: linear-gradient(135deg, #e6e6c0, #ddc958);
-  /* A subtle gradient for a smoother transition */
+  background-color: #f8f7f4;
 }
 
-/* Wrapper div with a border and margin */
 .wrapper {
   background-color: #fff;
-  /* White background inside the border for contrast */
-  padding: 1.0rem;
-  /* Space between the content and the border */
-  border: 5px solid #333;
-  /* Dark border around the entire screen */
-  border-radius: 10px;
-  /* Optional: Rounded corners */
+  padding: 2.5rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
   width: 100%;
-  /* Full width */
   max-width: 1200px;
-  /* Max width for large screens */
   box-sizing: border-box;
-  /* Ensure padding and border are included in width calculation */
-  height: 75%;
-  /* Ensure the wrapper takes full viewport height */
   overflow: auto;
-  /* Allow scroll if content exceeds height */
   margin-top: 2rem;
 }
 
 h1 {
-  color: #0056B9;
+  color: #005BBB;
   text-align: center;
-  font-size: 2.5rem;
-  padding: 1rem;
+  font-size: 2.2rem;
+  padding: 1.5rem 1rem;
+  letter-spacing: -0.01em;
 }
 
 /* Style for list items */
@@ -89,48 +72,28 @@ h1 {
 }
 
 .piece-line li a:hover {
-  color: #007BFF;
-  /* Blue color on hover */
+  color: #005BBB;
 }
 
-/* Optional: Icon styling (if any) inside list item */
 .piece-line li::before {
   content: '→';
-  /* Example arrow symbol */
   margin-right: 10px;
-  color: #007BFF;
+  color: #005BBB;
 }
 
-/* Style for h2 headings */
 h2 {
-  font-family: 'Arial', sans-serif;
-  /* Clean sans-serif font */
-  font-size: 1.25rem;
-  /* Adjust font size */
-  font-weight: 600;
-  /* Slightly bolder for emphasis */
-  color: #333;
-  /* Dark color for contrast */
-  text-transform: uppercase;
-  /* Uppercase for a clean look */
-  letter-spacing: 2px;
-  /* Slight letter spacing */
-  margin: 20px 0;
-  /* Space above and below */
-  padding: 10px;
-  /* Padding around the heading */
-  border-bottom: 2px solid #007BFF;
-  /* Blue underline */
-  transition: color 0.3s ease, transform 0.3s ease;
-  /* Smooth transition */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 16px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+  transition: color 0.2s ease;
 }
 
-/* Hover effect for h2 */
 h2:hover {
-  color: #007BFF;
-  /* Change color to blue on hover */
-  transform: translateY(-2px);
-  /* Lift effect */
+  color: #005BBB;
 }
 
 .composer-photo-container {
