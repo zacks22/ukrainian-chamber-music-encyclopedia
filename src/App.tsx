@@ -44,7 +44,7 @@ function App() {
                     <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="home-logo home-logo-center" />
                     <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="home-logo" />
                   </div>
-                  <p className="home-tagline">A searchable database of Ukrainian chamber music featuring the bassoon</p>
+                  <p className="home-tagline">A searchable database of Ukrainian chamber music</p>
                 </div>
 
                 {/* Nav cards */}

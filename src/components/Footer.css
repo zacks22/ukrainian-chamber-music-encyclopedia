@@ -1,6 +1,7 @@
 .footer {
     margin-top: 4rem;
-    border-top: 1px solid #e8e8e8;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, #005BBB 50%, #FFD700 50%) 1;
     background-color: #f8f7f4;
 }
 
