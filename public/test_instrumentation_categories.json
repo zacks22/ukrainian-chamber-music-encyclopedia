@@ -1,9 +1,18 @@
 [
     {
+        "instrumentation_category": "Unaccompanied Flute"
+    },
+    {
         "instrumentation_category": "Unaccompanied Bassoon"
     },
     {
+        "instrumentation_category": "Flute & Piano"
+    },
+    {
         "instrumentation_category": "Bassoon & Piano"
+    },
+    {
+        "instrumentation_category": "Flute & Other Accompaniment"
     },
     {
         "instrumentation_category": "Bassoon Concerto & Works with Strings"
