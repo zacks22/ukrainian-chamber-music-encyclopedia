@@ -4,100 +4,113 @@ import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
 import '../App.css';
 
-// Function to convert snake_case to Title Case
-const toTitleCase = (str: string): string => {
-    return str
-        .replace(/_/g, ' ') // Replace underscores with spaces
-        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize the first letter of each word
-        .replace(/\s+/g, ' '); // Remove extra spaces
+const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.target as HTMLImageElement;
+    target.src = import.meta.env.BASE_URL + 'default_photos/default_silhouette.svg';
 };
 
-const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    const target = e.target as HTMLImageElement; // Type assertion
-    target.src = import.meta.env.BASE_URL + 'default_photos/default_silhouette.svg'; // Set fallback image
-};
+const HIDDEN_KEYS: (keyof Composer)[] = ['composer', 'composer_cyrillic'];
+
+const BIO_FIELDS: { key: keyof Composer; label: string }[] = [
+    { key: 'birth',           label: 'Born' },
+    { key: 'death',           label: 'Died' },
+    { key: 'currently',       label: 'Currently' },
+    { key: 'diaspora',        label: 'Diaspora' },
+    { key: 'studied',         label: 'Studied' },
+    { key: 'taught',          label: 'Taught' },
+    { key: 'worked',          label: 'Worked' },
+    { key: 'member_of_NUCU',  label: 'NUCU Member' },
+    { key: 'personal_website',label: 'Website' },
+    { key: 'in_contact',      label: 'In Contact' },
+];
 
 function ComposerInfo() {
-    const { name } = useParams<{ name: string }>(); // Get the composer name from the URL
+    const { name } = useParams<{ name: string }>();
     const [composerInfo, setComposerInfo] = useState<Composer | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
 
-    if (!name) return; // Exit if name is undefined
-
+    if (!name) return null;
 
     useEffect(() => {
-
-        // Fetch the composer data from composers.json
-        fetch(`${import.meta.env.BASE_URL}composers.json`) // Ensure it's correctly located in the public folder
-            .then((response) => response.json())
+        fetch(`${import.meta.env.BASE_URL}composers.json`)
+            .then(res => res.json())
             .then((data: Composer[]) => {
-                const selectedComposer = data.find(
-                    (composer) => composer.composer === decodeURIComponent(name)
-                );
-                setComposerInfo(selectedComposer || null);
-
-                // Now fetch the pieces for this composer (assuming pieces.json is available)
+                const found = data.find(c => c.composer === decodeURIComponent(name));
+                setComposerInfo(found || null);
                 fetch(`${import.meta.env.BASE_URL}pieces.json`)
-                    .then((response) => response.json())
+                    .then(res => res.json())
                     .then((piecesData: Piece[]) => {
-                        // Filter the pieces for the selected composer
-                        const composerPieces = piecesData.filter(
-                            (piece) => piece.composer === decodeURIComponent(name)
-                        );
-                        setPieces(composerPieces);
+                        setPieces(piecesData.filter(p => p.composer === decodeURIComponent(name)));
                     })
-                    .catch((error) => console.error('Error fetching pieces:', error));
+                    .catch(err => console.error(err));
             })
-            .catch((error) => {
-                console.error('Error fetching composer info:', error);
-            });
+            .catch(err => console.error(err));
     }, [name]);
 
+    const decoded = decodeURIComponent(name);
+
     return (
-        <>
-            <h1 className="my-class">Composer: {decodeURIComponent(name)}</h1>
+        <div className="detail-page">
+            <h1>{decoded}</h1>
             {composerInfo ? (
                 <>
-                    <div className="composer-photo-container">
+                    {/* Photo */}
+                    <div className="detail-photo-container">
                         <img
                             src={import.meta.env.BASE_URL + 'composer_photos/photo_' + name + '.jpg'}
-                            className='composer-photo'
+                            className="detail-photo"
                             onError={handleImageError}
-                        ></img>
-                    </div>
-                    <div className="wrapper">
-                        {Object.keys(composerInfo)
-                            .filter((key) => key !== 'Composer' &&
-                                composerInfo[key as keyof Composer] !== '-')
-                            .map((key, idx) => (
-                                <p key={idx}>
-                                    <b>{toTitleCase(key)}: </b> {composerInfo[key as keyof Composer]}
-                                </p>
-                            ))}
+                            alt={decoded}
+                        />
+                        {composerInfo.composer_cyrillic && (
+                            <p className="detail-photo-caption">{composerInfo.composer_cyrillic}</p>
+                        )}
                     </div>
 
-                    <h3>Pieces by {decodeURIComponent(name)}:</h3>
+                    {/* Bio fields */}
+                    <div className="detail-card">
+                        {BIO_FIELDS.filter(f => composerInfo[f.key] && composerInfo[f.key] !== '-').map(f => (
+                            <div key={f.key} className="detail-row">
+                                <span className="detail-label">{f.label}</span>
+                                <span className="detail-value">{composerInfo[f.key]}</span>
+                            </div>
+                        ))}
+                        {composerInfo.sources && composerInfo.sources !== '-' && (
+                            <div className="detail-row detail-row-sources">
+                                <span className="detail-label">Sources</span>
+                                <span className="detail-value detail-sources">{composerInfo.sources}</span>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Pieces */}
+                    <h2 className="detail-section-heading">Works ({pieces.length})</h2>
                     {pieces.length > 0 ? (
-                        <ul className='piece-line'>
-                            {pieces.map((piece, index) => (
-                                <li key={index} className='piece-line'>
-                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
-                                        {piece.piece_title}
+                        <ul className="catalogue-list">
+                            {pieces.map((piece, i) => (
+                                <li key={i}>
+                                    <Link
+                                        to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}
+                                        className="catalogue-list-item"
+                                    >
+                                        <span className="catalogue-list-primary">{piece.piece_title}</span>
+                                        {piece.instrumentation && piece.instrumentation !== '-' && (
+                                            <span className="catalogue-list-secondary">{piece.instrumentation}</span>
+                                        )}
+                                        <span className="catalogue-list-chevron">›</span>
                                     </Link>
                                 </li>
                             ))}
                         </ul>
                     ) : (
-                        <p>No pieces found for this composer.</p>
+                        <p className="detail-empty">No pieces found for this composer.</p>
                     )}
                 </>
             ) : (
-                <p>Composer not found...</p>
-            )
-            }
-        </>
+                <p className="detail-empty">Composer not found.</p>
+            )}
+        </div>
     );
 }
 
 export default ComposerInfo;
-
