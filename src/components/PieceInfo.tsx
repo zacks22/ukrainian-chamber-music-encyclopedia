@@ -1,15 +1,12 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
 import { usePageTitle } from '../usePageTitle';
+import { makeImageErrorHandler } from '../utils/imageUtils';
 import '../App.css';
 
-const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    const target = e.target as HTMLImageElement;
-    target.src = import.meta.env.BASE_URL + 'default_photos/default_piece.webp';
-};
+const handleImageError = makeImageErrorHandler('default_photos/default_piece.webp');
 
 const isEmpty = (val: string) => !val || val === '-';
 
@@ -17,9 +14,10 @@ function PieceInfo() {
     const { composer, title } = useParams();
     const [pieceInfo, setPieceInfo] = useState<Piece | null>(null);
 
-    if (!composer || !title) return null;
+    usePageTitle(pieceInfo?.piece_title);
 
     useEffect(() => {
+        if (!composer || !title) return;
         fetch(`${import.meta.env.BASE_URL}pieces.json`)
             .then(res => res.json())
             .then((data: Piece[]) => {
@@ -30,10 +28,9 @@ function PieceInfo() {
                 setPieceInfo(found || null);
             })
             .catch(err => console.error(err));
-    }, [title]);
+    }, [composer, title]);
 
-    usePageTitle(pieceInfo?.piece_title);
-
+    if (!composer || !title) return null;
     if (!pieceInfo) return <p className="detail-empty">Piece not found.</p>;
 
     const overviewFields: { key: keyof Piece; label: string }[] = [
@@ -85,7 +82,6 @@ function PieceInfo() {
                 { label: decodeURIComponent(composer), to: `/composer/${composer}` },
                 { label: pieceInfo.piece_title },
             ]} />
-            {/* Piece hero */}
             <div className="piece-hero">
                 <img
                     src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + (pieceInfo.piece_csv_title || pieceInfo.piece_title) + '.jpg'}
@@ -104,11 +100,9 @@ function PieceInfo() {
                 </div>
             </div>
 
-            {/* Overview */}
             <h2 className="detail-section-heading">Overview</h2>
             <div className="detail-card">{renderSection(overviewFields)}</div>
 
-            {/* Publication */}
             {publicationFields.some(f => !isEmpty(pieceInfo[f.key])) && (
                 <>
                     <h2 className="detail-section-heading">Publication</h2>
@@ -116,7 +110,6 @@ function PieceInfo() {
                 </>
             )}
 
-            {/* Technical */}
             {technicalFields.some(f => !isEmpty(pieceInfo[f.key])) && (
                 <>
                     <h2 className="detail-section-heading">Technical</h2>
@@ -124,7 +117,6 @@ function PieceInfo() {
                 </>
             )}
 
-            {/* Description */}
             {!isEmpty(pieceInfo.description) && (
                 <>
                     <h2 className="detail-section-heading">Description</h2>

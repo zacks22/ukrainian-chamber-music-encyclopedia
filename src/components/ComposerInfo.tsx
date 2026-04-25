@@ -1,16 +1,12 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
 import Breadcrumb from './Breadcrumb';
 import { usePageTitle } from '../usePageTitle';
+import { makeImageErrorHandler } from '../utils/imageUtils';
 import '../App.css';
 
-const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    const target = e.target as HTMLImageElement;
-    target.src = import.meta.env.BASE_URL + 'default_photos/default_silhouette.svg';
-};
-
+const handleImageError = makeImageErrorHandler('default_photos/default_silhouette.svg');
 
 const BIO_FIELDS: { key: keyof Composer; label: string }[] = [
     { key: 'birth',           label: 'Born' },
@@ -27,29 +23,24 @@ const BIO_FIELDS: { key: keyof Composer; label: string }[] = [
 
 function ComposerInfo() {
     const { name } = useParams<{ name: string }>();
+    const decoded = name ? decodeURIComponent(name) : '';
     const [composerInfo, setComposerInfo] = useState<Composer | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
 
-    if (!name) return null;
+    usePageTitle(decoded || undefined);
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}composers.json`)
-            .then(res => res.json())
-            .then((data: Composer[]) => {
-                const found = data.find(c => c.composer === decodeURIComponent(name));
-                setComposerInfo(found || null);
-                fetch(`${import.meta.env.BASE_URL}pieces.json`)
-                    .then(res => res.json())
-                    .then((piecesData: Piece[]) => {
-                        setPieces(piecesData.filter(p => p.composer === decodeURIComponent(name)));
-                    })
-                    .catch(err => console.error(err));
-            })
-            .catch(err => console.error(err));
+        if (!name) return;
+        Promise.all([
+            fetch(`${import.meta.env.BASE_URL}composers.json`).then(r => r.json()),
+            fetch(`${import.meta.env.BASE_URL}pieces.json`).then(r => r.json()),
+        ]).then(([composers, allPieces]: [Composer[], Piece[]]) => {
+            setComposerInfo(composers.find(c => c.composer === decoded) ?? null);
+            setPieces(allPieces.filter(p => p.composer === decoded));
+        }).catch(err => console.error(err));
     }, [name]);
 
-    const decoded = decodeURIComponent(name);
-    usePageTitle(decoded);
+    if (!name) return null;
 
     return (
         <div className="detail-page">
@@ -57,10 +48,9 @@ function ComposerInfo() {
             <h1>{decoded}</h1>
             {composerInfo ? (
                 <>
-                    {/* Photo */}
                     <div className="detail-photo-container">
                         <img
-                            src={import.meta.env.BASE_URL + 'composer_photos/photo_' + name + '.jpg'}
+                            src={import.meta.env.BASE_URL + 'composer_photos/photo_' + decoded + '.jpg'}
                             className="detail-photo"
                             onError={handleImageError}
                             alt={decoded}
@@ -70,7 +60,6 @@ function ComposerInfo() {
                         )}
                     </div>
 
-                    {/* Bio fields */}
                     <div className="detail-card">
                         {BIO_FIELDS.filter(f => composerInfo[f.key] && composerInfo[f.key] !== '-').map(f => (
                             <div key={f.key} className="detail-row">
@@ -86,12 +75,11 @@ function ComposerInfo() {
                         )}
                     </div>
 
-                    {/* Pieces */}
                     <h2 className="detail-section-heading">Works ({pieces.length})</h2>
                     {pieces.length > 0 ? (
                         <ul className="catalogue-list">
-                            {pieces.map((piece, i) => (
-                                <li key={i}>
+                            {pieces.map(piece => (
+                                <li key={`${piece.composer}::${piece.piece_title}`}>
                                     <Link
                                         to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}
                                         className="catalogue-list-item"

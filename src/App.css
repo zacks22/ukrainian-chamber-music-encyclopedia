@@ -29,57 +29,11 @@ body {
 }
 
 h1 {
-  color: #005BBB;
+  color: var(--blue);
   text-align: center;
   font-size: 2.2rem;
   padding: 1.5rem 1rem;
   letter-spacing: -0.01em;
-}
-
-/* Style for list items */
-.piece-line ul {
-  padding: 0;
-  list-style-type: none;
-  /* Remove default bullet points */
-  margin: 0;
-}
-
-.piece-line li {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  margin: 8px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  cursor: pointer;
-}
-
-/* Hover effects */
-.piece-line li:hover {
-  background-color: #e0e0e0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for text inside list items */
-.piece-line li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.0rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.piece-line li a:hover {
-  color: #005BBB;
-}
-
-.piece-line li::before {
-  content: '→';
-  margin-right: 10px;
-  color: #005BBB;
 }
 
 h2 {
@@ -94,39 +48,7 @@ h2 {
 }
 
 h2:hover {
-  color: #005BBB;
-}
-
-.composer-photo-container {
-  display: flex;
-  justify-content: center;
-  /* Horizontally center the image */
-  align-items: center;
-  /* Vertically center the image */
-}
-
-/* Styling for the image */
-.composer-photo {
-  height: 30%;
-  width: 30%;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.piece-photo-container {
-  display: flex;
-  justify-content: center;
-  /* Horizontally center the image */
-  align-items: center;
-  /* Vertically center the image */
-}
-
-/* Styling for the image */
-.piece-photo {
-  height: 30%;
-  width: 30%;
-  max-width: 100%;
-  max-height: 100%;
+  color: var(--blue);
 }
 
 /* ── Breadcrumb ─────────────────────────────────────────── */
@@ -153,7 +75,7 @@ h2:hover {
 }
 
 .breadcrumb-link:hover {
-  color: #005BBB;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -188,7 +110,7 @@ h2:hover {
   padding: 0.25rem 0 0.75rem;
   margin: 0 0 0.25rem;
   font-size: 1.9rem;
-  border-bottom: 2px solid #FFD700;
+  border-bottom: 2px solid var(--gold);
 }
 
 .detail-subtitle {
@@ -332,7 +254,7 @@ h2:hover {
 .piece-hero-composer {
   font-size: 1rem;
   font-weight: 500;
-  color: #005BBB;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -365,7 +287,7 @@ h2:hover {
 
 .piece-tag-blue {
   background: #e8f0fb;
-  color: #005BBB;
+  color: var(--blue);
 }
 
 @media (max-width: 560px) {
@@ -422,7 +344,7 @@ h2:hover {
   font-size: 1.75rem;
   padding: 0.25rem 0 0.75rem;
   margin: 0 0 0.75rem;
-  border-bottom: 2px solid #FFD700;
+  border-bottom: 2px solid var(--gold);
 }
 
 .list-loading {
@@ -448,7 +370,7 @@ h2:hover {
 }
 
 .search-input:focus {
-  border-color: #005BBB;
+  border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(0, 91, 187, 0.1);
 }
 
@@ -497,11 +419,11 @@ h2:hover {
 .catalogue-list-item:hover {
   background-color: #f5f8ff;
   text-decoration: none;
-  color: #005BBB;
+  color: var(--blue);
 }
 
 .catalogue-list-item:hover .catalogue-list-chevron {
-  color: #005BBB;
+  color: var(--blue);
 }
 
 .catalogue-list-primary {
@@ -531,7 +453,6 @@ h2:hover {
   padding: 2rem;
 }
 
-/* Hero */
 .home-hero {
   display: flex;
   flex-direction: column;
@@ -568,7 +489,6 @@ h2:hover {
   margin: 0;
 }
 
-/* Nav cards */
 .home-nav-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -594,15 +514,15 @@ h2:hover {
 .home-nav-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07);
-  border-bottom-color: #FFD700;
+  border-bottom-color: var(--gold);
   text-decoration: none;
-  color: #005BBB;
+  color: var(--blue);
 }
 
 .home-nav-card-icon {
   width: 32px;
   height: 32px;
-  color: #FFD700;
+  color: var(--gold);
   flex-shrink: 0;
 }
 
@@ -617,7 +537,6 @@ h2:hover {
   color: #888;
 }
 
-/* Stats bar */
 .home-stats {
   display: flex;
   align-items: center;
@@ -640,7 +559,7 @@ h2:hover {
 .home-stat-number {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #FFD700;
+  color: var(--gold);
   line-height: 1;
 }
 
@@ -657,7 +576,6 @@ h2:hover {
   background: #e8e8e8;
 }
 
-/* About — two columns */
 .home-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -675,7 +593,7 @@ h2:hover {
 .home-about-col h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: #005BBB;
+  color: var(--blue);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 0 1rem;
@@ -688,7 +606,6 @@ h2:hover {
   margin: 0 0 0.75rem;
 }
 
-/* Reference / collapsible */
 .home-reference {
   display: flex;
   flex-direction: column;
@@ -723,7 +640,7 @@ h2:hover {
 .home-details summary::before {
   content: '▶';
   font-size: 0.65rem;
-  color: #005BBB;
+  color: var(--blue);
   transition: transform 0.2s ease;
 }
 

@@ -1,13 +1,14 @@
 :root {
   --blue: #005BBB;
   --blue-hover: #0047a0;
+  --gold: #FFD700;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.7;
   font-weight: 400;
 
   color-scheme: light;
-  color: #1a1a1a;
+  color: #442020;
   background-color: #f8f7f4;
 
   font-synthesis: none;
