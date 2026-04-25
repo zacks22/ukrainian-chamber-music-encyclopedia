@@ -26,8 +26,8 @@ function PieceInfo() {
 
 
     useEffect(() => {
-        // Fetch the pieces data from test_pieces.json
-        fetch(`${import.meta.env.BASE_URL}test_pieces.json`)
+        // Fetch the pieces data from pieces.json
+        fetch(`${import.meta.env.BASE_URL}pieces.json`)
             .then((response) => response.json())
             .then((piecesData: Piece[]) => {
                 const selectedPiece = piecesData.find(

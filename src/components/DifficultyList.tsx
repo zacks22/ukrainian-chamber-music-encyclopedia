@@ -7,7 +7,7 @@ function DifficultyList() {
     const [data, setData] = useState<Difficulty[]>([]);  // Use state to store the dataset
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}test_difficulty_levels.json`)
+        fetch(`${import.meta.env.BASE_URL}difficulty_levels.json`)
             .then(response => response.json())  // Parse the JSON directly
             .then(data => {
                 setData(data);  // Save fetched data to state

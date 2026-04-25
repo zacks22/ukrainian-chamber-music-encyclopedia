@@ -11,8 +11,8 @@ function DifficultyInfo() {
     if (!difficulty) return; // Exit if difficulty is undefined
 
     useEffect(() => {
-        // Fetch the composer data from test_composers.json
-        fetch(`${import.meta.env.BASE_URL}test_difficulty_levels.json`) // Ensure it's correctly located in the public folder
+        // Fetch the composer data from composers.json
+        fetch(`${import.meta.env.BASE_URL}difficulty_levels.json`) // Ensure it's correctly located in the public folder
             .then((response) => response.json())
             .then((data: Difficulty[]) => {
                 const selectedDifficulty = data.find(
@@ -20,8 +20,8 @@ function DifficultyInfo() {
                 );
                 setDifficultyInfo(selectedDifficulty);
 
-                // Now fetch the pieces for this composer (assuming test_pieces.json is available)
-                fetch(`${import.meta.env.BASE_URL}test_pieces.json`)
+                // Now fetch the pieces for this composer (assuming pieces.json is available)
+                fetch(`${import.meta.env.BASE_URL}pieces.json`)
                     .then((response) => response.json())
                     .then((piecesData: Piece[]) => {
                         // Filter the pieces for the selected composer

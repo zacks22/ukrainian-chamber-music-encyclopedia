@@ -23,17 +23,17 @@ This is a React + TypeScript + Vite SPA deployed to `https://ukrainianchambermus
 **Data flow**: All data lives as static JSON files in `public/`. Components fetch their data via `fetch(import.meta.env.BASE_URL + 'filename.json')` inside `useEffect` on mount. There is no backend or API.
 
 **Data files** (all in `public/`):
-- `test_composers.json` / `.csv` — 259 composers
-- `test_pieces.json` / `.csv` — 675 pieces
-- `test_instrumentation_categories.json` / `.csv` — 17 categories
-- `test_difficulty_levels.json` / `.csv` — difficulty levels
-- `test_piece_lengths.json` / `.csv` — length buckets
+- `composers.json` / `.csv` — 259 composers
+- `pieces.json` / `.csv` — 675 pieces
+- `instrumentation_categories.json` / `.csv` — 17 categories
+- `difficulty_levels.json` / `.csv` — difficulty levels
+- `piece_lengths.json` / `.csv` — length buckets
 
 **Updating data**: When a new CSV is received, copy it to `public/`, then regenerate the JSON using Python:
 ```bash
 python3 -c "
 import csv, json
-for name in ['test_composers', 'test_pieces', 'test_instrumentation_categories', 'test_difficulty_levels', 'test_piece_lengths']:
+for name in ['composers', 'pieces', 'instrumentation_categories', 'difficulty_levels', 'piece_lengths']:
     with open(f'public/{name}.csv', encoding='utf-8') as f:
         data = list(csv.DictReader(f))
     with open(f'public/{name}.json', 'w', encoding='utf-8') as f:
