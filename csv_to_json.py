@@ -23,11 +23,11 @@ def make_json(csvFilePath, jsonFilePath):
 # Define the file paths according to your system
 
 file_names = [
-        'test_composers',
-        #'test_difficulty_levels',
-        #'test_instrumentation_categories',
-        #'test_piece_lengths',
-        'test_pieces'
+        'composers',
+        #'difficulty_levels',
+        #'instrumentation_categories',
+        #'piece_lengths',
+        'pieces'
     ]
 
 for file_name in file_names:
