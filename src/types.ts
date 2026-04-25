@@ -37,6 +37,7 @@ export type Piece = {
     extended_techniques: string;
     performace_considerations: string;
     description: string;
+    piece_csv_title: string;
 };
 
 

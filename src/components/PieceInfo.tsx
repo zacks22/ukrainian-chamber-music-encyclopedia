@@ -11,6 +11,7 @@ const toTitleCase = (str: string): string => {
         .replace(/\s+/g, ' '); // Remove extra spaces
 };
 
+
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement; // Type assertion
     target.src = import.meta.env.BASE_URL + 'default_photos/default_piece.webp'; // Set fallback image
@@ -53,7 +54,7 @@ function PieceInfo() {
 
                     <div className="piece-photo-container">
                         <img
-                            src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + title + '.jpg'}
+                            src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + (pieceInfo.piece_csv_title || pieceInfo.piece_title) + '.jpg'}
                             className='piece-photo'
                             onError={handleImageError}
                         ></img>
@@ -69,7 +70,7 @@ function PieceInfo() {
                         </p>
 
                         {Object.keys(pieceInfo)
-                            .filter((key) => key !== "Piece Title" && pieceInfo[key as keyof Piece] !== '-') // Exclude the "Piece Title" key and keys with "-" value
+                            .filter((key) => key !== "Piece Title" && key !== "piece_csv_title" && pieceInfo[key as keyof Piece] !== '-') // Exclude the "Piece Title" key and keys with "-" value
                             .map((key, idx) => (
                                 <p key={idx}>
                                     <b>{toTitleCase(key)}: </b> {pieceInfo[key as keyof Piece]}
