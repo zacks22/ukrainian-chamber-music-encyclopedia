@@ -15,8 +15,6 @@ import Footer from './components/Footer';
 
 function App() {
 
-  console.log(import.meta.env.BASE_URL);
-
   return (
     <>
       <Navbar></Navbar>
@@ -27,64 +25,99 @@ function App() {
           <Route
             path="/"
             element={
-              <div className="wrapper">
-                <h2>
-                  <Link to={`/composers`}>Composers</Link>
-                </h2>
-                <h2>
-                  <Link to={`/instrumentation_category`}>Instrumentation Category</Link>
-                </h2>
-                <h2>
-                  <Link to={`/difficulty_levels`}>Difficulty</Link>
-                </h2>
-                <h2>
-                  <Link to={`/piece_lengths`}>Piece Length</Link>
-                </h2>
+              <div className="home">
 
-                {/* Webpage description */}
-
-                <div className="logo-container">
-                  <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="logo-icon" />
-                  <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="logo-icon" />
-                  <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="logo-icon" />
+                {/* Hero */}
+                <div className="home-hero">
+                  <div className="home-logo-row">
+                    <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="home-logo" />
+                    <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="home-logo home-logo-center" />
+                    <img src='./icons/ucme-logo.jpg' alt="UCME Logo" className="home-logo" />
+                  </div>
+                  <p className="home-tagline">A searchable database of Ukrainian chamber music featuring the bassoon</p>
                 </div>
 
-                <p>Welcome to the Ukrainian Chamber Music Encyclopedia! This database features solo bassoon and chamber music involving the bassoon. Over time this database will be updated with solo and chamber works for other instruments beginning with other wind instruments.</p>
+                {/* Nav cards */}
+                <div className="home-nav-cards">
+                  <Link to="/composers" className="home-nav-card">
+                    <span className="home-nav-card-icon">🎼</span>
+                    <span className="home-nav-card-label">Composers</span>
+                    <span className="home-nav-card-sub">259 composers</span>
+                  </Link>
+                  <Link to="/instrumentation_category" className="home-nav-card">
+                    <span className="home-nav-card-icon">🎵</span>
+                    <span className="home-nav-card-label">Instrumentation</span>
+                    <span className="home-nav-card-sub">17 categories</span>
+                  </Link>
+                  <Link to="/difficulty_levels" className="home-nav-card">
+                    <span className="home-nav-card-icon">📊</span>
+                    <span className="home-nav-card-label">Difficulty</span>
+                    <span className="home-nav-card-sub">5 levels</span>
+                  </Link>
+                  <Link to="/piece_lengths" className="home-nav-card">
+                    <span className="home-nav-card-icon">⏱️</span>
+                    <span className="home-nav-card-label">Piece Length</span>
+                    <span className="home-nav-card-sub">Browse by duration</span>
+                  </Link>
+                </div>
 
-                <p>This database arose from Zachary Senick’s doctoral research as an avenue to make the information in my dissertation easily accessible and searchable for musicians to allow information about Ukrainian composers and their music to be more readily accessible.</p>
+                {/* Stats bar */}
+                <div className="home-stats">
+                  <div className="home-stat">
+                    <span className="home-stat-number">259</span>
+                    <span className="home-stat-label">Composers</span>
+                  </div>
+                  <div className="home-stat-divider" />
+                  <div className="home-stat">
+                    <span className="home-stat-number">675</span>
+                    <span className="home-stat-label">Pieces</span>
+                  </div>
+                  <div className="home-stat-divider" />
+                  <div className="home-stat">
+                    <span className="home-stat-number">17</span>
+                    <span className="home-stat-label">Instrumentation Categories</span>
+                  </div>
+                </div>
 
-                <b>Database Compilation</b>
-                <p>This database has been compiled through reading as many sources as possible and contacting as many living composers or the family members of deceased composers, resulting in over 200 composers. The sources used for each particular composer has the author’s last name of the book or organization listed.</p>
+                {/* About — two columns */}
+                <div className="home-about">
+                  <div className="home-about-col">
+                    <h3>About the Database</h3>
+                    <p>The Ukrainian Chamber Music Encyclopedia is a searchable database of solo and chamber music involving the bassoon by Ukrainian composers. It arose from Zachary Senick's doctoral research at the University of Toronto as a way to make information from his dissertation on Ukrainian solo and chamber bassoon music freely accessible to musicians worldwide.</p>
+                    <p>The database has been compiled through extensive source research and direct contact with living composers and the families of deceased composers. Over 259 composers are currently represented. The source used for each composer is cited by the author's last name or organization abbreviation.</p>
+                    <p>The database is browsable by composer biography, instrumentation category, difficulty level (1–5), and piece duration. Each piece entry links back to the composer's biography.</p>
+                  </div>
+                  <div className="home-about-col">
+                    <h3>About the Researcher</h3>
+                    <p>Zachary Senick is a bassoonist of Ukrainian background who holds a Doctorate of Musical Arts from the University of Toronto, where he researched <em>Ukrainian Solo and Chamber Bassoon Music</em>. He is a freelance bassoonist in the Toronto area, a course instructor at the University of Toronto, and a music editor for Éditions Plamondon for their <a href='https://editionsplamondon.com/collections/slava-ukraini-series'>Slava Ukraini Series</a>.</p>
+                    <p>To learn more, visit <a href='https://zacharysenick.com'>zacharysenick.com</a>.</p>
+                  </div>
+                </div>
 
-                <b>Database Organization</b>
-                <p>The database is organized and searchable in four main categories</p>
+                {/* Collapsible reference sections */}
+                <div className="home-reference">
+                  <details className="home-details">
+                    <summary>Abbreviations Used in Entries</summary>
+                    <div className="home-details-body">
+                      <p><strong>Instruments:</strong> acc (accordion), asax (alto saxophone), bcl (bass clarinet), bsn (bassoon), cbsn (contrabassoon), cl (clarinet), cond (conductor), enghn (english horn), fl (flute), hn (french horn), org (organ), perc (percussion), pic (piccolo), pno (piano), ob (oboe), orch (orchestra), sax (saxophone), ssax (soprano saxophone), stg (string), tb (trombone), tpt (trumpet), tsax (tenor saxophone), vln (violin), vla (viola), vlc (cello), db (double bass)</p>
+                      <p><strong>Schools:</strong> DAM (M. Glinka Dnipro Academy of Music), DSMA (S.S. Prokofiev Donetsk State Music Academy), GMI (Gnessin State Musical Institute in Moscow), GKIM (R. Glière Kyiv Institute of Music), KhNUA (I.P. Kotlyarevsky Kharkiv National University of Arts), LNMA (M. Lysenko Lviv National Music Academy), MSC (Moscow State Tchaikovsky Conservatory), NMAU (P.I. Tchaikovsky National Music Academy of Ukraine), ONMA (A.V. Nezhdanova Odesa National Music Academy), SPSC (N. A. Rimsky-Korsakov Saint Petersburg State Conservatory)</p>
+                      <p><strong>Sources:</strong> CE (Canadian Encyclopedia), ESU (Encyclopedia of Modern Ukraine), IEU (Internet Encyclopedia of Ukraine), LCP (The Living Composers Project), NMU (New Music of Ukraine), UL (Ukrainian Live), UME (Ukrainian Musical Encyclopedia), UMW (Ukrainian Musical World), VUE (Great Ukrainian Encyclopedia), WRP (Wind Repertory Project), NUCU (National Union of Composers of Ukraine)</p>
+                    </div>
+                  </details>
 
-                <ul>
-                  <li><b>Composer</b> - listed alphabetically and will display their biography when clicked on. At the bottom of each biography is a list of that composer’s works included currently in the database.</li>
-                  <li><b>Instrumentation Category</b> - each work is listed based on the most appropriate category based on the instrumentation of the work. At the top of each piece entry a link to the composer’s biography can be clicked on.</li>
-                  <li><b>Difficulty Level</b> - each piece that I was able to track down a copy of the score has been ranked from 1-5. 1 is meant for the beginner musician who has recently begun playing. 2 is intermediate meant for students playing for a couple of years, ideally high school level. 3 is meant for early advanced aim at students who have recently begun serious study of the instrument such as early in an undergraduate music degree. 4 is meant for late advanced such as a student at the end of their studies. 5 professional are the most difficult pieces requiring a complete mastery of the instrument and often involves extended techniques.</li>
-                  <li><b>Length</b> - each piece that I could track down a score to guesstimate or a recording to have a timing of the the length of the piece has been broken down into categories based on timings accordingly.</li>
-                </ul>
-
-                <b>Abbreviations used in Entries</b>
-                <ol type="a">
-                  <li><b>Instruments:</b> acc (accordion), asax (alto saxophone) bcl (bass clarinet), bsn (bassoon), comp (composition/composer) cbsn (contrabassoon), cl (clarinet), cond (conductor) enghn (english hn), fl (flute), hn (french horn), organ (org), perc (percussion), pic (piccolo) pno (piano), ob (oboe), orch (orchestra) sax (saxophone), ssax (soprano saxophone), stg (string), tb (trombone), tpt (trumpet), tsax (tenor saxophone), vln (violin), vla (viola), vlc (cello), db (double bass) </li>
-                  <li><b>School Abbreviations:</b> DAM (M. Glinka Dnipro Academy of Music), DSMA (S.S. Prokofiev Donetsk State Music Academy), DnMS (Dnipro Music School), DoMS (Donetsk Music School), GMI (Gnessin State Musical Institute in Moscow), GKIM (R. Glière Kyiv Institute of Music), KhMS (Kharkiv Music School), KhNUA (I.P. Kotlyarevsky Kharkiv National University of Arts), KLMS (Kyiv Lysenko Music School), KMS (Kyiv Music School) KU (Kyiv National University of Culture and Arts), KUB (Borys Krinchenko Kyiv University), LMS (Special Krushelnytska Lviv Music School), LNU (Lviv National University), LNMA (M. Lysenko Lviv National Music Academy), LuC (Luhansk College of Culture & Arts), MSC (Moscow State Tchaikovsky Conservatory), NMAU (P.I. Tchaikovsky National Music Academy of Ukraine), ONMA (A.V. Nezhdanova Odesa National Music Academy), SPSC (N. A. Rimsky-Korsakov Saint Petersburg State Conservatory [old: Leningrad Conservatory or Petrograd Conservatory]), TAU (Tel-Aviv University) </li>
-                  <li><b>Sources:</b> CE (Canadian Encyclopedia), ESU (Encyclopedia of Modern Ukraine), IEMJ (Institut Européen des Musique Juives), IEU (Internet Encyclopedia of Ukraine), IMI (Israel Music Institute), ICL (Israeli Composers League), JMRC (Jewish Music Research Centre), JVL (Jewish Virtual Library), LCP (The Living Composers Project), NMU (New Music of Ukraine), UCMF (Ukrainian Contemporary Music Festival) UDC (Ukrainian Diaspora Composers Collection), UL (Ukrainian Live), UME (Ukrainian Musical Encyclopedia), UMW (Ukrainian Musical World), VUE (Great Ukrainian Encyclopedia), WRP (Wind Repertory Project), NUCU (National Union of Composers of Ukraine), NUCU membership handbooks are abbreviated as the year published (ie: 1968, 1978, 1984, 2006)</li>
-                </ol>
-
-                <b>General Notes</b>
-                <ul>
-                  <li>Instrument ranges are transposed pitches.</li>
-                  <li>Clarinet in B♭ and horn in F unless specified otherwise.</li>
-                  <li>Common time referred to as 4/4.</li>
-                  <li>Studied: only the graduation year is listed for each degree obtain (1927), full studied dates listed if they did not complete their studies (1925-1927).</li>
-                  <li>The most current name of the institutions in Ukraine has been used in the biographies regardless of when a composer attended the institution. More information on the name changes throughout history can be found in Chapter 1 section “The Rise of Conservatories in Ukraine”.</li>
-                  <li>Some composers are not mentioned in any sources but sent me their music to be included. I omitted the source line for those composers.</li>
-                </ul>
-
-                <b>About the Researcher:</b>
-                <p>Zachary Senick is a bassoonist of Ukrainian background who holds a Doctorate of Musical Arts from the University of Toronto, where he researched “Ukrainian Solo and Chamber Bassoon Music”. He currently is a freelance bassoonist in the Toronto area, course instructor at the University of Toronto, and a music editor for Éditions Plamondon producing publications for their <a href='https://editionsplamondon.com/collections/slava-ukraini-series'>Slava Ukraini Series</a>. To read more about him visit his website: <a href='https://zacharysenick.com'>zacharysenick.com</a> </p>
+                  <details className="home-details">
+                    <summary>General Notes</summary>
+                    <div className="home-details-body">
+                      <ul>
+                        <li>Instrument ranges are transposed pitches.</li>
+                        <li>Clarinet in B♭ and horn in F unless specified otherwise.</li>
+                        <li>Common time referred to as 4/4.</li>
+                        <li>Studied: only the graduation year is listed for each completed degree (e.g. 1927); full date ranges listed if studies were not completed (e.g. 1925–1927).</li>
+                        <li>The most current institutional names are used regardless of when a composer attended. Some composers are not cited in any sources but submitted their music directly; the source line is omitted for those entries.</li>
+                      </ul>
+                    </div>
+                  </details>
+                </div>
 
               </div>
             }
