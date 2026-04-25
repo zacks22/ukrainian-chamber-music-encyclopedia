@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { InstrumentationCategory } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 function InstrumentationCategoryList() {
@@ -16,6 +17,7 @@ function InstrumentationCategoryList() {
 
     return (
         <div className="list-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Instrumentation' }]} />
             <h1>Instrumentation</h1>
             {loading ? (
                 <p className="list-loading">Loading…</p>

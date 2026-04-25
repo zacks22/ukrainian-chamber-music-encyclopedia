@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Composer, Piece } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
@@ -51,6 +52,7 @@ function ComposerInfo() {
 
     return (
         <div className="detail-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Composers', to: '/composers' }, { label: decoded }]} />
             <h1>{decoded}</h1>
             {composerInfo ? (
                 <>

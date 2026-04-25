@@ -1,67 +1,78 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Difficulty, Piece } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 function DifficultyInfo() {
-    const { difficulty } = useParams(); // Get the composer name from the URL
-    const [difficultyInfo, setDifficultyInfo] = useState<Difficulty>();
+    const { difficulty } = useParams();
+    const [difficultyInfo, setDifficultyInfo] = useState<Difficulty | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
+    const [query, setQuery] = useState('');
 
-    if (!difficulty) return; // Exit if difficulty is undefined
+    if (!difficulty) return null;
 
     useEffect(() => {
-        // Fetch the composer data from composers.json
-        fetch(`${import.meta.env.BASE_URL}difficulty_levels.json`) // Ensure it's correctly located in the public folder
-            .then((response) => response.json())
+        fetch(`${import.meta.env.BASE_URL}difficulty_levels.json`)
+            .then(res => res.json())
             .then((data: Difficulty[]) => {
-                const selectedDifficulty = data.find(
-                    (difficulty_level) => difficulty_level.difficulty_level === decodeURIComponent(difficulty)
-                );
-                setDifficultyInfo(selectedDifficulty);
-
-                // Now fetch the pieces for this composer (assuming pieces.json is available)
+                const found = data.find(d => d.difficulty_level === decodeURIComponent(difficulty));
+                setDifficultyInfo(found || null);
                 fetch(`${import.meta.env.BASE_URL}pieces.json`)
-                    .then((response) => response.json())
+                    .then(res => res.json())
                     .then((piecesData: Piece[]) => {
-                        // Filter the pieces for the selected composer
-                        const composerPieces = piecesData.filter(
-                            (piece) => piece.difficulty_level === decodeURIComponent(difficulty)
-                        );
-                        setPieces(composerPieces);
+                        setPieces(piecesData.filter(p => p.difficulty_level === decodeURIComponent(difficulty)));
                     })
-                    .catch((error) => console.error('Error fetching pieces:', error));
+                    .catch(err => console.error(err));
             })
-            .catch((error) => {
-                console.error('Error fetching difficulty info:', error);
-            });
+            .catch(err => console.error(err));
     }, [difficulty]);
 
+    const filtered = pieces.filter(p => {
+        const q = query.toLowerCase();
+        return p.piece_title.toLowerCase().includes(q) ||
+               p.composer.toLowerCase().includes(q);
+    });
 
     return (
-        <>
-            <h1>Difficulty Level: {decodeURIComponent(difficulty)}</h1>
+        <div className="list-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Difficulty', to: '/difficulty_levels' }, { label: decodeURIComponent(difficulty) }]} />
+            <h1>{decodeURIComponent(difficulty)}</h1>
             {difficultyInfo ? (
                 <>
-                    <h3>Pieces by difficulty level {decodeURIComponent(difficulty)}:</h3>
+                    <input
+                        className="search-input"
+                        type="search"
+                        placeholder="Search pieces or composers…"
+                        value={query}
+                        onChange={e => setQuery(e.target.value)}
+                    />
+                    {query && (
+                        <p className="search-count">{filtered.length} result{filtered.length !== 1 ? 's' : ''}</p>
+                    )}
                     {pieces.length > 0 ? (
-                        <ul className='piece-line'>
-                            {pieces.map((piece, index) => (
-                                <li key={index} className='piece-line'>
-                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
-                                        {piece.piece_title}
-                                    </Link >
-                                </li >
+                        <ul className="catalogue-list">
+                            {filtered.map((piece, i) => (
+                                <li key={i}>
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`} className="catalogue-list-item">
+                                        <span className="catalogue-list-primary">{piece.piece_title}</span>
+                                        <span className="catalogue-list-secondary">{piece.composer}</span>
+                                        <span className="catalogue-list-chevron">›</span>
+                                    </Link>
+                                </li>
                             ))}
-                        </ul >
+                            {filtered.length === 0 && (
+                                <li className="search-empty">No pieces match "{query}"</li>
+                            )}
+                        </ul>
                     ) : (
-                        <p>No pieces found for this difficulty level.</p>
+                        <p className="detail-empty">No pieces found for this difficulty level.</p>
                     )}
                 </>
             ) : (
-                <p>Loading piece info...</p>
+                <p className="detail-empty">Difficulty level not found.</p>
             )}
-        </>
+        </div>
     );
 }
 

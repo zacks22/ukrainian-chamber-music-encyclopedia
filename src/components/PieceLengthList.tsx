@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PieceLength } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 function PieceLengthList() {
@@ -16,6 +17,7 @@ function PieceLengthList() {
 
     return (
         <div className="list-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Piece Length' }]} />
             <h1>Piece Length</h1>
             {loading ? (
                 <p className="list-loading">Loading…</p>

@@ -1,68 +1,78 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PieceLength, Piece } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 function PieceLengthInfo() {
-    const { length } = useParams(); // Get the composer name from the URL
-    const [pieceLengthInfo, setPieceLengthInfo] = useState<PieceLength>();
+    const { length } = useParams();
+    const [lengthInfo, setLengthInfo] = useState<PieceLength | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
+    const [query, setQuery] = useState('');
 
-    if (!length) return; // Exit if length is undefined
-
+    if (!length) return null;
 
     useEffect(() => {
-        // Fetch the composer data from composers.json
-        fetch(`${import.meta.env.BASE_URL}piece_lengths.json`) // Ensure it's correctly located in the public folder
-            .then((response) => response.json())
+        fetch(`${import.meta.env.BASE_URL}piece_lengths.json`)
+            .then(res => res.json())
             .then((data: PieceLength[]) => {
-                const selectedPieceLength = data.find(
-                    (piece_length) => piece_length.length === decodeURIComponent(length)
-                );
-                setPieceLengthInfo(selectedPieceLength);
-
-                // Now fetch the pieces for this composer (assuming pieces.json is available)
+                const found = data.find(l => l.length === decodeURIComponent(length));
+                setLengthInfo(found || null);
                 fetch(`${import.meta.env.BASE_URL}pieces.json`)
-                    .then((response) => response.json())
+                    .then(res => res.json())
                     .then((piecesData: Piece[]) => {
-                        // Filter the pieces for the selected composer
-                        const composerPieces = piecesData.filter(
-                            (piece) => piece.length === decodeURIComponent(length)
-                        );
-                        setPieces(composerPieces);
+                        setPieces(piecesData.filter(p => p.length === decodeURIComponent(length)));
                     })
-                    .catch((error) => console.error('Error fetching pieces:', error));
+                    .catch(err => console.error(err));
             })
-            .catch((error) => {
-                console.error('Error fetching length info:', error);
-            });
+            .catch(err => console.error(err));
     }, [length]);
 
+    const filtered = pieces.filter(p => {
+        const q = query.toLowerCase();
+        return p.piece_title.toLowerCase().includes(q) ||
+               p.composer.toLowerCase().includes(q);
+    });
 
     return (
-        <>
-            <h1>Piece Length: {decodeURIComponent(length)}</h1>
-            {pieceLengthInfo ? (
+        <div className="list-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Piece Length', to: '/piece_lengths' }, { label: decodeURIComponent(length) }]} />
+            <h1>{decodeURIComponent(length)}</h1>
+            {lengthInfo ? (
                 <>
-                    <h3>Pieces by piece length {decodeURIComponent(length)}:</h3>
+                    <input
+                        className="search-input"
+                        type="search"
+                        placeholder="Search pieces or composers…"
+                        value={query}
+                        onChange={e => setQuery(e.target.value)}
+                    />
+                    {query && (
+                        <p className="search-count">{filtered.length} result{filtered.length !== 1 ? 's' : ''}</p>
+                    )}
                     {pieces.length > 0 ? (
-                        <ul className='piece-line'>
-                            {pieces.map((piece, index) => (
-                                <li key={index} className='piece-line'>
-                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
-                                        {piece.piece_title}
-                                    </Link >
-                                </li >
+                        <ul className="catalogue-list">
+                            {filtered.map((piece, i) => (
+                                <li key={i}>
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`} className="catalogue-list-item">
+                                        <span className="catalogue-list-primary">{piece.piece_title}</span>
+                                        <span className="catalogue-list-secondary">{piece.composer}</span>
+                                        <span className="catalogue-list-chevron">›</span>
+                                    </Link>
+                                </li>
                             ))}
-                        </ul >
+                            {filtered.length === 0 && (
+                                <li className="search-empty">No pieces match "{query}"</li>
+                            )}
+                        </ul>
                     ) : (
-                        <p>No pieces found for this piece length.</p>
+                        <p className="detail-empty">No pieces found for this length.</p>
                     )}
                 </>
             ) : (
-                <p>Loading piece info...</p>
+                <p className="detail-empty">Length not found.</p>
             )}
-        </>
+        </div>
     );
 }
 

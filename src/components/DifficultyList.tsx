@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Difficulty } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 function DifficultyList() {
@@ -16,6 +17,7 @@ function DifficultyList() {
 
     return (
         <div className="list-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Difficulty' }]} />
             <h1>Difficulty Levels</h1>
             {loading ? (
                 <p className="list-loading">Loading…</p>

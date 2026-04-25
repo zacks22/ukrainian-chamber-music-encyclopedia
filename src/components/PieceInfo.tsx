@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Piece } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
@@ -33,14 +34,12 @@ function PieceInfo() {
     if (!pieceInfo) return <p className="detail-empty">Piece not found.</p>;
 
     const overviewFields: { key: keyof Piece; label: string }[] = [
-        { key: 'composer',              label: 'Composer' },
-        { key: 'composer_cyrillic',     label: 'Composer (Cyrillic)' },
-        { key: 'instrumentation',       label: 'Instrumentation' },
+        { key: 'instrumentation',          label: 'Instrumentation' },
         { key: 'instrumentation_category', label: 'Category' },
-        { key: 'date_written',          label: 'Date Written' },
-        { key: 'length',                label: 'Length' },
-        { key: 'difficulty_level',      label: 'Difficulty' },
-        { key: 'style',                 label: 'Style' },
+        { key: 'date_written',             label: 'Date Written' },
+        { key: 'length',                   label: 'Length' },
+        { key: 'difficulty_level',         label: 'Difficulty' },
+        { key: 'style',                    label: 'Style' },
     ];
 
     const publicationFields: { key: keyof Piece; label: string }[] = [
@@ -77,19 +76,29 @@ function PieceInfo() {
 
     return (
         <div className="detail-page">
-            <h1>{pieceInfo.piece_title}</h1>
-            <p className="detail-subtitle">
-                <Link to={`/composer/${encodeURIComponent(pieceInfo.composer)}`}>{pieceInfo.composer}</Link>
-            </p>
-
-            {/* Photo */}
-            <div className="detail-photo-container">
+            <Breadcrumb crumbs={[
+                { label: 'Home', to: '/' },
+                { label: 'Composers', to: '/composers' },
+                { label: decodeURIComponent(composer), to: `/composer/${composer}` },
+                { label: pieceInfo.piece_title },
+            ]} />
+            {/* Piece hero */}
+            <div className="piece-hero">
                 <img
                     src={import.meta.env.BASE_URL + 'piece_photos/photo_piece_' + pieceInfo.composer + '_' + (pieceInfo.piece_csv_title || pieceInfo.piece_title) + '.jpg'}
-                    className="detail-photo"
+                    className="piece-hero-photo"
                     onError={handleImageError}
                     alt={pieceInfo.piece_title}
                 />
+                <div className="piece-hero-info">
+                    <h1 className="piece-hero-title">{pieceInfo.piece_title}</h1>
+                    <Link to={`/composer/${encodeURIComponent(pieceInfo.composer)}`} className="piece-hero-composer">
+                        {pieceInfo.composer}
+                        {pieceInfo.composer_cyrillic && !isEmpty(pieceInfo.composer_cyrillic) && (
+                            <span className="piece-hero-composer-cyrillic"> · {pieceInfo.composer_cyrillic}</span>
+                        )}
+                    </Link>
+                </div>
             </div>
 
             {/* Overview */}

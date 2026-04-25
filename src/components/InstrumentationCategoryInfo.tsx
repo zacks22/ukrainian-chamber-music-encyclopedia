@@ -1,77 +1,79 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { InstrumentationCategory, Piece } from '../types';
+import Breadcrumb from './Breadcrumb';
 import '../App.css';
 
-function ComposerInfo() {
-    const { category } = useParams(); // Get the instrument category name from the URL
-    const [instrumentationCategoryInfo, setInstrumentationCategoryInfo] = useState<InstrumentationCategory | null>(null);
+function InstrumentationCategoryInfo() {
+    const { category } = useParams();
+    const [categoryInfo, setCategoryInfo] = useState<InstrumentationCategory | null>(null);
     const [pieces, setPieces] = useState<Piece[]>([]);
+    const [query, setQuery] = useState('');
 
-    if (!category) return; // Exit if category is undefined
-
+    if (!category) return null;
 
     useEffect(() => {
-        // Fetch the composer data from composers.json
-        fetch(`${import.meta.env.BASE_URL}instrumentation_categories.json`) // Ensure it's correctly located in the public folder
-            .then((response) => response.json())
+        fetch(`${import.meta.env.BASE_URL}instrumentation_categories.json`)
+            .then(res => res.json())
             .then((data: InstrumentationCategory[]) => {
-                const selectedInstrumentationCategory = data.find(
-                    (instrumentation_category) => instrumentation_category.instrumentation_category === decodeURIComponent(category)
-                );
-                setInstrumentationCategoryInfo(selectedInstrumentationCategory || null);
-
-                // Now fetch the pieces for this composer (assuming pieces.json is available)
+                const found = data.find(c => c.instrumentation_category === decodeURIComponent(category));
+                setCategoryInfo(found || null);
                 fetch(`${import.meta.env.BASE_URL}pieces.json`)
-                    .then((response) => response.json())
+                    .then(res => res.json())
                     .then((piecesData: Piece[]) => {
-                        // Filter the pieces for the selected composer
-                        const composerPieces = piecesData.filter(
-                            (piece) => piece.instrumentation_category === decodeURIComponent(category)
-                        );
-                        setPieces(composerPieces);
+                        setPieces(piecesData.filter(p => p.instrumentation_category === decodeURIComponent(category)));
                     })
-                    .catch((error) => console.error('Error fetching pieces:', error));
+                    .catch(err => console.error(err));
             })
-            .catch((error) => {
-                console.error('Error fetching instrumentation cateogory info:', error);
-            });
+            .catch(err => console.error(err));
     }, [category]);
 
-    return (
-        <>
-            <h1>Instrumentation Category: {decodeURIComponent(category)}</h1>
-            {instrumentationCategoryInfo ? (
-                <>
-                    {Object.keys(instrumentationCategoryInfo)
-                        .filter((key) => key !== 'instrumentation_category') // Exclude the Composer key
-                        .map((key, idx) => (
-                            <p key={idx}>
-                                <b>{key}: </b> {instrumentationCategoryInfo[key as keyof InstrumentationCategory]}
-                            </p>
-                        ))}
+    const filtered = pieces.filter(p => {
+        const q = query.toLowerCase();
+        return p.piece_title.toLowerCase().includes(q) ||
+               p.composer.toLowerCase().includes(q);
+    });
 
-                    <h3>Pieces by {decodeURIComponent(category)}:</h3>
+    return (
+        <div className="list-page">
+            <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Instrumentation', to: '/instrumentation_category' }, { label: decodeURIComponent(category) }]} />
+            <h1>{decodeURIComponent(category)}</h1>
+            {categoryInfo ? (
+                <>
+                    <input
+                        className="search-input"
+                        type="search"
+                        placeholder="Search pieces or composers…"
+                        value={query}
+                        onChange={e => setQuery(e.target.value)}
+                    />
+                    {query && (
+                        <p className="search-count">{filtered.length} result{filtered.length !== 1 ? 's' : ''}</p>
+                    )}
                     {pieces.length > 0 ? (
-                        <ul className='piece-line'>
-                            {pieces.map((piece, index) => (
-                                <li key={index} className='piece-line'>
-                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`}>
-                                        {piece.piece_title}
-                                    </Link >
-                                </li >
+                        <ul className="catalogue-list">
+                            {filtered.map((piece, i) => (
+                                <li key={i}>
+                                    <Link to={`/piece/${encodeURIComponent(piece.composer)}/${encodeURIComponent(piece.piece_title)}`} className="catalogue-list-item">
+                                        <span className="catalogue-list-primary">{piece.piece_title}</span>
+                                        <span className="catalogue-list-secondary">{piece.composer}</span>
+                                        <span className="catalogue-list-chevron">›</span>
+                                    </Link>
+                                </li>
                             ))}
-                        </ul >
+                            {filtered.length === 0 && (
+                                <li className="search-empty">No pieces match "{query}"</li>
+                            )}
+                        </ul>
                     ) : (
-                        <p>No pieces found for this instrumentation category.</p>
+                        <p className="detail-empty">No pieces found for this category.</p>
                     )}
                 </>
             ) : (
-                <p>Instrumentation Category not found...</p>
+                <p className="detail-empty">Category not found.</p>
             )}
-        </>
+        </div>
     );
 }
 
-export default ComposerInfo;
-
+export default InstrumentationCategoryInfo;
