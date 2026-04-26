@@ -6,8 +6,15 @@
   <link rel="icon" type="image/svg+xml" href="/icons/ucme-logo.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ukrainian Chamber Music Encyclopedia</title>
-  <script type="module" crossorigin src="/assets/index-DhOlIn2l.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BXZor6SR.css">
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var theme = (stored === 'light' || stored === 'dark') ? stored : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-B7CVawHF.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CeFBXTAJ.css">
 </head>
 
 <body>
