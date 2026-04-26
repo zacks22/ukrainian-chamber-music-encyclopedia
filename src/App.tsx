@@ -12,6 +12,7 @@ import PieceLengthList from './components/PieceLengthList';
 import PieceLengthInfo from './components/PieceLengthInfo';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import DarkModeToggle from './components/DarkModeToggle';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/piece/:composer/:title" element={<PieceInfo />} />
       </Routes>
       <Footer />
+      <DarkModeToggle />
     </Router>
   );
 }

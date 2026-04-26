@@ -1,20 +1,75 @@
 :root {
+  /* Brand — constant in both modes */
   --blue: #005BBB;
   --blue-hover: #0047a0;
   --gold: #FFD700;
+
+  /* Surfaces */
+  --bg-page: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f5f8ff;
+  --bg-input: #ffffff;
+  --bg-photo-fallback: #f0f0ee;
+  --bg-tag: #f0f0f0;
+  --bg-tag-blue: #e8f0fb;
+
+  /* Text */
+  --text-primary: #1a1a1a;
+  --text-secondary: #555;
+  --text-muted: #888;
+  --text-faint: #aaa;
+  --text-tag: #555;
+  --text-tag-blue: var(--blue);
+
+  /* Borders */
+  --border-subtle: #f0f0f0;
+  --border-input: #e0e0e0;
+  --border-divider: #e8e8e8;
+
+  /* Shadows */
+  --shadow-card: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.7;
   font-weight: 400;
 
   color-scheme: light;
-  color: #442020;
-  background-color: #f8f7f4;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --bg-page: #0f1117;
+  --bg-card: #1c1f26;
+  --bg-card-hover: #1a2035;
+  --bg-input: #1c1f26;
+  --bg-photo-fallback: #2a2d35;
+  --bg-tag: #2a2d35;
+  --bg-tag-blue: #1a2a45;
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #a0a0a0;
+  --text-muted: #6b7280;
+  --text-faint: #4b5563;
+  --text-tag: #a0a0a0;
+  --text-tag-blue: #7eb3f5;
+
+  --border-subtle: #2a2d35;
+  --border-input: #374151;
+  --border-divider: #2a2d35;
+
+  --shadow-card: 0 1px 4px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.25);
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
 }
 
 a {
@@ -31,7 +86,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f8f7f4;
+  background-color: var(--bg-page);
   display: block;
 }
 

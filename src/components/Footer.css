@@ -2,7 +2,7 @@
     margin-top: 4rem;
     border-top: 4px solid;
     border-image: linear-gradient(to right, #005BBB 50%, #FFD700 50%) 1;
-    background-color: #f8f7f4;
+    background-color: var(--bg-page);
 }
 
 .footer-content {
@@ -14,7 +14,7 @@
     align-items: center;
     gap: 0.25rem;
     text-align: center;
-    color: #888;
+    color: var(--text-muted);
     font-size: 0.875rem;
     line-height: 1.6;
 }

@@ -3,24 +3,24 @@
   margin: 0 auto;
   padding: 80px 2rem 1rem;
   text-align: left;
-  color: black;
+  color: var(--text-primary);
   box-sizing: border-box;
 }
 
 body {
-  color: #1a1a1a;
+  color: var(--text-primary);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f7f4;
+  background-color: var(--bg-page);
 }
 
 .wrapper {
-  background-color: #fff;
+  background-color: var(--bg-card);
   padding: 2.5rem;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-card);
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
@@ -40,10 +40,10 @@ h2 {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.15rem;
   font-weight: 500;
-  color: #1a1a1a;
+  color: var(--text-primary);
   margin: 16px 0;
   padding: 10px 0;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--border-divider);
   transition: color 0.2s ease;
 }
 
@@ -69,7 +69,7 @@ h2:hover {
 }
 
 .breadcrumb-link {
-  color: #888;
+  color: var(--text-muted);
   text-decoration: none;
   transition: color 0.15s ease;
 }
@@ -80,14 +80,13 @@ h2:hover {
 }
 
 .breadcrumb-sep {
-  color: #ccc;
+  color: var(--text-faint);
   font-size: 0.85rem;
 }
 
 .breadcrumb-current {
-  color: #1a1a1a;
+  color: var(--text-primary);
   font-weight: 500;
-  /* truncate long piece titles on small screens */
   max-width: 200px;
   white-space: nowrap;
   overflow: hidden;
@@ -106,7 +105,7 @@ h2:hover {
 
 .detail-page h1 {
   text-align: left;
-  color: #1a1a1a;
+  color: var(--text-primary);
   padding: 0.25rem 0 0.75rem;
   margin: 0 0 0.25rem;
   font-size: 1.9rem;
@@ -115,7 +114,7 @@ h2:hover {
 
 .detail-subtitle {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-secondary);
   margin: 0 0 1.5rem;
 }
 
@@ -133,13 +132,13 @@ h2:hover {
   object-position: center top;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  background-color: #f0f0ee;
+  background-color: var(--bg-photo-fallback);
 }
 
 .detail-photo-caption {
   margin: 0.6rem 0 0;
   font-size: 0.9rem;
-  color: #888;
+  color: var(--text-muted);
 }
 
 .detail-section-heading {
@@ -147,16 +146,16 @@ h2:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #888;
+  color: var(--text-muted);
   margin: 1.75rem 0 0.5rem;
   padding: 0;
   border: none;
 }
 
 .detail-card {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
@@ -165,7 +164,7 @@ h2:hover {
   align-items: baseline;
   gap: 1rem;
   padding: 0.75rem 1.25rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .detail-row:last-child {
@@ -175,7 +174,7 @@ h2:hover {
 .detail-label {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #888;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   min-width: 140px;
@@ -184,13 +183,13 @@ h2:hover {
 
 .detail-value {
   font-size: 0.95rem;
-  color: #1a1a1a;
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
 .detail-sources {
   font-size: 0.8rem;
-  color: #aaa;
+  color: var(--text-faint);
   line-height: 1.6;
 }
 
@@ -201,12 +200,12 @@ h2:hover {
 .detail-description p {
   margin: 0;
   font-size: 0.95rem;
-  color: #444;
+  color: var(--text-secondary);
   line-height: 1.8;
 }
 
 .detail-empty {
-  color: #888;
+  color: var(--text-muted);
   padding: 1rem 0;
 }
 
@@ -217,9 +216,9 @@ h2:hover {
   gap: 2rem;
   align-items: flex-start;
   margin: 1rem 0 1.75rem;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 14px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-card);
   padding: 1.5rem;
 }
 
@@ -243,7 +242,7 @@ h2:hover {
 .piece-hero-title {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-primary);
   margin: 0;
   padding: 0;
   text-align: left;
@@ -263,7 +262,7 @@ h2:hover {
 }
 
 .piece-hero-composer-cyrillic {
-  color: #888;
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -280,14 +279,14 @@ h2:hover {
   border-radius: 20px;
   font-size: 0.78rem;
   font-weight: 500;
-  background: #f0f0f0;
-  color: #555;
+  background: var(--bg-tag);
+  color: var(--text-tag);
   white-space: nowrap;
 }
 
 .piece-tag-blue {
-  background: #e8f0fb;
-  color: var(--blue);
+  background: var(--bg-tag-blue);
+  color: var(--text-tag-blue);
 }
 
 @media (max-width: 560px) {
@@ -340,7 +339,7 @@ h2:hover {
 
 .list-page h1 {
   text-align: left;
-  color: #1a1a1a;
+  color: var(--text-primary);
   font-size: 1.75rem;
   padding: 0.25rem 0 0.75rem;
   margin: 0 0 0.75rem;
@@ -348,7 +347,7 @@ h2:hover {
 }
 
 .list-loading {
-  color: #888;
+  color: var(--text-muted);
   text-align: center;
   padding: 2rem 0;
 }
@@ -361,10 +360,10 @@ h2:hover {
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
   font-family: inherit;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid var(--border-input);
   border-radius: 10px;
-  background: #fff;
-  color: #1a1a1a;
+  background: var(--bg-input);
+  color: var(--text-primary);
   outline: none;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
@@ -376,13 +375,13 @@ h2:hover {
 
 .search-count {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-muted);
   margin: 0 0 0.5rem 0.25rem;
 }
 
 .search-empty {
   padding: 1.25rem;
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.9rem;
   list-style: none;
   text-align: center;
@@ -392,14 +391,14 @@ h2:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
 .catalogue-list li {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .catalogue-list li:last-child {
@@ -411,13 +410,13 @@ h2:hover {
   align-items: center;
   padding: 0.9rem 1.25rem;
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--text-primary);
   transition: background-color 0.15s ease;
   gap: 0.5rem;
 }
 
 .catalogue-list-item:hover {
-  background-color: #f5f8ff;
+  background-color: var(--bg-card-hover);
   text-decoration: none;
   color: var(--blue);
 }
@@ -434,13 +433,13 @@ h2:hover {
 
 .catalogue-list-secondary {
   font-size: 0.875rem;
-  color: #888;
+  color: var(--text-muted);
   margin-right: 0.5rem;
 }
 
 .catalogue-list-chevron {
   font-size: 1.2rem;
-  color: #ccc;
+  color: var(--text-faint);
   line-height: 1;
   flex-shrink: 0;
 }
@@ -483,7 +482,7 @@ h2:hover {
 
 .home-tagline {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-secondary);
   max-width: 520px;
   line-height: 1.6;
   margin: 0;
@@ -502,18 +501,18 @@ h2:hover {
   align-items: center;
   gap: 0.4rem;
   padding: 1.75rem 1rem;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 12px;
   border-bottom: 3px solid transparent;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-card);
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--text-primary);
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 .home-nav-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07);
+  box-shadow: var(--shadow-card-hover);
   border-bottom-color: var(--gold);
   text-decoration: none;
   color: var(--blue);
@@ -534,7 +533,7 @@ h2:hover {
 
 .home-nav-card-sub {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-muted);
 }
 
 .home-stats {
@@ -543,9 +542,9 @@ h2:hover {
   justify-content: center;
   gap: 2rem;
   padding: 1.5rem;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  box-shadow: var(--shadow-card);
   margin-bottom: 2.5rem;
 }
 
@@ -565,7 +564,7 @@ h2:hover {
 
 .home-stat-label {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -573,7 +572,7 @@ h2:hover {
 .home-stat-divider {
   width: 1px;
   height: 40px;
-  background: #e8e8e8;
+  background: var(--border-divider);
 }
 
 .home-about {
@@ -584,9 +583,9 @@ h2:hover {
 }
 
 .home-about-col {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  box-shadow: var(--shadow-card);
   padding: 2rem;
 }
 
@@ -601,7 +600,7 @@ h2:hover {
 
 .home-about-col p {
   font-size: 0.95rem;
-  color: #444;
+  color: var(--text-secondary);
   line-height: 1.75;
   margin: 0 0 0.75rem;
 }
@@ -614,9 +613,9 @@ h2:hover {
 }
 
 .home-details {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
@@ -624,7 +623,7 @@ h2:hover {
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 0.95rem;
-  color: #333;
+  color: var(--text-primary);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -651,7 +650,7 @@ h2:hover {
 .home-details-body {
   padding: 0 1.5rem 1.25rem;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.75;
 }
 
