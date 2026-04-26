@@ -10,7 +10,7 @@ export type Composer = {
     studied: string;
     taught: string;
     worked: string;
-    member_of_NUCU: string;
+    member_of_National_Union_of_Composers_of_Ukraine: string;
     sources: string;
     personal_website: string;
     in_contact: string;

@@ -9,6 +9,7 @@ import '../App.css';
 const handleImageError = makeImageErrorHandler('default_photos/default_silhouette.svg');
 
 const BIO_FIELDS: { key: keyof Composer; label: string }[] = [
+    { key: 'gender',          label: 'Gender' },
     { key: 'birth',           label: 'Born' },
     { key: 'death',           label: 'Died' },
     { key: 'currently',       label: 'Currently' },
@@ -16,7 +17,7 @@ const BIO_FIELDS: { key: keyof Composer; label: string }[] = [
     { key: 'studied',         label: 'Studied' },
     { key: 'taught',          label: 'Taught' },
     { key: 'worked',          label: 'Worked' },
-    { key: 'member_of_NUCU',  label: 'NUCU Member' },
+    { key: 'member_of_National_Union_of_Composers_of_Ukraine', label: 'NUCU Member' },
     { key: 'personal_website',label: 'Website' },
     { key: 'in_contact',      label: 'In Contact' },
 ];
