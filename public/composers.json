@@ -27,7 +27,7 @@
         "taught": "director of a music school in Tbilisi (1901-03), SPSC (1914-1923) taught Igor Stravinsky, Drahomanov Ukrainian Institute of Higher Education (1924-26)",
         "worked": "pianist in France, Switzerland (1903-06), wrote “A Practical Course in Harmony” (1926)",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "Baley, Gnativ (14), Grove, Ho (8-9), IEU, Mukha (340-41), Shank (52), Slonimsky (98), Sonevystky (91-92), UL, Vilkova (352-53), Vodarsky (11), VUE",
+        "sources": "Baley, Gnativ (14), Grove, Ho (8-9), IEU, Mukha (340-41), Shank (52), Slonimsky (98), Sonevystky (91-92), UASP, UL, Vilkova (352-53), Vodarsky (11), VUE",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -144,6 +144,22 @@
         "in_contact": "via email "
     },
     {
+        "composer": "ARKUSHYNA, Anna",
+        "composer_cyrillic": "Аркушина, Анна ",
+        "gender": "Female",
+        "birth": "1989 in Lutsk, Ukraine",
+        "death": "-",
+        "currently": "Graz, Austria",
+        "diaspora": "Austria",
+        "studied": "Kyiv Special Music College (2009) theory, comp with A. Zagaykevych, NMAU (2014) comp with Y. Stankovych, University of Music & Performing Arts Graz (2017) comp with B. Furrer, IEM Graz (2019) studied with M. Cicilliani & D. Mayer, IRCAM (2023) Cursus Program in Composition & Computer Music, University of Music & Performing Arts Graz (2024) comp with F. Bedrossian; Private lessons with D. Kourliandski, C. Bauckholt, S. Gervasoni",
+        "taught": "-",
+        "worked": "artist-in-residence at Kulturstiftung Schloss Wiepersdorf in Germany (2024)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "-",
+        "sources": "LCP, UCMF",
+        "personal_website": "https://www.annaarkushyna.com/",
+        "in_contact": "-"
+    },
+    {
         "composer": "AVIDOM (MAHLER-KALKSTEIN), Menahem",
         "composer_cyrillic": "Авідом, Менахем",
         "gender": "Male",
@@ -202,7 +218,7 @@
         "studied": "Los Angeles Conservatory of Music (1960), (1962) comp with E. Voorhies",
         "taught": "Jacyk Fellow at Harvard Ukrainian Research Institute, University of Nevada (1970–?), University of Las Vegas, California Institute of the Arts (1966–1970)",
         "worked": "director/conductor Las Vegas Chamber Players (1974-?) & Las Vegas Symphony (1980–?), founder/director Nevada Symphony Orchestra (1980–95), guest conductor/music advisor Kyiv Camerata (1995–?), published musicology articles",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Baley, Dytynyak (17), ESU, Gnativ (17–18), Grove, Herman (I: 20), Karas, Korniy, Kubikovyc (I: 165) LCP, Mukha (21), Shank (73), Sonevytskyi (16–17), UCMF, UDC, UME (I: 128–29), UMW, Vilkova (16), VUE, NUCU website, 2006 (101)",
         "personal_website": "https://www.virkobaley.com/",
         "in_contact": "via email "
@@ -330,7 +346,7 @@
         "studied": "NMAU (2003) comp with L. Kolodub",
         "taught": "KMS no. 3 (1998–?)",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Mukha (33), NUCU website, 2006 (11)",
         "personal_website": "-",
         "in_contact": "-"
@@ -382,6 +398,22 @@
         "sources": "Dytynyak (25), Grove, IEU, Kubikovyc (I: 278), Mukha (40–42), Musicalics, Ritzarev, Sonevytsky (35–37), UL, UMW, Vilkova (33–34), Vodarsky (25–26), VUE",
         "personal_website": "-",
         "in_contact": "-"
+    },
+    {
+        "composer": "BOYKO, Oleg",
+        "composer_cyrillic": "Бойко, Олег ",
+        "gender": "Male",
+        "birth": "1976 in Mariupol, Ukraine",
+        "death": "-",
+        "currently": "Brussels, Belgium (moved in 2022)",
+        "diaspora": "Belgium",
+        "studied": "Chernihiv Music College (1996) gtr, NMAU (2001) gtr",
+        "taught": "Chernihiv Music College (2000-21)",
+        "worked": "guitarist",
+        "member_of_National_Union_of_Composers_of_Ukraine": "-",
+        "sources": "-",
+        "personal_website": "https://www.boyko.cn.ua",
+        "in_contact": "via email"
     },
     {
         "composer": "BRUK, Fridrich",
@@ -458,7 +490,7 @@
         "studied": "Odesa Music School (1967) acc, Kyiv Institute of Culture (1971) choral cond, DSMA (1987) comp with O. Rudyansky",
         "taught": "Music Schools in Izmail & Kyiv (1967-82), director of Music Schools no. 5 & 35 in Kyiv (1982-89), founder of Kyiv Children’s Academy of Arts (1994)",
         "worked": "Ministry of Culture (1989-94)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Gnativ (25-26), Sonevytsky (40), Vilkova (335-36), VUE, NUCU website",
         "personal_website": "www.chemberzhi.com.ua",
         "in_contact": "-"
@@ -475,7 +507,7 @@
         "taught": "KhNUA (2014–)",
         "worked": "for various theater companies in Kharkiv",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "-",
+        "sources": "UASP",
         "personal_website": "-",
         "in_contact": "via email "
     },
@@ -576,6 +608,22 @@
         "in_contact": "-"
     },
     {
+        "composer": "DREMLIUHA, Mykola",
+        "composer_cyrillic": "Дремлюга, Микола ",
+        "gender": "Male",
+        "birth": "June 15th (July 22 Old Calendar), 1917 in Buturlinovka, Voronezh oblast, Russia",
+        "death": "December 18th, 1998 in Kyiv, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "Kyiv Polytechnic Institute (1941) engineering, NMAU (1946) comp with L. Revutsky NMAU (1949)",
+        "taught": "NMAU (1946-?) history & theory (1978-?) comp",
+        "worked": "musicologist of journal articles, editor of collection “Ukrainian piano music”",
+        "member_of_National_Union_of_Composers_of_Ukraine": "oined (1944) (on the board)",
+        "sources": "Dytynyak (48), ESU, Ho (120), Mukha (95-96), Sonevytsky (53-4), UL, UME (I: 655), UMW, Vilkova (94), VUE",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
         "composer": "DUBOVYK, Yevhenii",
         "composer_cyrillic": "Дубовик, Євгеній",
         "gender": "Male",
@@ -635,7 +683,7 @@
         "taught": "Kyiv Pedagogical Institute (1965-66), Kyiv Art Institute (1972-94), NMAU (1993-Present) music history, theory, and comp",
         "worked": "head coordinator of All-Ukraine Musicians Union, Jury member of Leontovych Choral Competition, organizing committee for Kyiv-Music Fest, Premieres of the Season, and Zolotoverkhyi Kyiv, jury of World Choral Competition",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined 1968, secretary (1994-?)",
-        "sources": "Drabyna (37-68), Dytynyak (45-46), ESU, Gnativ (27-28), Grove, Ho (126), IEU, Kubikovyc (I: 773-74), Mukha (91-92), Musicalics, NMU, Shank (99), Sonevytsky (56-57), UL, UME (619-21), UMW, Vilkova (90-91), VUE, NUCU website, 1968 (54), 1978 (59-60), 1984 (64-66), 2006 (3-5, 7, 16)",
+        "sources": "Drabyna (37-68), Dytynyak (45-46), ESU, Gnativ (27-28), Grove, Ho (126), IEU, Kubikovyc (I: 773-74), Mukha (91-92), Musicalics, NMU, Shank (99), Sonevytsky (56-57), UASP, UL, UME (619-21), UMW, Vilkova (90-91), VUE, NUCU website, 1968 (54), 1978 (59-60), 1984 (64-66), 2006 (3-5, 7, 16)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -667,7 +715,7 @@
         "taught": "Akkerman [Modern: Belgorod-Dniester] Music School (1941–?)",
         "worked": "musician in Holland Symphony Orchestra (1944–52), choir conductor, one of the founders of the Ukrainian Music Society of Alberta",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "CE, Dmytryk, Dytynyak (157), ESU, Gnativ (16), Karas, Mukha (343–44), Shank (59), UMW, Vilkova (357)",
+        "sources": "CE, Dmytryk, Dytynyak (157), ESU, Gnativ (16), Karas, Mukha (343–44), Shank (59), UASP. UMW, Vilkova (357)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -682,7 +730,7 @@
         "studied": "ONMA (1930) comp with V. Zolotarov & P. Molchanov, (1933) radio-communication",
         "taught": "ONMA (1935–41)",
         "worked": "Army (1914–17 & 1919–22), Odesa theatre ensembles (1933–37), Samarkanda Theatre (1941–45)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), secretary of Odesa branch (1932–41 & 1945–52)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), secretary of Odesa branch (1932–41 & 1945–52)",
         "sources": "Dytynyak (141), Mukha (304), Sonevytskyi (59–60), UMW, 1968 (221–22)",
         "personal_website": "-",
         "in_contact": "-"
@@ -697,7 +745,7 @@
         "diaspora": "-",
         "studied": "Donetsk Music School no. 3 (now no. 7) (1997) comp with V. Stetsenko & M. Shukh, DSMA (2001) vln, DSMA (2007) & (2012) comp with S. Mamonov",
         "taught": "-",
-        "worked": "editor for book “Musical Folklore of Donvass: Calendar and Ritual Songs of Donetsk and Adjacent Regions”",
+        "worked": "editor",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (2009)",
         "sources": "UMW, Vilkova (317-18), NUCU website",
         "personal_website": "https://fandeev.musicaneo.com/about.html",
@@ -795,7 +843,7 @@
         "taught": "Director of NMAU (1914–1920), MSC (1920–1941)",
         "worked": "Director of Soviet Composers Association (1938–1948), cond, pno, folklorist",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "Baley, Belza, Bohdanova-Berezovska, Hakobian, Gnativ (31–32), Grove, Herman (I: 63–67), Ho (174–175), IEU, Karas, Korniy, Kubikovyc (II: 62), Moisenko, Mukha (67–68), Musicalics, Olkhovsky, Petrova, Piirainen, Rozhok, Schwarz, Shank (114–15), Slonimsky (II: 594–95), UME (I: 468), Vilkova (63), Vodarsky (48–49), VUE, WRP",
+        "sources": "Baley, Belza, Bohdanova-Berezovska, Hakobian, Gnativ (31–32), Grove, Herman (I: 63–67), Ho (174–175), IEU, Karas, Korniy, Kubikovyc (II: 62), Moisenko, Mukha (67–68), Musicalics, Olkhovsky, Petrova, Piirainen, Rozhok, Schwarz, Shank (114–15), Slonimsky (II: 594–95),  UME (I: 468), Vilkova (63), Vodarsky (48–49), VUE, WRP",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -845,6 +893,22 @@
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (2017)",
         "sources": "ESU, UL, UMW, NUCU website",
         "personal_website": "https://gonobolin.pp.ua",
+        "in_contact": "-"
+    },
+    {
+        "composer": "GRINBERG, Alexander",
+        "composer_cyrillic": "Ґрінберґ, Олександр ",
+        "gender": "Male",
+        "birth": "March 2nd, 1961 in Kharkiv, Ukraine",
+        "death": "-",
+        "currently": "Germany",
+        "diaspora": "Germany (moved in 2023)",
+        "studied": "Kharkiv Music College (1980), KhNUA (1985) comp with I. Kovach",
+        "taught": "Kharkiv Music School (1987-95) comp, theory & history, Kharkiv Music College (1987-94 & 2000-03) , KhNUA (1994-2003) comp, theory, Folkwang Universitat der Kunste in Essen (2005-06) musicology, Marina Kheifets Mussikschule Subito und Akademie in Dusseldorf (2008-?)",
+        "worked": "-",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
+        "sources": "ESU, Grove, LCP, Sonevytsky (83), UME (I: 571), NUCU website",
+        "personal_website": "-",
         "in_contact": "-"
     },
     {
@@ -939,7 +1003,7 @@
         "taught": "LNMA (1991-) bandura",
         "worked": "music supervisor for Especialista de Musica in Cuba (1983-89), bandurist in Lvivianky Trio (1974-82) touring internationally such as Moldova, Poland, Vietnam and Japan; solo and chamber bandurist (1985-) for various concerts and groups internationally, editor of bandura repertoire collections",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (2006)",
-        "sources": "ESU, Gnativ (35-36), UME (I: 450-51), UMW, Vilkova (60), VUE, NUCU website, 2006 (59)",
+        "sources": "ESU, Gnativ (35-36), UASP, UME (I: 450-51), UMW, Vilkova (60), VUE, NUCU website, 2006 (59)",
         "personal_website": "-",
         "in_contact": "via email"
     },
@@ -986,7 +1050,7 @@
         "studied": "NMAU (1939–41) history/theory, Tashkent Conservatory (1941–42), NMAU (1946) comp with L. Revutsky",
         "taught": "NMAU (1946–48)",
         "worked": "head of Muzfond Ukraine (1958–76)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown) secretary (1951–56)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown) secretary (1951–56)",
         "sources": "Dytynyak (40), ESU, Gnativ (37), Ho (187), Karas, Korniy, Kubikovyc (II: 215), Mukha (72–73), Musicalics, Piirainen, Shank (117), Sonevytskyi (79–80), UME (I: 495), UMW, Vilkova (68), VUE, 1968 (35–36), 1978 (34–35)",
         "personal_website": "-",
         "in_contact": "-"
@@ -1019,7 +1083,7 @@
         "taught": "NMAU (1961–1963 & 1966–1968)",
         "worked": "editor for Soviet Muzyka magazine in Moscow (1987–1990), composer-in-residence Ukrainian Institute of America in New York (1990–1994), church organist in America (1990s)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1961)",
-        "sources": "Baley, Dytynyak (40), ESU, Gnativ (39), Grove, Ho (190–191), IEU, Karas, Korniy, Kubikovyc (II: 237), Lunyna (431–498), Mukha (75–76), Musicalics, NMU, Piirainen, Schwarz, Shank (119), Shchetynsky, Slonimsky (II: 640), Sonevytskyi (82–83), Tsenova (84–97), UCMF, UME (I: 515–17), UMW, Vilkova (72–73), VUE, Zagaykevych (154–156), NUCU website, 1968 (43–44), 1978 (39–40), 2006 (102)",
+        "sources": "Baley, Dytynyak (40), ESU, Gnativ (39), Grove, Ho (190–191), IEU, Karas, Korniy, Kubikovyc (II: 237), Lunyna (431–498), Mukha (75–76), Musicalics, NMU, Novytska, Piirainen, Schwarz, Shank (119), Shchetynsky, Slonimsky (II: 640), Sonevytskyi (82–83), Tsenova (84–97), UCMF, UME (I: 515–17), UMW, Vilkova (72–73), VUE, Zagaykevych (154–156), NUCU website, 1968 (43–44), 1978 (39–40), 2006 (102)",
         "personal_website": "http://www.leonidhrabovsky.com/index.html",
         "in_contact": "via email "
     },
@@ -1050,8 +1114,8 @@
         "studied": "Odessa Marine Institute (1935) engineering, ONMA (1946) comp with S. Orfeev & K. Dankevych",
         "taught": "-",
         "worked": "ship repair engineer (1935–36), director of repair plant (1936–48), director of “Black Sea Project” (1966–?)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown) secretary of Odesa branch (1962–67)",
-        "sources": "Dytynyak (40–41), ESU, Mukha (77), Sonevytskyi (85), UME (I: 524) 1968 (45–46), 1978 (40–41), 1984 (44–45)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown) secretary of Odesa branch (1962–67)",
+        "sources": "Dytynyak (40–41), ESU, Mukha (77), Sonevytskyi (85), UASP, UME (I: 524) 1968 (45–46), 1978 (40–41), 1984 (44–45)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -1064,10 +1128,26 @@
         "currently": "-",
         "diaspora": "-",
         "studied": "NMAU (1957)* pno, comp with B. Lyatoshynsky (1979) comp with A. Shtoharenko *His studies were initially interrupted in 1957 due to his modernist view on music. He later returned and graduated in 1979. ",
-        "taught": "Taught: music schools in Kyiv",
+        "taught": "music schools in Kyiv",
         "worked": "music editor for Ukrainian Radio and Television, filmmaker, poet",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1977)",
-        "sources": "Baley, Beebe (33), Dytynyak (42), ESU, Gnativ (39–40), Grove, Ho (195–196), Karas, Korniy, Mukha (80), Musicalics, NMU, Rozhok, Shank (121), Sonevytskyi (86–87), UCMF, UME (I: 545–46), UMW, Vilkova (76), VUE, NUCU website, 1984 (47–49), 2006 (15)",
+        "sources": "Baley, Beebe (33), Dytynyak (42), ESU, Gnativ (39–40), Grove, Ho (195–196), Karas, Korniy, Mukha (80), Musicalics, NMU, Rozhok, Shank (121), Sonevytskyi (86–87), UASP, UCMF, UME (I: 545–46), UMW, Vilkova (76), VUE, NUCU website, 1984 (47–49), 2006 (15)",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
+        "composer": "HUBARENKO, Iryna",
+        "composer_cyrillic": "Губаренко, Ірина ",
+        "gender": "Female",
+        "birth": "June 30, 1959 in Kharkiv, Ukraine (musical family: father Vitaliy Hubarenko; mother Maryna-Cherkashyna-Hubarenko)",
+        "death": "October 10, 2004 in Kharkiv, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "Kharkiv Music School (1979), KhNUA (1984) comp with V. Zolotukhin, NMAU (2004) working on PhD thesis when passed away “Director’s Concepts of the Twentieth Century in the Light of Analytical Psychology”",
+        "taught": "-",
+        "worked": "Kharkiv Young Spectator Theatre (1984-?) head of music department, founder of collective “Poor Theatre” (1987), poet",
+        "member_of_National_Union_of_Composers_of_Ukraine": "-",
+        "sources": "UME (I: 548-9), UMW",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -1083,7 +1163,7 @@
         "taught": "Kharkiv Children's Music School (1958–60), KhNUA (1961–72)",
         "worked": "music editor Kharkiv Radio (1960–?)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1961), on the board",
-        "sources": "Baley (The 20th Century), Drabyna (26–36) Dytynyak (42), ESU, Gnativ (39–40), Grove, Herman (I: 78–79), Ho (197), IEU, Korniy, Kubikovyc (II: 262), Mukha (81–82), Musicalics, Rozhok, Schwarz, Shank (122), Sonevytskyi (88), UME (547–48), UMW, Vilkova (77–78), VUE, NUCU website, 1968 (47), 1978 (43–44), 1984 (50–51)",
+        "sources": "Baley (The 20th Century), Drabyna (26–36) Dytynyak (42), ESU, Gnativ (39–40), Grove, Herman (I: 78–79), Ho (197), IEU, Korniy, Kubikovyc (II: 262), Mukha (81–82), Musicalics, Rozhok, Schwarz, Shank (122), Sonevytskyi (88), UASP, UME (547–48), UMW, Vilkova (77–78), VUE, NUCU website, 1968 (47), 1978 (43–44), 1984 (50–51)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -1131,7 +1211,7 @@
         "taught": "NMAU (1962–2021)",
         "worked": "-",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1963)",
-        "sources": "Dytynyak (57–58), ESU, Gnativ (41–42), Grove, Ho (217), Lunyna (347–376), Korniy, Mukha (120–121), Musicalics, Piirainen, Rozhok, Shank (128), Sonevytskyi (101–102), UL, UME (II: 264–66), UMW, Vilkova (116–17), VUE, NUCU website, 1968 (90), 1978 (80–81), 1984 (91–93), 2006 (21)",
+        "sources": "Dytynyak (57–58), ESU, Gnativ (41–42), Grove, Ho (217), Lunyna (347–376), Korniy, Mukha (120–121), Musicalics, Piirainen, Rozhok, Shank (128), Sonevytskyi (101–102), UASP, UL, UME (II: 264–66), UMW, Vilkova (116–17), VUE, NUCU website, 1968 (90), 1978 (80–81), 1984 (91–93), 2006 (21)",
         "personal_website": "-",
         "in_contact": "via email with daughter, Nadiya Shcherbakov & former student, Alex Voytenko "
     },
@@ -1147,7 +1227,7 @@
         "taught": "NMAU (2009–25)",
         "worked": "editor for Ukrainian State Radio Company (1976–79), director of Kyiv Youth Theatre (1979–83), composer-in-residence for Opera House in Novi Sad, Yugoslavia (1990–92), folklorist collecting folk songs",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1978)",
-        "sources": "N. Jacobchuk, Karas, Korniy, Mukha (341–342), Rozhok, Shank (295), Sonevytskyi (90–91), UMW, Vilkova (353–55), NUCU website, 1984 (273–274), 2006 (105)",
+        "sources": "N. Jacobchuk, Karas, Korniy, Kushniruk, Mukha (341–342), Rozhok, Shank (295), Sonevytskyi (90–91), UASP, UMW, Vilkova (353–55), NUCU website, 1984 (273–274), 2006 (105)",
         "personal_website": "https://www.jacobchuk.com/",
         "in_contact": "via email and in person"
     },
@@ -1259,7 +1339,7 @@
         "taught": "NMAU (1983-2002) comp",
         "worked": "conductor Song & Dance Ensemble in Kyiv (1968-75), founder & director Kyiv Music Fest (1990-2001), music director Kyiv Camerata (1994-2000), music advisor Ministry of Culture of Ukraine, chairman of jury of Horowitz International Piano Competition (1995-2002), member of National Commission on Cultural Affairs under UNESCO",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1972)",
-        "sources": "Baley, Dytynyak (59-60), ESU, Gnativ (44), Grove, IEU, Mukha (126-27), Kubikovyc (II: 419), NMU, Shank (140), Sonevytsky (109-110), UL, UME (II: 325-27), UMW, Vilkova (122-23), VUE, NUCU website, 1978 (85-86), 1984 (100-01)",
+        "sources": "Baley, Dytynyak (59-60), ESU, Gnativ (44), Grove, IEU, Mukha (126-27), Kubikovyc (II: 419), NMU, Shank (140), Sonevytsky (109-110), UASP, UL, UME (II: 325-27), UMW, Vilkova (122-23), VUE, NUCU website, 1978 (85-86), 1984 (100-01)",
         "personal_website": "https://www.karabits.com/en/",
         "in_contact": "via email with daughter Ivanka Karabits"
     },
@@ -1294,6 +1374,22 @@
         "sources": "NUCU website",
         "personal_website": "-",
         "in_contact": "via email "
+    },
+    {
+        "composer": "KHUTORIANSKY, Ihor",
+        "composer_cyrillic": "Хуторянський, Ігор ",
+        "gender": "Male",
+        "birth": "December 21st, 1924 in Nemyriv, Vinnytsia oblast, Ukraine",
+        "death": "January 13th, 1984 in Kyiv, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "Sverdlovsk Conservatory (?) comp with V. Trambitskyi, NMAU (1955) Kyiv Conservatory comp with L. Revutsky",
+        "taught": "Lysenko Music School in Kyiv (1957-67)",
+        "worked": "senior editor for Muzychna Ukraina (1967-?)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
+        "sources": "Mukha (315), Sonevytsky (114), UMW",
+        "personal_website": "-",
+        "in_contact": "-"
     },
     {
         "composer": "KIKTA, Valeri",
@@ -1339,7 +1435,7 @@
         "taught": "KhNUA(1934–?) theory, (1944–?) comp, (1970–?) head of department",
         "worked": "violist in Leningrad opera and ballet orchestra (1927–28), conductor of Kharkiv radio symphony orchestra (1927–28), author of “Art of Instrumentation” textbook",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1932), head of Kharkiv branch (1948–49)",
-        "sources": "Dytynyak (63), ESU, Grove, Herman (II: 33–34), Ho (261–62), IEU, Karas, Korniy, Kubikovyc (II: 563–64), Mukha (136), Olkhovsky, Piirainen, Rozhok, Shank (152–53), Sonevytsky (116–117), Slonimsky (III: 497), UL, UME (II: 425–26), UMW, Vilkova (134), VUE, Zolotovytska, NUCU website (blank), 1968 (100–01), 1978 (90–92), 1984 (107–09)",
+        "sources": "Dytynyak (63), ESU, Grove, Herman (II: 33–34), Ho (261–62), IEU, Karas, Korniy, Kubikovyc (II: 563–64), Mukha (136), Olkhovsky, Piirainen, Rozhok, Shank (152–53), Sonevytsky (116–117), Slonimsky (III: 497), UASP, UL, UME (II: 425–26), UMW, Vilkova (134), VUE, Zolotovytska, NUCU website (blank), 1968 (100–01), 1978 (90–92), 1984 (107–09)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -1403,7 +1499,7 @@
         "taught": "Kyiv State Theatre Institute (1958–60), NMAU (1966–?) head of department of music & technology (1997–2002)",
         "worked": "sound-engineer for Kyiv Radio (1956–58), director of Muzfond (1988–94), head of the Association of Wind Musicians branch in the All-Ukraine Music Union (1985–?), music editor",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1959), head of Kyiv branch (1994–99)",
-        "sources": "Baley, Bila, Dytynyak (68–69), ESU, Grove, Ho (269), Herman (II: 36), Karas, Korniy, Kubikovyc (II: 588), Mukha (146–147), Piirainen, Rozhok, Schwarz, Shank (156), Sonevytskyi (121–122), UL, UME (II: 500–02), UMW, Vilkova (141–42), VUE, NUCU website, 1968 (111–112), 1978 (99–101), 1984 (118–120), 2006 (23–24)",
+        "sources": "Baley, Bila, Dytynyak (68–69), ESU, Grove, Ho (269), Herman (II: 36), Karas, Korniy, Kubikovyc (II: 588), Mukha (146–147), Piirainen, Rozhok, Schwarz, Shank (156), Sonevytskyi (121–122), UASP, UL, UME (II: 500–02), UMW, Vilkova (141–42), VUE, NUCU website, 1968 (111–112), 1978 (99–101), 1984 (118–120), 2006 (23–24)",
         "personal_website": "-",
         "in_contact": "via email with daughter Oksana Kolodub"
     },
@@ -1435,7 +1531,7 @@
         "taught": "NMAU (1951–?)",
         "worked": "concertmaster of Ukraine Dramatic Theatre Orchestra in Tashkent (1943–45) and music editor",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1942)",
-        "sources": "Dytynyak (69), ESU, Ho (270), Karas, Korniy, Mukha (147–148), Rozhok, Sonevytskyi (123–124), UME (II: 505–06), UMW, Vilkova (142), VUE, 1968 (113–114), 1978 (101–102), 1984 (120–122)",
+        "sources": "Dytynyak (69), ESU, Ho (270), Karas, Korniy, Mukha (147–148), Rozhok, Sonevytskyi (123–124), UASP, UME (II: 505–06), UMW, Vilkova (142), VUE, 1968 (113–114), 1978 (101–102), 1984 (120–122)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -1476,14 +1572,14 @@
         "composer_cyrillic": "Корчинський, Мирослав",
         "gender": "Male",
         "birth": "July 1st, 1941 in Krushelnytsia, Lviv oblast",
-        "death": "October 7th, 2021 in Lviv",
+        "death": "October 6th, 2021 in Lviv (according to family sources have the wrong date as October 7th)",
         "currently": "-",
         "diaspora": "-",
         "studied": "LNMA (1965) acc, (1969) comp with M. Skoryk & S. Lyudkevych",
         "taught": "Lviv Cultural and Educational College (1965-68), LNMA (1968-?) folk instruments (head 1994), comp, cond, organized the first orchestra of Ukrainian folk instruments in music education",
         "worked": "",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined 1973, head of Lviv branch (1995-2001)",
-        "sources": "Dytynyak (70-71), ESU, Gnativ (46-47), Mukha (150), Shank (158), Sonevytsky (126), UL, UME (II: 556-57), UMW, NUCU website, 1978 (103-04), 1984 (125), 2006 (61)",
+        "sources": "Dytynyak (70-71), ESU, Gnativ (46-47), Mukha (150), Shank (158), Sonevytsky (126), UASP, UL, UME (II: 556-57), UMW, NUCU website, 1978 (103-04), 1984 (125), 2006 (61)",
         "personal_website": "",
         "in_contact": "-"
     },
@@ -1531,7 +1627,7 @@
         "taught": "Zhytomyr Music School (1919–1928), KLMS (1929–34) pno, chamber music & theory, NMAU (1934–37)",
         "worked": "concert pianist, musicologist publishing articles",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1932)",
-        "sources": "Baley, Dytynyak (72), ESU, Grove, Herman (II: 37–38), Ho (278–279), IEU, Karas, Korniy, Kubikovyc (II: 622), Ivakhnenko, Mukha (151–152), Musicalics, Netyrovsky, Olkhovsky, Rozhok, Sonevytskyi (128–129), UL, UME (II: 559–60), 563-64), UMW, Vilkova (145–46), VUE, NUCU website",
+        "sources": "Baley, Dytynyak (72), ESU, Grove, Herman (II: 37–38), Ho (278–279), IEU, Karas, Korniy, Kubikovyc (II: 622), Ivakhnenko, Mukha (151–152), Musicalics, Netyrovsky, Olkhovsky, Rozhok, Sonevytskyi (128–129), UASP, UL, UME (II: 559–60), 563-64), UMW, Vilkova (145–46), VUE, NUCU website",
         "personal_website": "https://kossenko-museum.wixsite.com/site",
         "in_contact": "-"
     },
@@ -1610,7 +1706,7 @@
         "studied": "Paris Conservatory (1948) vln, comp G. Dandelot",
         "taught": "-",
         "worked": "founder of Alpha-Omega Brass Ensemble",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Dytynyak (76–77), ESU, IEU, Karas, Korniy, Kubikovyc (II: 638), Mukha (162), Musicalics, Shank (170), Sonevytskyi (144–45), UDC, UL, UME (II: 631), UMW, Vilkova (158–59)",
         "personal_website": "-",
         "in_contact": "-"
@@ -1675,9 +1771,25 @@
         "taught": "Ball State University (dates?) adjunct faculty pno performance, theory & orchestration/arranging, Saint Leo University (dates?), Northwood University (dates?), University of Miami (dates?) graduate teaching assistant, private pno lessons",
         "worked": "pianist",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "Canadian Music Centre",
+        "sources": "Canadian Music Centre, UASP",
         "personal_website": "https://www.sofiakraevska.com/",
         "in_contact": "via email "
+    },
+    {
+        "composer": "KRASOTOV, Oleksandr",
+        "composer_cyrillic": "Красотов, Олександр ",
+        "gender": "Male",
+        "birth": "May 5th, 1936 in Odesa, Ukraine (parents part of the Odesa Intelligentsia, mother pianist & teacher)",
+        "death": "October 5th, 2007 in Tianjin, China",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "ONMA (1959-1999) theory & comp, Tianjin Conservatory (1999-2007) invited professor of comp",
+        "taught": "ONMA (1959-?) theory & comp, Tianjin Conservatory (1999-2007) invited professor of comp",
+        "worked": "-",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (1966)",
+        "sources": "Dytynyak (74-75), Herman (II: 39), Ho (284-85), Mukha (157-8), Musicalics, NMU, Sonevytsky (138), UME (II: 595-6), UMW",
+        "personal_website": "-",
+        "in_contact": "via email with son Aleksey Krasotov"
     },
     {
         "composer": "KRUTYKOV, Sviatoslav",
@@ -1851,7 +1963,7 @@
         "taught": "Uman Music School (1971–72), Kyiv Children music school (1974–76)",
         "worked": "conductor Uman Symphony (1971–72), editor Muzychna Ukraina (1977–81)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1972)",
-        "sources": "Drabyna (69–83), Grove, Ho (261), Lunyna (225–226), Karas, Korniy, Musicalics, NMU, Rozhok, Shank (152), UME (II: 359–60), UMW, Vilkova (131–32), VUE, 2006 (22)",
+        "sources": "Drabyna (69–83), Grove, Ho (261), Lunyna (225–226), Karas, Korniy, Musicalics, NMU, Rozhok, Shank (152), UASP, UME (II: 359–60), UMW, Vilkova (131–32), VUE, 2006 (22)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -1866,7 +1978,7 @@
         "studied": "NMAU (1931) pno, comp with B. Lyatoshynsky",
         "taught": "-",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Dytynyak (81), ESU, Karas, Mukha (169), Sonevytskyi (153), UME (III: 32–33)",
         "personal_website": "-",
         "in_contact": "-"
@@ -2122,8 +2234,8 @@
         "studied": "KU (1918) law, NMAU (1919) comp with R. Glière",
         "taught": "NMAU (1920–1935 & 1944–1968), MSC (1935–38 & 1941–44)",
         "worked": "artistic director of Kyiv State Philharmonic (1944), jury member of various competitions such as Lysenko and Tchaikovsky, President of Kyiv branch of the Association of Contemporary Music (1922–1925)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), President (1939–41)",
-        "sources": "Baley, Belza, Dytynyak (92–93), ESU, Gnativ (49–50) Grove, Hakobian, Herman (II: 46), Hrysenko, IEU, Ho (322–324), Klopoushak (Chapter 3), Karas, Korniy, Mukha (188–190), Musicalics, Olkhovsky, Rozhok, Shank (180), Slonimsky (IV:19) Sonevytsky (164–167), Struk (III: 113–114), UCMF, UL, UME (III: 248–255), UMW, Vodarsky (83), Vilkova (183–85), Yaremenko (16),  NUCU website, 1968 (136–137)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), President (1939–41)",
+        "sources": "Baley, Belza, Dytynyak (92–93), ESU, Gnativ (49–50) Grove, Hakobian, Herman (II: 46), Hrysenko, IEU, Ho (322–324), Klopoushak (Chapter 3), Karas, Korniy, Mukha (188–190), Musicalics, Olkhovsky, Rozhok, Shank (180), Slonimsky (IV:19) Sonevytsky (164–167), Struk (III: 113–114), UASP, UCMF, UL, UME (III: 248–255), UMW, Vodarsky (83), Vilkova (183–85), Yaremenko (16),  NUCU website, 1968 (136–137)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -2171,7 +2283,7 @@
         "taught": "founded Lysenko Music and Drama School (1904)",
         "worked": "involved with anti-tsarist movement (supporter of 1905 revolution and was imprisoned), legal adviser for Imperial Civil Service, ethnomusicologist collecting Ukrainian folk songs, cond choir in Kyiv, founded Boyan Music Society in Kyiv (1905)",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "Baley, Cornish, Dytynyak (85-87), Eremenko (12-13), ESU, Filenko & Bulat, Gnativ (50-51), Grove, Ho (324-25), IEU, Mukha (177-80), Shank (15, 181), Sonevytsky (173-76), Stuk (III: 250-51), UL, UME (III: 110-12), UMW, Vilkova (174-76), Vodarsky (78), VUE, WRP",
+        "sources": "Baley, Cornish, Dytynyak (85-87), Eremenko (12-13), ESU, Filenko & Bulat, Gnativ (50-51), Grove, Ho (324-25), IEU, Mukha (177-80), Shank (15, 181), Sonevytsky (173-76), Stuk (III: 250-51), UASP, UL, UME (III: 110-12), UMW, Vilkova (174-76), Vodarsky (78), VUE, WRP",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -2186,7 +2298,7 @@
         "studied": "KMS (1995) pno, NMAU (n.d.) comp with L. Kolodub",
         "taught": "-",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Mukha (185), 2006 (27–28), UME (III: 232)",
         "personal_website": "-",
         "in_contact": "-"
@@ -2458,7 +2570,7 @@
         "studied": "ONMA (1932) comp with P. Molchanov",
         "taught": "ONMA (1934–1964) director (1951–62)",
         "worked": "Soviet army (1932–34)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown) head of Odesa branch (1952–54/64) *sources list different years",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown) head of Odesa branch (1952–54/64) *sources list different years",
         "sources": "Dytynyak (106), ESU, Ho (390), Korniy, Mukha (222–223), Rozhok, Shank (207), Sonevytskyi (205), UME (IV: 507), UMW, Vilkova (225–26), 1968 (162–63)",
         "personal_website": "-",
         "in_contact": "-"
@@ -2746,7 +2858,7 @@
         "studied": "NMAU (1954) bsn with O. Lytvynov, (1957) comp with B. Lyatoshynsky",
         "taught": "KhMS (1960–68) history/theory, DSMA (1968–70), KhNUA (1974–?)",
         "worked": "Musical director for Sakhtarsky Song & Dance Ensemble (1957–59), editor for music programs for Donetsk Television Studio (1959–60)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Dytynyak (112–113), Mukha (237–38), Musicalics, Sonevytskyi (217), UME (V: 365), 1968 (174), 1978 (159–60), 1984 (185–86)",
         "personal_website": "-",
         "in_contact": "-"
@@ -2810,9 +2922,25 @@
         "studied": "University of Manitoba (1970) BFA, Indiana University (1973) MFA; Private studies comp with B. McDonalds",
         "taught": "University of Manitoba (1973–2010) printmaking, drawing, painting, color theory",
         "worked": "co-founder of IZ Music (1980), president of Manitoba Composers Association (1981), artist, composer, writer",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "CE, Karas, Sonevytskyi (220), UME (V: 521), 2006 (104)",
         "personal_website": "http://www.williampura.com/",
+        "in_contact": "via email "
+    },
+    {
+        "composer": "RADZETSKYI, Dmytro",
+        "composer_cyrillic": "Радзецький, Дмитро ",
+        "gender": "Male",
+        "birth": "June 24, 1989 in Dnipro, Ukraine (musical family: father Yuriy Radzetskyi; brother Serhiy Radzetskyi)",
+        "death": "-",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "DAM (2008) gtr, comp with V. Martynyuk; KNUCA (2011)",
+        "taught": "-",
+        "worked": "creator of 8 & 10-strings Midi Radz-guitars, founder/director/conductor of Ukrainian Improvisers Orchestra, cofounded of KORA duo and art cube at the Dovzhenko Center, host of “Kora Late Night Show”, guitarist",
+        "member_of_National_Union_of_Composers_of_Ukraine": "-",
+        "sources": "UME (VI: 15)",
+        "personal_website": "https://radzguitar.wixsite.com",
         "in_contact": "via email "
     },
     {
@@ -2826,7 +2954,7 @@
         "studied": "Leningrad Musical Technical (1932) comp with P. Ryazanov and G. Popov, SPSC (1937) cond",
         "taught": "DoMS (1948–?)",
         "worked": "cond of Belorussian theater opera and ballet in Minsk (1937–41), Uyhursky National Theater in Alma-Ati, conductor of Luhansk Philharmonic (1944–47), Donetsk Philharmonic (1948-?), Donetsk Opera & Ballet (1948–?)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Dytynyak (115-–), Mukha (246–247), Shank (225–26), Sonevytskyi (224–25), UME (VI: 32), UMW, 1968 (177–78), 1978 (162–63), 1984 (190–91)",
         "personal_website": "-",
         "in_contact": "-"
@@ -2906,8 +3034,24 @@
         "studied": "NMAU (1999) comp with I. Karabyts ",
         "taught": "-",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Korniy, Mukha (254), Rozhok, UME (VI: 198), NUCU website, 2006 (34)",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
+        "composer": "RUDOY, M",
+        "composer_cyrillic": "Рудой, М",
+        "gender": "Male",
+        "birth": "no information or sources can be found",
+        "death": "-",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "-",
+        "taught": "-",
+        "worked": "-",
+        "member_of_National_Union_of_Composers_of_Ukraine": "-",
+        "sources": "-",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -2922,7 +3066,7 @@
         "studied": "Sverdlovsky Military Music School (1951), Moscow Music School (1957), Moscow Pedagogical Institute (1963) comp with A Khachaturian & I. Shyshakov, Alma-Atynsky Art Institute (1969)",
         "taught": "Alma-Atynsky Art Institute (1963–73), Karaganda Ped Inst (1974–77) director of theory, DSMA (1983–) head of composition department",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown) vice-president of Donetsk branch (1983–?)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown) vice-president of Donetsk branch (1983–?)",
         "sources": "Mukha (256), Shank (232). Sonevytskyi (230–31), UME (214–15), UMW, Vilkova (260–61), NUCU website, 2006 (88–89)",
         "personal_website": "-",
         "in_contact": "-"
@@ -2954,7 +3098,7 @@
         "studied": "ONMA (1974) comp with T. Maliukov",
         "taught": "Simferopol music school no. 1 (1974–?) pno & comp",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), secretary of Crimea branch",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), secretary of Crimea branch",
         "sources": "Dytynyak (121), Shank (235), Sonevytskyi (234), 1978 (168–69), 1984 (198–99)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3018,8 +3162,8 @@
         "studied": "MSC (1908) db, (1909) comp with O. Ilyinsky & S. Vasylenko",
         "taught": "Moscow Music School (1905–15), Moscow Educational Institute (1908–?)",
         "worked": "he Folk Ministry of Education (1922–31) ethnographer, author of “Contemporary Ukrainian Music” (1923) “Ukrainian Vocal Music” (1925)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
-        "sources": "Dytynyak (124), Ho (474), Karas, Korniy, Mukha (263–64), Mykhailov, Piirainen, Rozhok, Shank (241), Sonevytskyi (239–41), Struk (IV: 591), UME (VI: 338–39), UMW, Vilkova (271)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
+        "sources": "Dytynyak (124), Ho (474), Karas, Korniy, Mukha (263–64), Mykhailov, Piirainen, Rozhok, Shank (241), Sonevytskyi (239–41), Struk (IV: 591), UASP, UME (VI: 338–39), UMW, Vilkova (271)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -3035,7 +3179,7 @@
         "taught": "-",
         "worked": "medical assistant in military for First Ukrainian Front (1942–46)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1948), on the board",
-        "sources": "Drabyna (138–148), Dytynyak (149–150), Gnativ (55–56), Grove, Herman (III: 38–39),  Ho (478), IEU, Karas, Korniy, Mukha (322–323), Musicalics, Nevenchanaia, Rozhok, Shank (243), Slonimsky (V: 490), Sonevytskyi (241–242), Struk (IV: 613),  UL, UMW, Vilkova (338–39), VUE, NUCU website, 1968 (234–235), 1978 (210–211)",
+        "sources": "Drabyna (138–148), Dytynyak (149–150), Gnativ (55–56), Grove, Herman (III: 38–39),  Ho (478), IEU, Karas, Korniy, Mukha (322–323), Musicalics, Nevenchanaia, Rozhok, Shank (243), Slonimsky (V: 490), Sonevytskyi (241–242), Struk (IV: 613),  UASP, UL, UMW, Vilkova (338–39), VUE, NUCU website, 1968 (234–235), 1978 (210–211)",
         "personal_website": "http://www.igorshamo.de/eng/biogr.htm",
         "in_contact": "-"
     },
@@ -3050,7 +3194,7 @@
         "studied": "NMAU (1970) comp with A. Shtoharenko",
         "taught": "KU (1970–?) theory",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Gnativ (56), Karas, 1984 (245–246), Rozhok, Shank (242–43), Sonevytyskyi (242–43), UMW, 2006 (105)",
         "personal_website": "http://www.igorshamo.de/eng/biogr.htm",
         "in_contact": "-"
@@ -3066,7 +3210,7 @@
         "studied": "ONMA (1921) cond, comp with V. Malishevsky, (1924) pno",
         "taught": "ONMA (1933–36) radio faculty",
         "worked": "pno for Drama Theatre in Odesa & Dnipro (1924–33)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Dytynyak (150–151), Mukha (325), Shank (245), Sonevytskyi (243–44), 1968 (237)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3136,6 +3280,22 @@
         "in_contact": "via email "
     },
     {
+        "composer": "SHUKAILO, Lyudmyla",
+        "composer_cyrillic": "Шукайло, Людмила ",
+        "gender": "Female",
+        "birth": "December 26th, 1942 in Verkhnia Salda, Sverdlovsk oblast, Russia",
+        "death": "-",
+        "currently": "Cairo, Egypt",
+        "diaspora": "Egypt (moved in 2020)",
+        "studied": "KhNUA (1966) pno, comp with V. Nakhabin",
+        "taught": "Kharkiv Music School (1965-2019)",
+        "worked": "-",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "sources": "Dytynyak (153), ESU, Mukha (332), Piirainen, Sonevytsky (249), UMW, Vilkova (344-5), NUCU website",
+        "personal_website": "-",
+        "in_contact": "via email with duaghter "
+    },
+    {
         "composer": "SHUKH, Mykhail",
         "composer_cyrillic": "Шух, Михаїл",
         "gender": "Male",
@@ -3178,7 +3338,7 @@
         "studied": "GMI (1956) comp with V. Kriukov",
         "taught": "music schools in Yakutsk (1954–59), Kalush (1959–62), Kirovohrad (1962–?)",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "music schools in Yakutsk (1954–59), Kalush (1959–62), Kirovohrad (1962–?)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3210,7 +3370,7 @@
         "studied": "NMAU (?) comp with L. Revutsky, B. Lyatoshynsky & V. Kosenko",
         "taught": "-",
         "worked": "Arrested: in 1940 ",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Korniy, Mukha (328)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3243,7 +3403,7 @@
         "taught": "various music schools in Kyiv (1963–70)",
         "worked": "-",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1969)",
-        "sources": "Dytynyak (125–26), Gnativ (60–61), Grove, Herman (III: 46–47), Ho (499–501), IEU, Khomik, Klopoushak (Chapter 4), Korniy, LCP, Lunyna, Mukha (266–67), Musicalics, NMU, Pavlyshyn, Rozhok, Schwarz, Shank (254), Slonimsky (V: 530), Sonevytskyi (279–80), Struk (IV: 140), Tsenova (66–83), UCMF, UME (VI: 363–68), UMW, Vilkova (275–76), VUE, 1978 (176–77), NUCU website, 1976 (176–77), 2006 (34–35)",
+        "sources": "Dytynyak (125–26), Gnativ (60–61), Grove, Herman (III: 46–47), Ho (499–501), IEU, Khomik, Klopoushak (Chapter 4), Korniy, LCP, Lunyna, Mukha (266–67), Musicalics, NMU, Pavlyshyn, Rozhok, Schwarz, Shank (254), Slonimsky (V: 530), Sonevytskyi (279–80), Struk (IV: 140), Tsenova (66–83), UASP, UCMF, UME (VI: 363–68), UMW, Vilkova (275–76), VUE, 1978 (176–77), NUCU website, 1976 (176–77), 2006 (34–35)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -3307,7 +3467,7 @@
         "taught": "LNMA (1964–66 & 1988–1996), NMAU (1966–1988 & 1998–?) head of department of music history (1999–?)",
         "worked": "",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1963), secretary (1968), head of management (1984), co-president (2006–2010)",
-        "sources": "Baley, Drabyna (99–109), Dytynyak (128–129), Grove, Herman (III: 48–50), Ho (503–504), IEU, Karas, Klopoushak (Chapter 5), Korniy, Mukha (271–272), Musicalics, NMU, Rozhok, Schwarz, Shank (255), Sonevytskyi (259–260), Struk (IV: 733), UCMF, UL, UME (VI: 431–35), UMW, Vilkova (279–80), VUE, Zaderatsky, NUCU website, 1968 (198–199), 1978 (178–179), 1984 (210–211), 2006 (63–64)",
+        "sources": "Baley, Drabyna (99–109), Dytynyak (128–129), Grove, Herman (III: 48–50), Ho (503–504), IEU, Karas, Klopoushak (Chapter 5), Korniy, Mukha (271–272), Musicalics, NMU, Rozhok, Schwarz, Shank (255), Sonevytskyi (259–260), Struk (IV: 733), UASP, UCMF, UL, UME (VI: 431–35), UMW, Vilkova (279–80), VUE, Zaderatsky, NUCU website, 1968 (198–199), 1978 (178–179), 1984 (210–211), 2006 (63–64)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -3370,8 +3530,24 @@
         "studied": "LNMA (1911) vln & music theory, State Music Academy in Berlin (1914), Berlin Academy of Arts (1916), University of Berlin (1921) Phd supervisor J. Wolf",
         "taught": "LNMA (1921–?) director (1930–39)",
         "worked": "cond Lviv Philharmonic (1940–1956), vln, music critic",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Dytynyak (131), Ho (515–16), IEU, Karas, Korniy, Mukha (277–78), Musicalics, Rozhok, Slonimsky (V: 594), Struk (IV: 824), UME (VI: 508–09), UMW, 1968 (204–05)",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
+        "composer": "SPASOKUKOTSKY, Lev",
+        "composer_cyrillic": "Спасокукоцький, Лев ",
+        "gender": "Male",
+        "birth": "September 14th, 1912 in Nikolske, Yaroslavl oblast, Russia",
+        "death": "May 25th, 1960 in Kyiv, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "NMAU (1945) comp with B. Lyatoshynsky, (1948), (1951) PhD “The Cantata Genre in the Works of Ukrainian Soviet Composers”",
+        "taught": "NMAU (1951-60) comp & theory",
+        "worked": "-",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
+        "sources": "Mukha (279), Piirainen, UME (VI: 535), UMW, Vilkova (287)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -3403,7 +3579,7 @@
         "taught": "NMAU (1976–), head of comp department (1989–)",
         "worked": "editor for Muzychna Ukraina (1970–76)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1975) first secretary (1989–92), president (1990–93), copresident (2004–10)",
-        "sources": "Baley, Drabyna (110–121), Dytynyak (132–133), Gnativ (61–62), Grove, Ho (519), IEU, Karas, Lunyna, Korniy, LCP, Mukha (279–282), Musicalics, NMU, Rozhok, Shank (262–63), Sonevytskyi (268–269), UCMF, UL, UME (VI: 550–559), UMW, Vilkova (288–89), VUE, Zinkevych, NUCU website, 1978 (181–182), 1984 (213–214), 2006 (35)",
+        "sources": "Baley, Drabyna (110–121), Dytynyak (132–133), Gnativ (61–62), Grove, Ho (519), IEU, Karas, Lunyna, Korniy, LCP, Mukha (279–282), Musicalics, NMU, Rozhok, Shank (262–63), Sonevytskyi (268–269), UASP, UCMF, UL, UME (VI: 550–559), UMW, Vilkova (288–89), VUE, Zinkevych, NUCU website, 1978 (181–182), 1984 (213–214), 2006 (35)",
         "personal_website": "https://www.stankovych.org.ua/",
         "in_contact": "via email with daughter Rada Stankovych"
     },
@@ -3418,7 +3594,7 @@
         "studied": "NMAU (1984) comp with A. Shtoharenko",
         "taught": "-",
         "worked": "army (1976–78), played in Luhansk Philharmonic (1978–79), editor Muzychna Ukraina (1984–98), music editor for Dovzhenko Film Studio in Kyiv (1991–98), chief librarian at Russian State Library in Moscow (1998–2005)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Karas, Korniy, Mukha (282), Rozhok, Shank (263), UME (VI: 563), UMW, Vilkova (289), 2006 (104)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3516,7 +3692,7 @@
         "worked": "-",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (2018)",
         "sources": "UME (VI: 644-45), NUCU website",
-        "personal_website": "https://pandemic-media-space.com/works",
+        "personal_website": "-",
         "in_contact": "via email "
     },
     {
@@ -3563,7 +3739,7 @@
         "taught": "-",
         "worked": "President CUPE Local 1230 (2010–22), Founder Hypertext Plus (1998– 2022), Editor “Cathedral Bells” St. Volodymyr Ukrainian Orthodox Cathedral (1995– 2021), East European Reference Specialist at Petro Jacyk Resource Centre University of Toronto (1994–2022), artistic advisor for festivals “Ukrainian Music Festival” & “Ukrainian Art Song Project”, music critic with articles in US Daily, Svoboda & Canadian Weekly, The New Pathway, cond & organized concert for 100 year of Ukrainians in Canada (1991), musicologist contributed works such as the Encyclopedia of Ukraine",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "CE, Karas, Mukha (264–265), Sonevytskyi (278), Struk (V: 139), UME (VI: 358–59)",
+        "sources": "CE, Karas, Mukha (264–265), Sonevytskyi (278), Struk (V: 139), UASP, UME (VI: 358–59)",
         "personal_website": "-",
         "in_contact": "via email and in person with sister Halyna Sydorenko"
     },
@@ -3595,7 +3771,7 @@
         "taught": "-",
         "worked": "-",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "-",
+        "sources": "UL",
         "personal_website": "-",
         "in_contact": "via email"
     },
@@ -3626,7 +3802,7 @@
         "studied": "NMAU (1924) cond, comp with R. Glière & B. Lyatoshynsky, KLMS (1925), SPSC (1944) Phd",
         "taught": "KLMS (1925–1939), NMAU (1939–1941 & 1950–74) head of instrumentation department, SPSC (1941–1950)",
         "worked": "-",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), president (1956–1968)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), president (1956–1968)",
         "sources": "Dytynyak (136–137), Ho (543–544), Korniy, Mukha (292–293), Olkhovsky, Rozhok, Shank (273), Slonimsky (VI: 77), Sonevytskyi (280–281), Struk (V: 161), UMW, Vilkova (306), 1968 (207–208), 1978 (185–186), 1984 (220–222)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3674,7 +3850,7 @@
         "studied": "ONMA (1986) comp with T. Maliukova",
         "taught": "Odessa Music School no. 12 (1994–?)",
         "worked": "artistic director All-Ukraine Children Festival “Orpheus” (2000)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Korniy, Mukha (298–99), Musicalics, NMU, NUCU website, 2006 (82)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3690,7 +3866,7 @@
         "studied": "ONMA (1979) comp with O. Krasotov, Moscow Pedagogical Institute (1989), (1990) Phd comp with G. Tsypin",
         "taught": "ONMA (1979–)",
         "worked": "artistic director of “Two days and two nights of new music in Odesa”, head of Ukrainian section of International Society for Contemporary Music",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), secretary",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), secretary",
         "sources": "Baley, Gnativ (62–64), Grove, Korniy, LCP, Mukha (316), Musicalics, NMU, Shank (278–79), Sonevytskyi (286–287), UCMF, UMW, Vilkova (333), VUE, Zagaykevych (155), NUCU website, 1984 (239), 2006 (83)",
         "personal_website": "-",
         "in_contact": "via email"
@@ -3706,7 +3882,7 @@
         "studied": "LNMA (1953) comp with S. Lyudkevych",
         "taught": "KhNUA (1962–?)",
         "worked": "artistic director of Vinnytsia Philharmonic (1953–7), director of Folk ensemble “Serp i molot” (Sickle and hammer)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), head of Kharkiv branch (1982-?)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), head of Kharkiv branch (1982-?)",
         "sources": "Dytynyak (148–49), Mukha (317), Struk (V: 310), UMW, Vilkova (335), 1968 (233), 1978 (207–08), 1984 (240–41)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3723,7 +3899,7 @@
         "taught": "Lysenko Music Institute of Lviv (1935–39), LNMA (1940–1941)",
         "worked": "accompanist Lviv Opera House, pno Lviv Radio, private piano teacher",
         "member_of_National_Union_of_Composers_of_Ukraine": "(1939–41)",
-        "sources": "Dytynyak (90), ESU, Gnativ (64), IEU, Karas, Korniy, Mukha (183–184), Pavlyshyn, Shank (283), Sonevytskyi (289–290), Struk (V: 318–19), UDC, UL, UMW, Vilkova (313)",
+        "sources": "Dytynyak (90), ESU, Gnativ (64), IEU, Karas, Korniy, Mukha (183–184), Pavlyshyn, Shank (283), Sonevytskyi (289–290), Struk (V: 318–19), UASP, UDC, UL, UMW, Vilkova (313)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -3754,7 +3930,7 @@
         "studied": "NMAU (1962) comp with L. Revutsky & A. Shtoharenko",
         "taught": "GKIM (1976–81)",
         "worked": "editor for Ukrainian Radio (1962–67), Muzyka (1967–70), Mystetsvo (1967–68), Muzychna Ukraina (1971–74)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Drabyna (130–137), Dytynyak (138), Mukha (295), Rozhok, Sonevytskyi (291), Struk (V: 328), UMW, Vilkova (309), 1968 (211), 1978 (190), 1984 (224–225), 2006 (38-9)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3803,7 +3979,7 @@
         "taught": "Kharkiv Opera (1928–35), KHNUA (1934–35) director of Opera & Ballet (1928–35), NMAU (1946–60)",
         "worked": "cond of Ukrainian National choir (1919), Kyiv Opera & Ballet (1926–28), & Kharkiv Opera and Orchestra (1928–35), cofounder of Leontovych Music Association (1921–28), chairman of presidium for All-Ukrainian Society of Revolutionary Musicians (1928–30), head of Dumka State Chapel (1940), musicologist",
         "member_of_National_Union_of_Composers_of_Ukraine": "-",
-        "sources": "Baley, Dytynyak (30), ESU, Grove, Ho (576), IEU, Karas, Korniy, Mukha (49–50), Musicalics, Olkhovsky, Rozhok, Shank (289), Sonevytskyi (302–303), Struk (V: 590), UME (I: 327–29), UMW, Vilkova (41–42), VUE",
+        "sources": "Baley, Dytynyak (30), ESU, Grove, Ho (576), IEU, Karas, Korniy, Mukha (49–50), Musicalics, Olkhovsky, Rozhok, Shank (289), Sonevytskyi (302–303), Struk (V: 590), UASP, UME (I: 327–29), UMW, Vilkova (41–42), VUE",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -3818,7 +3994,7 @@
         "studied": "SPSC (1918) pno, comp with V. Kalafati",
         "taught": "-",
         "worked": "co-founder of Kyiv Philharmonic, Young People’s Theatre, and the Kharkiv Theatre of the Red Army (1920s), artistic director of Dance Ensemble of Ukraine (1937–41)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), member of the organizing committee, director of military patronage commission",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), member of the organizing committee, director of military patronage commission",
         "sources": "Dytynyak (34), ESU, Mukha (55), Sonevytskyi (304–05), Struk (V: 602), UME (I: 375), UMW, Vilkova (47–48), 1968 (26–27)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3851,7 +4027,7 @@
         "taught": "DoMS (1956–92)",
         "worked": "Music Director of Shakharsky Song & Dance Ensemble (1959–61), sound director of Donetsk Television Studio (1963–64)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1967), head of Donetsk branch (1970–83)",
-        "sources": "Dytynytak (35), ESU, Mukha (58), UME (I: 396), UMW, Vilkova (49–50), NUCU website, 1968 (28), 1978 (25), 1984 (29–30), 2006 (12)",
+        "sources": "Dytynytak (35), ESU, Mukha (58), UME (I: 396), UASP, UMW, Vilkova (49–50), NUCU website, 1968 (28), 1978 (25), 1984 (29–30), 2006 (12)",
         "personal_website": "-",
         "in_contact": "via email with son Eugen Vodovozov"
     },
@@ -3883,7 +4059,7 @@
         "taught": "LMS (1990–2022)",
         "worked": "-",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (2007)",
-        "sources": "Sonevytsky (307), UMW, Vilkova (51-52), NUCU website",
+        "sources": "Sonevytsky (307), UASP, UMW, Vilkova (51-52), NUCU website",
         "personal_website": "https://mwolynskij.at.ua/",
         "in_contact": "via email"
     },
@@ -3930,7 +4106,7 @@
         "studied": "NMAU (1975) comp with Y. Ishchenko & L. Kolodub",
         "taught": "-",
         "worked": "music director of Kyiv Youth Theatre, editor Muzychna Ukraina (1978-83)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
         "sources": "Mukha (330), Shank (297), Sonevytskyi (98-=–99), UMW, Vilkova (352), 1984 (270–71)",
         "personal_website": "-",
         "in_contact": "-"
@@ -3976,8 +4152,8 @@
         "currently": "-",
         "diaspora": "-",
         "studied": "NMAU (1990) comp with Y. Ishchenko, IRCAM in Paris (1996)",
-        "taught": "NMAU (1998–) electroacoustics",
-        "worked": "-",
+        "taught": "NMAU (1997–2023) comp & electroacoustics, KhNAU (2023-) comp & electroacoustics",
+        "worked": "comp in Kharkiv (2023-)",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1993)",
         "sources": "ESU, Gnativ (68–69), Korniy, LCP, Musicalics, NMU, Shank (301–02), UCMF, UL, UME (II: 107), UMW, Vilkova (104–05), VUE, Zagaykevych (161), NUCU website, 2006 (18)",
         "personal_website": "-",
@@ -4026,8 +4202,24 @@
         "studied": "NMAU (1990) comp with Y. Stankovych",
         "taught": "-",
         "worked": "Music editor for Muzychna Ukraina (1990–94)",
-        "member_of_National_Union_of_Composers_of_Ukraine": "joined (unknown), consultant of Kyiv branch (1994–?) secretary (2003–?)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown), consultant of Kyiv branch (1994–?) secretary (2003–?)",
         "sources": "Mukha (109), Musicalics, NMU, Shank (302–03), UCMF, UMW, Korniy, LCP, Rozhok, Vilkova (107), NUCU website, 2006 (18)",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
+        "composer": "ZAVALISHINA, Mariya",
+        "composer_cyrillic": "Завалішина, Марія ",
+        "gender": "Female",
+        "birth": "December 26th, 1903 in St. Petersburg, Russia",
+        "death": "July 3rd, 1991 in Kyiv, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "ONMA (1939) comp with P. Molchanov",
+        "taught": "Stoliarsky Special Music School (1937-8), ONMA (1945-51), NMAU (1951-61)",
+        "worked": "cond for Odes Drama Theatre (1935-6) & State Philharmonic (1952-3), music editor for Odesa Radio (1937-8), music school inspector (1938-41), Ukrainian Ministry for Arts in Kyiv (1951-2)",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (date unknown)",
+        "sources": "Dytynyak (52-53), ESU, Mukha (105-6), Sonevytsky (316), UME (II: 105), UMW, Vilkova (104)",
         "personal_website": "-",
         "in_contact": "-"
     },
@@ -4080,6 +4272,22 @@
         "in_contact": "via email with wife Oleksandra Modynova-Zhylinska "
     },
     {
+        "composer": "ZNATOKOV, Yuriy",
+        "composer_cyrillic": "Знатоков, Юрій",
+        "gender": "Male",
+        "birth": "February 6th, 1926 in Batumi, Georgia",
+        "death": "October 11th, 1998 in Odesa, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "ONMA (1951) comp with O. Kogan",
+        "taught": "director of Odesa Music School no. 1 & 4 (1953-62)",
+        "worked": "soldier WWII",
+        "member_of_National_Union_of_Composers_of_Ukraine": "oined 1953 (on board of Odesa branch 1966-76)",
+        "sources": "Dytynyak (54), ESU, Herman (III: 84), Mukha (112), Sonevystsky (322-3), UME (II: 161), UMW, Vilkova (111), 1968 (83-4), 1978 (70-1), 1984 (77-9)",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
         "composer": "ZNOSKO-BOROVSKY, Oleksandr",
         "composer_cyrillic": "Зноско-Боровський, Олександр",
         "gender": "Male",
@@ -4096,6 +4304,22 @@
         "in_contact": "-"
     },
     {
+        "composer": "ZOLOTUKHIN, Volodymyr",
+        "composer_cyrillic": "Золотухін, Володимир ",
+        "gender": "Male",
+        "birth": "May 16th, 1936 in Kharkiv, Ukraine",
+        "death": "September 4th, 2010 in Kharkiv, Ukraine",
+        "currently": "-",
+        "diaspora": "-",
+        "studied": "KhNUA (1963) comp with D. Klebanov",
+        "taught": "Kharkiv Institute of the Arts (1963-?) music & comp",
+        "worked": "-",
+        "member_of_National_Union_of_Composers_of_Ukraine": "joined (1965) (head of Kharkiv branch 1994-9)",
+        "sources": "Dytynyak (55-56), ESU, Ho (629), Mukha (114), Sonevytsky (324-5), UME (II: 167), UMW, Vilkova (112), NUCU website",
+        "personal_website": "-",
+        "in_contact": "-"
+    },
+    {
         "composer": "ZUBITSKY, Volodymyr",
         "composer_cyrillic": "Зубицький, Володимир",
         "gender": "Male",
@@ -4104,7 +4328,7 @@
         "currently": "Italy",
         "diaspora": "Italy (moved in 1995)",
         "studied": "NMAU (1976) acc, (1977) comp with M. Skoryk, (1979) cond",
-        "taught": "acc soloist for UkrConcert (1976–79), private and masterclass acc teacher, head of Ukrainian Accordion Association (1989–95)",
+        "taught": "acc soloist for UkrConcert (1976–79), private and masterclass acc teacher, head of the Young Composers Section of NUCU (1984–1988) head of Ukrainian Accordion Association (1989–95)",
         "worked": "-",
         "member_of_National_Union_of_Composers_of_Ukraine": "joined (1978)",
         "sources": "ESU, Gnativ (69–70), Herman (III: 85), Korniy, Mukha (115), Musicalics, NMU, Rozhok, Shank (306–07), UME (II: 172), VUE, NUCU website, 1984 (82–83), 2006 (20)",
