@@ -490,7 +490,7 @@ h2:hover {
 
 .home-nav-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin: 2rem 0;
 }
