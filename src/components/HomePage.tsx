@@ -61,6 +61,16 @@ function HomePage() {
                     <span className="home-nav-card-label">Piece Length</span>
                     <span className="home-nav-card-sub">Browse by duration</span>
                 </Link>
+                <a href="https://www.ucmepublishing.com" target="_blank" rel="noopener noreferrer" className="home-nav-card">
+                    <svg className="home-nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M4 5.5C4 4.67 4.67 4 5.5 4H14v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"/>
+                        <path d="M14 4h4.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H14"/>
+                        <path d="M17.5 9.5v4.75"/>
+                        <circle cx="16.6" cy="14.6" r="1.1" fill="currentColor" stroke="none"/>
+                    </svg>
+                    <span className="home-nav-card-label">Purchase Scores</span>
+                    <span className="home-nav-card-sub">UCME Publishing</span>
+                </a>
             </div>
 
             <div className="home-stats">
